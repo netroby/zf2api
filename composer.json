@@ -1,0 +1,6 @@
+{
+    "name": "deyihome-phpsource",
+    "require": {
+        "zendframework/zendframework": "dev-master"
+    }
+}
