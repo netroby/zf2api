@@ -1,2 +1,2 @@
 #!/bin/sh
-apigen.phar generate -q --php
+apigen.phar generate  --php
