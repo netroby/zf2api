@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2778,7 +2778,7 @@
 
 
 	<div class="description">
-	<p>Compares DateTime instances for equality.</p>
+	<p>Compares DateTimeInterface instances for equality.</p>
 	</div>
 
 	<dl class="tree">
@@ -2821,17 +2821,9 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-SebastianBergmann.html">SebastianBergmann</a>\<a href="namespace-SebastianBergmann.Comparator.html">Comparator</a><br>
-		<b>Package:</b> Comparator<br>
+		
 
-				<b>Copyright:</b>
-				Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>License:</b>
-				<a href="http://www.opensource.org/licenses/BSD-3-Clause">The BSD 3-Clause License</a><br>
-				<b>Author:</b>
-				Jeff Welch <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#119;h&#x61;&#116;&#x74;&#104;&#x65;&#106;&#x65;&#102;f&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#119;h&#x61;&#116;&#x74;&#104;&#x65;&#106;&#x65;&#102;f&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;</a><br>
-				<b>Link:</b>
-				<a href="http://www.github.com/sebastianbergmann/comparator">http://www.github.com/sebastianbergmann/comparator</a><br>
-			<b>Located at</b> <a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#13-85" title="Go to source code">sebastian/comparator/src/DateTimeComparator.php</a>
+			<b>Located at</b> <a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#13-80" title="Go to source code">sebastian/comparator/src/DateTimeComparator.php</a>
 		<br>
 	</div>
 
@@ -2851,7 +2843,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_accepts">#</a>
-		<code><a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#24-34" title="Go to source code">accepts</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$actual</var></span> )</code>
+		<code><a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#18-29" title="Go to source code">accepts</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$actual</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns whether the comparator can compare two values.</p>
@@ -2894,7 +2886,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertEquals">#</a>
-		<code><a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#36-69" title="Go to source code">assertEquals</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$actual</var></span>, <span>float <var>$delta</var> = <span class="php-num">0.0</span></span>, <span>boolean <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#31-64" title="Go to source code">assertEquals</a>( <span>mixed <var>$expected</var></span>, <span>mixed <var>$actual</var></span>, <span>float <var>$delta</var> = <span class="php-num">0.0</span></span>, <span>boolean <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Asserts that two values are equal.</p>
@@ -2912,21 +2904,21 @@
 					<dd>The second value to compare</dd>
 					<dt><var>$delta</var></dt>
 					<dd><p>The allowed numerical distance between two values to
-                     consider them equal</p></dd>
+                                        consider them equal</p></dd>
 					<dt><var>$canonicalize</var></dt>
 					<dd><p>If set to TRUE, arrays are sorted before
-                            comparison</p></dd>
+                                        comparison</p></dd>
 					<dt><var>$ignoreCase</var></dt>
 					<dd><p>If set to TRUE, upper- and lowercasing is
-                          ignored when comparing string values</p></dd>
+                                        ignored when comparing string values</p></dd>
 				</dl></div>
 
 
 				<h4>Throws</h4>
 				<div class="list">
 					<code><a href="class-SebastianBergmann.Comparator.ComparisonFailure.html">SebastianBergmann\Comparator\ComparisonFailure</a></code><br><p>Thrown when the comparison
-                          fails. Contains information about the
-                          specific errors that lead to the failure.</p>
+                                       fails. Contains information about the
+                                       specific errors that lead to the failure.</p>
 				</div>
 
 
@@ -2948,17 +2940,17 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_dateTimeToString">#</a>
-		<code><a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#71-84" title="Go to source code">dateTimeToString</a>( <span>DateTime <var>$datetime</var></span> )</code>
+		<code><a href="source-class-SebastianBergmann.Comparator.DateTimeComparator.html#66-79" title="Go to source code">dateTimeToString</a>( <span><code><a href="class-DateTimeInterface.html">DateTimeInterface</a></code> <var>$datetime</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns an ISO 8601 formatted string representation of a datetime or
-'Invalid DateTime object' if the provided DateTime was not properly
+'Invalid DateTimeInterface object' if the provided DateTimeInterface was not properly
 initialized.</p>
 		</div>
 
 		<div class="description detailed hidden">
 			<p>Returns an ISO 8601 formatted string representation of a datetime or
-'Invalid DateTime object' if the provided DateTime was not properly
+'Invalid DateTimeInterface object' if the provided DateTimeInterface was not properly
 initialized.</p>
 
 
@@ -3040,6 +3032,6 @@ initialized.</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

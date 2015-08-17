@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2778,7 +2778,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Http.html">Http</a>\<a href="namespace-Zend.Http.Client.html">Client</a>\<a href="namespace-Zend.Http.Client.Adapter.html">Adapter</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Http.Client.Adapter.Curl.html#17-524" title="Go to source code">zendframework/zend-http/src/Client/Adapter/Curl.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Http.Client.Adapter.Curl.html#17-527" title="Go to source code">zendframework/zend-http/src/Client/Adapter/Curl.php</a>
 		<br>
 	</div>
 
@@ -2834,7 +2834,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOptions">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#95-148" title="Go to source code">setOptions</a>( <span>array|Traversable <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#95-148" title="Go to source code">setOptions</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$options</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Set the configuration array for the adapter</p>
@@ -2999,7 +2999,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_write">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#237-465" title="Go to source code">write</a>( <span>string <var>$method</var></span>, <span><code><a href="class-Zend.Uri.Uri.html">Zend\Uri\Uri</a></code> <var>$uri</var></span>, <span>float <var>$httpVersion</var> = <span class="php-num">1.1</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$body</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#237-468" title="Go to source code">write</a>( <span>string <var>$method</var></span>, <span><code><a href="class-Zend.Uri.Uri.html">Zend\Uri\Uri</a></code> <var>$uri</var></span>, <span>float <var>$httpVersion</var> = <span class="php-num">1.1</span></span>, <span>array <var>$headers</var> = []</span>, <span>string <var>$body</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Send request to the remote server</p>
@@ -3055,7 +3055,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_read">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#467-475" title="Go to source code">read</a>( )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#470-478" title="Go to source code">read</a>( )</code>
 
 		<div class="description short">
 			<p>Return read response from server</p>
@@ -3091,7 +3091,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_close">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#477-488" title="Go to source code">close</a>( )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#480-491" title="Go to source code">close</a>( )</code>
 
 		<div class="description short">
 			<p>Close the connection to the server</p>
@@ -3123,7 +3123,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHandle">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#490-498" title="Go to source code">getHandle</a>( )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#493-501" title="Go to source code">getHandle</a>( )</code>
 
 		<div class="description short">
 			<p>Get cUrl Handle</p>
@@ -3157,7 +3157,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOutputStream">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#500-510" title="Go to source code">setOutputStream</a>( <span>resource <var>$stream</var></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#503-513" title="Go to source code">setOutputStream</a>( <span>resource <var>$stream</var></span> )</code>
 
 		<div class="description short">
 			<p>Set output stream for the response</p>
@@ -3198,7 +3198,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 
 		<td class="name"><div>
 		<a class="anchor" href="#_readHeader">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#512-523" title="Go to source code">readHeader</a>( <span>resource <var>$curl</var></span>, <span>string <var>$header</var></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Curl.html#515-526" title="Go to source code">readHeader</a>( <span>resource <var>$curl</var></span>, <span>string <var>$header</var></span> )</code>
 
 		<div class="description short">
 			<p>Header reader function for CURL</p>
@@ -3263,7 +3263,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 		<td class="value">
 			<div>
 				<a href="#$config" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -3288,7 +3288,7 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 		<td class="value">
 			<div>
 				<a href="#$connectedTo" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(<span class="php-keyword1">null</span>, <span class="php-keyword1">null</span>)</code>
+				<code>[<span class="php-keyword1">null</span>, <span class="php-keyword1">null</span>]</code>
 			</div>
 		</td>
 	</tr>
@@ -3407,6 +3407,6 @@ Curl requires libcurl. See for full requirements the PHP manual: http://php.net/
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

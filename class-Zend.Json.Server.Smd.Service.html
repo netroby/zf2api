@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2797,7 +2797,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code><br>if no name provided
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>if no name provided
 				</div>
 
 
@@ -2879,7 +2879,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code>
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
 				</div>
 
 
@@ -2958,7 +2958,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code>
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
 				</div>
 
 
@@ -3108,7 +3108,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code>
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
 				</div>
 
 
@@ -3162,7 +3162,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addParam">#</a>
-		<code><a href="source-class-Zend.Json.Server.Smd.Service.html#255-296" title="Go to source code">addParam</a>( <span>string|array <var>$type</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span>integer|null <var>$order</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Json.Server.Smd.Service.html#255-296" title="Go to source code">addParam</a>( <span>string|array <var>$type</var></span>, <span>array <var>$options</var> = []</span>, <span>integer|null <var>$order</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Add a parameter to the service</p>
@@ -3189,7 +3189,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code>
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
 				</div>
 
 
@@ -3348,7 +3348,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code>
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
 				</div>
 
 
@@ -3529,7 +3529,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-Zend.Json.Server.Exception.InvalidArgumentException.html">Zend\Json\Server\Exception\InvalidArgumentException</a></code>
+					<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code>
 				</div>
 
 
@@ -3698,10 +3698,10 @@
 		<td class="value">
 			<div>
 				<a href="#$envelopeTypes" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     Smd::ENV_JSONRPC_1,
     Smd::ENV_JSONRPC_2,
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -3756,12 +3756,12 @@
 		<td class="value">
 			<div>
 				<a href="#$paramOptionTypes" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'name'</span>        =&gt; <span class="php-quote">'is_string'</span>,
     <span class="php-quote">'optional'</span>    =&gt; <span class="php-quote">'is_bool'</span>,
     <span class="php-quote">'default'</span>     =&gt; <span class="php-keyword1">null</span>,
     <span class="php-quote">'description'</span> =&gt; <span class="php-quote">'is_string'</span>,
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -3786,7 +3786,7 @@
 		<td class="value">
 			<div>
 				<a href="#$params" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -3811,7 +3811,7 @@
 		<td class="value">
 			<div>
 				<a href="#$paramMap" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'any'</span>     =&gt; <span class="php-quote">'any'</span>,
     <span class="php-quote">'arr'</span>     =&gt; <span class="php-quote">'array'</span>,
     <span class="php-quote">'array'</span>   =&gt; <span class="php-quote">'array'</span>,
@@ -3834,7 +3834,7 @@
     <span class="php-quote">'struct'</span>  =&gt; <span class="php-quote">'object'</span>,
     <span class="php-quote">'true'</span>    =&gt; <span class="php-quote">'boolean'</span>,
     <span class="php-quote">'void'</span>    =&gt; <span class="php-quote">'null'</span>,
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -3859,9 +3859,9 @@
 		<td class="value">
 			<div>
 				<a href="#$transportTypes" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'POST'</span>,
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -3880,6 +3880,6 @@
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

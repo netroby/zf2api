@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2752,6 +2752,15 @@
 	<p>SaveHandler Interface</p>
 	</div>
 
+	<dl class="tree">
+		<dd style="padding-left:0px">
+<b><span>Zend\Session\SaveHandler\SaveHandlerInterface</span></b>			
+			 implements 
+				<a href="class-SessionHandlerInterface.html"><span>SessionHandlerInterface</span></a>
+			
+			
+		</dd>
+	</dl>
 
 
 
@@ -2774,229 +2783,26 @@
 
 				<b>See:</b>
 				http://php.net/session_set_save_handler<br>
-			<b>Located at</b> <a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#12-63" title="Go to source code">zendframework/zend-session/src/SaveHandler/SaveHandlerInterface.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#14-21" title="Go to source code">zendframework/zend-session/src/SaveHandler/SaveHandlerInterface.php</a>
 		<br>
 	</div>
 
 
 
-	<table class="summary methods" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="open" id="_open">
 
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_open">#</a>
-		<code><a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#19-25" title="Go to source code">open</a>( <span>string <var>$savePath</var></span>, <span>string <var>$name</var></span> )</code>
-
-		<div class="description short">
-			<p>Open Session - retrieve resources</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Open Session - retrieve resources</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$savePath</var></dt>
-					<dd></dd>
-					<dt><var>$name</var></dt>
-					<dd></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="close" id="_close">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_close">#</a>
-		<code><a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#27-31" title="Go to source code">close</a>( )</code>
-
-		<div class="description short">
-			<p>Close Session - free resources</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Close Session - free resources</p>
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="read" id="_read">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_read">#</a>
-		<code><a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#33-38" title="Go to source code">read</a>( <span>string <var>$id</var></span> )</code>
-
-		<div class="description short">
-			<p>Read session data</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Read session data</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$id</var></dt>
-					<dd></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="write" id="_write">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_write">#</a>
-		<code><a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#40-46" title="Go to source code">write</a>( <span>string <var>$id</var></span>, <span>mixed <var>$data</var></span> )</code>
-
-		<div class="description short">
-			<p>Write Session - commit data to resource</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Write Session - commit data to resource</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$id</var></dt>
-					<dd></dd>
-					<dt><var>$data</var></dt>
-					<dd></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="destroy" id="_destroy">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_destroy">#</a>
-		<code><a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#48-54" title="Go to source code">destroy</a>( <span>string <var>$id</var></span> )</code>
-
-		<div class="description short">
-			<p>Destroy Session - remove data from resource for
-given session id</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Destroy Session - remove data from resource for
-given session id</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$id</var></dt>
-					<dd></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="gc" id="_gc">
-
-		<td class="attributes"><code>
-			 public 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_gc">#</a>
-		<code><a href="source-class-Zend.Session.SaveHandler.SaveHandlerInterface.html#56-62" title="Go to source code">gc</a>( <span>integer <var>$maxlifetime</var></span> )</code>
-
-		<div class="description short">
-			<p>Garbage Collection - remove old session data older
-than $maxlifetime (in seconds)</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Garbage Collection - remove old session data older
-than $maxlifetime (in seconds)</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$maxlifetime</var></dt>
-					<dd></dd>
-				</dl></div>
-
-
-
-
-
-		</div>
-		</div></td>
+	<table class="summary inherited">
+	<caption>Methods inherited from <a href="class-SessionHandlerInterface.html#methods">SessionHandlerInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-SessionHandlerInterface.html#_close">close()</a>, 
+			<a href="class-SessionHandlerInterface.html#_destroy">destroy()</a>, 
+			<a href="class-SessionHandlerInterface.html#_gc">gc()</a>, 
+			<a href="class-SessionHandlerInterface.html#_open">open()</a>, 
+			<a href="class-SessionHandlerInterface.html#_read">read()</a>, 
+			<a href="class-SessionHandlerInterface.html#_write">write()</a>
+		</code></td>
 	</tr>
 	</table>
-
 
 
 
@@ -3022,6 +2828,6 @@ than $maxlifetime (in seconds)</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

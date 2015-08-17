@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2755,7 +2755,7 @@
 		<b>Namespace:</b> <a href="namespace-ZendXml.html">ZendXml</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-ZendXml.Security.html#14-135" title="Go to source code">zendframework/zendxml/library/ZendXml/Security.php</a>
+			<b>Located at</b> <a href="source-class-ZendXml.Security.html#14-374" title="Go to source code">zendframework/zendxml/library/ZendXml/Security.php</a>
 		<br>
 	</div>
 
@@ -2775,7 +2775,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_heuristicScan">#</a>
-		<code><a href="source-class-ZendXml.Security.html#18-29" title="Go to source code">heuristicScan</a>( <span>string <var>$xml</var></span> )</code>
+		<code><a href="source-class-ZendXml.Security.html#18-31" title="Go to source code">heuristicScan</a>( <span>string <var>$xml</var></span> )</code>
 
 		<div class="description short">
 			<p>Heuristic scan to detect entity in XML</p>
@@ -2794,7 +2794,7 @@
 
 				<h4>Throws</h4>
 				<div class="list">
-					<code><a href="class-ZendXml.Exception.RuntimeException.html">ZendXml\Exception\RuntimeException</a></code>
+					<code><a href="class-ZendXml.Exception.RuntimeException.html">ZendXml\Exception\RuntimeException</a></code><br>If entity expansion or external entity declaration was discovered.
 				</div>
 
 
@@ -2807,14 +2807,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			SimpleXMLElement|DomDocument|boolean
+			<code><a href="class-SimpleXMLElement.html">SimpleXMLElement</a></code>|DomDocument|boolean
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_scan">#</a>
-		<code><a href="source-class-ZendXml.Security.html#31-103" title="Go to source code">scan</a>( <span>string <var>$xml</var></span>, <span>DOMDocument <var>$dom</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-ZendXml.Security.html#33-105" title="Go to source code">scan</a>( <span>string <var>$xml</var></span>, <span><code><a href="class-DOMDocument.html">DOMDocument</a></code> <var>$dom</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Scan XML string for potential XXE and XEE attacks</p>
@@ -2834,7 +2834,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					SimpleXMLElement|DomDocument|boolean
+					<code><a href="class-SimpleXMLElement.html">SimpleXMLElement</a></code>|DomDocument|boolean
 				</div>
 
 				<h4>Throws</h4>
@@ -2852,14 +2852,14 @@
 		<td class="attributes"><code>
 			 public static
 
-			SimpleXMLElement|DomDocument
+			<code><a href="class-SimpleXMLElement.html">SimpleXMLElement</a></code>|DomDocument
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_scanFile">#</a>
-		<code><a href="source-class-ZendXml.Security.html#105-121" title="Go to source code">scanFile</a>( <span>string <var>$file</var></span>, <span>DOMDocument <var>$dom</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-ZendXml.Security.html#107-123" title="Go to source code">scanFile</a>( <span>string <var>$file</var></span>, <span><code><a href="class-DOMDocument.html">DOMDocument</a></code> <var>$dom</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Scan XML file for potential XXE/XEE attacks</p>
@@ -2879,7 +2879,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					SimpleXMLElement|DomDocument
+					<code><a href="class-SimpleXMLElement.html">SimpleXMLElement</a></code>|DomDocument
 				</div>
 
 				<h4>Throws</h4>
@@ -2904,7 +2904,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isPhpFpm">#</a>
-		<code><a href="source-class-ZendXml.Security.html#123-134" title="Go to source code">isPhpFpm</a>( )</code>
+		<code><a href="source-class-ZendXml.Security.html#125-153" title="Go to source code">isPhpFpm</a>( )</code>
 
 		<div class="description short">
 			<p>Return true if PHP is running with PHP-FPM</p>
@@ -2913,11 +2913,356 @@
 		<div class="description detailed hidden">
 			<p>Return true if PHP is running with PHP-FPM</p>
 
+<p>This method is mainly used to determine whether or not heuristic checks
+(vs libxml checks) should be made, due to threading issues in libxml;
+under php-fpm, threading becomes a concern.</p>
+
+<p>However, PHP versions 5.5.22+ and 5.6.6+ contain a patch to the
+libxml support in PHP that makes the libxml checks viable; in such
+versions, this method will return false to enforce those checks, which
+are more strict and accurate than the heuristic checks.</p>
+
 
 
 				<h4>Returns</h4>
 				<div class="list">
 					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEntityComparison" id="_getEntityComparison">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEntityComparison">#</a>
+		<code><a href="source-class-ZendXml.Security.html#155-168" title="Go to source code">getEntityComparison</a>( <span>string <var>$xml</var></span> )</code>
+
+		<div class="description short">
+			<p>Determine and return the string(s) to use for the &lt;!ENTITY comparison.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Determine and return the string(s) to use for the &lt;!ENTITY comparison.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$xml</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detectStringEncoding" id="_detectStringEncoding">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detectStringEncoding">#</a>
+		<code><a href="source-class-ZendXml.Security.html#170-182" title="Go to source code">detectStringEncoding</a>( <span>string <var>$xml</var></span> )</code>
+
+		<div class="description short">
+			<p>Determine the string encoding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Determine the string encoding.</p>
+
+<p>Determines string encoding from either a detected BOM or a
+heuristic.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$xml</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>File encoding
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detectBom" id="_detectBom">
+
+		<td class="attributes"><code>
+			 protected static
+
+			false|string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detectBom">#</a>
+		<code><a href="source-class-ZendXml.Security.html#184-202" title="Go to source code">detectBom</a>( <span>string <var>$string</var></span> )</code>
+
+		<div class="description short">
+			<p>Attempt to match a known BOM.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Attempt to match a known BOM.</p>
+
+<p>Iterates through the return of getBomMap(), comparing the initial bytes
+of the provided string to the BOM of each; if a match is determined,
+it returns the encoding.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					false|string<br>Returns encoding on success.
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detectXmlStringEncoding" id="_detectXmlStringEncoding">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detectXmlStringEncoding">#</a>
+		<code><a href="source-class-ZendXml.Security.html#204-221" title="Go to source code">detectXmlStringEncoding</a>( <span>string <var>$xml</var></span> )</code>
+
+		<div class="description short">
+			<p>Attempt to detect the string encoding of an XML string.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Attempt to detect the string encoding of an XML string.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$xml</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>Encoding
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="detectXmlEncoding" id="_detectXmlEncoding">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string[]
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_detectXmlEncoding">#</a>
+		<code><a href="source-class-ZendXml.Security.html#223-269" title="Go to source code">detectXmlEncoding</a>( <span>string <var>$xml</var></span>, <span>string <var>$fileEncoding</var></span> )</code>
+
+		<div class="description short">
+			<p>Attempt to detect the specified XML encoding.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Attempt to detect the specified XML encoding.</p>
+
+<p>Using the file's encoding, determines if an "encoding" attribute is
+present and well-formed in the XML declaration; if so, it returns a
+list with both the ASCII representation of that declaration and the
+original file encoding.</p>
+
+<p>If not, a list containing only the provided file encoding is returned.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$xml</var></dt>
+					<dd></dd>
+					<dt><var>$fileEncoding</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string[]<br>Potential XML encodings
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBomMap" id="_getBomMap">
+
+		<td class="attributes"><code>
+			 protected static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBomMap">#</a>
+		<code><a href="source-class-ZendXml.Security.html#271-314" title="Go to source code">getBomMap</a>( )</code>
+
+		<div class="description short">
+			<p>Return a list of BOM maps.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return a list of BOM maps.</p>
+
+<p>Returns a list of common encoding -> BOM maps, along with the character
+length to compare against.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+				<h4>Link</h4>
+				<div class="list">
+						<a href="https://en.wikipedia.org/wiki/Byte_order_mark">https://en.wikipedia.org/wiki/Byte_order_mark</a><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAsciiEncodingMap" id="_getAsciiEncodingMap">
+
+		<td class="attributes"><code>
+			 protected static
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAsciiEncodingMap">#</a>
+		<code><a href="source-class-ZendXml.Security.html#316-353" title="Go to source code">getAsciiEncodingMap</a>( )</code>
+
+		<div class="description short">
+			<p>Return a map of encoding => generator pairs.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return a map of encoding => generator pairs.</p>
+
+<p>Returns a map of encoding => generator pairs, where the generator is a
+callable that accepts a string and returns the appropriate byte order
+sequence of that string for the encoding.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="substr" id="_substr">
+
+		<td class="attributes"><code>
+			 protected static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_substr">#</a>
+		<code><a href="source-class-ZendXml.Security.html#355-373" title="Go to source code">substr</a>( <span>string <var>$string</var></span>, <span>integer <var>$start</var></span>, <span>integer <var>$end</var></span> )</code>
+
+		<div class="description short">
+			<p>Binary-safe substr.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Binary-safe substr.</p>
+
+<p>substr() is not binary-safe; this method loops by character to ensure
+multi-byte characters are aggregated correctly.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$string</var></dt>
+					<dd></dd>
+					<dt><var>$start</var></dt>
+					<dd></dd>
+					<dt><var>$end</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
 				</div>
 
 
@@ -2980,6 +3325,6 @@
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

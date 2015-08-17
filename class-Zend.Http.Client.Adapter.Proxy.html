@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2810,7 +2810,7 @@ installed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOptions">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Proxy.html#56-72" title="Go to source code">setOptions</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Proxy.html#56-72" title="Go to source code">setOptions</a>( <span>array <var>$options</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Set the configuration array for the adapter</p>
@@ -2899,7 +2899,7 @@ fall back to the target server (behave like regular Socket adapter)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_write">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Proxy.html#106-193" title="Go to source code">write</a>( <span>string <var>$method</var></span>, <span><code><a href="class-Zend.Uri.Uri.html">Zend\Uri\Uri</a></code> <var>$uri</var></span>, <span>string <var>$httpVer</var> = <span class="php-quote">'1.1'</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$body</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Proxy.html#106-193" title="Go to source code">write</a>( <span>string <var>$method</var></span>, <span><code><a href="class-Zend.Uri.Uri.html">Zend\Uri\Uri</a></code> <var>$uri</var></span>, <span>string <var>$httpVer</var> = <span class="php-quote">'1.1'</span></span>, <span>array <var>$headers</var> = []</span>, <span>string <var>$body</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Send request to the proxy server</p>
@@ -2952,7 +2952,7 @@ fall back to the target server (behave like regular Socket adapter)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_connectHandshake">#</a>
-		<code><a href="source-class-Zend.Http.Client.Adapter.Proxy.html#195-272" title="Go to source code">connectHandshake</a>( <span>string <var>$host</var></span>, <span>integer <var>$port</var> = <span class="php-num">443</span></span>, <span>string <var>$httpVer</var> = <span class="php-quote">'1.1'</span></span>, <span>array <var>&amp; $headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Zend.Http.Client.Adapter.Proxy.html#195-272" title="Go to source code">connectHandshake</a>( <span>string <var>$host</var></span>, <span>integer <var>$port</var> = <span class="php-num">443</span></span>, <span>string <var>$httpVer</var> = <span class="php-quote">'1.1'</span></span>, <span>array <var>&amp; $headers</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Preform handshaking with HTTPS proxy using CONNECT method</p>
@@ -3099,7 +3099,7 @@ fall back to the target server (behave like regular Socket adapter)</p>
 		<td class="value">
 			<div>
 				<a href="#$config" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'ssltransport'</span>       =&gt; <span class="php-quote">'ssl'</span>,
     <span class="php-quote">'sslcert'</span>            =&gt; <span class="php-keyword1">null</span>,
     <span class="php-quote">'sslpassphrase'</span>      =&gt; <span class="php-keyword1">null</span>,
@@ -3113,7 +3113,7 @@ fall back to the target server (behave like regular Socket adapter)</p>
     <span class="php-quote">'proxy_pass'</span>         =&gt; <span class="php-quote">''</span>,
     <span class="php-quote">'proxy_auth'</span>         =&gt; Client::AUTH_BASIC,
     <span class="php-quote">'persistent'</span>         =&gt; <span class="php-keyword1">false</span>
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -3170,6 +3170,6 @@ fall back to the target server (behave like regular Socket adapter)</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

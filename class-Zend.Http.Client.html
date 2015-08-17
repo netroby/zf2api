@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2794,7 +2794,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.Http.Client.html#126-140" title="Go to source code">__construct</a>( <span>string <var>$uri</var> = <span class="php-keyword1">null</span></span>, <span>array|Traversable <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.html#126-140" title="Go to source code">__construct</a>( <span>string <var>$uri</var> = <span class="php-keyword1">null</span></span>, <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -2831,7 +2831,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setOptions">#</a>
-		<code><a href="source-class-Zend.Http.Client.html#142-169" title="Go to source code">setOptions</a>( <span>array|Traversable <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Zend.Http.Client.html#142-169" title="Go to source code">setOptions</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$options</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Set configuration parameters for this HTTP client</p>
@@ -3727,7 +3727,7 @@ separated from ->request() to preserve logic and readability</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addCookie">#</a>
-		<code><a href="source-class-Zend.Http.Client.html#534-568" title="Go to source code">addCookie</a>( <span>array|ArrayIterator|<code><a href="class-Zend.Http.Header.SetCookie.html">Zend\Http\Header\SetCookie</a></code>|string <var>$cookie</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$expire</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$domain</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$httponly</var> = <span class="php-keyword1">true</span></span>, <span>string <var>$maxAge</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$version</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.html#534-568" title="Go to source code">addCookie</a>( <span>array|<code><a href="class-ArrayIterator.html">ArrayIterator</a></code>|<code><a href="class-Zend.Http.Header.SetCookie.html">Zend\Http\Header\SetCookie</a></code>|string <var>$cookie</var></span>, <span>string <var>$value</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$expire</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$path</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$domain</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$httponly</var> = <span class="php-keyword1">true</span></span>, <span>string <var>$maxAge</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$version</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Add a cookie</p>
@@ -4170,7 +4170,7 @@ specified user, password and authentication method.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_calcAuthDigest">#</a>
-		<code><a href="source-class-Zend.Http.Client.html#747-800" title="Go to source code">calcAuthDigest</a>( <span>string <var>$user</var></span>, <span>string <var>$password</var></span>, <span>string <var>$type</var> = <code><a href="class-Zend.Http.Client.html#AUTH_BASIC">Zend\Http\Client::<b>AUTH_BASIC</b></a></code></span>, <span>array <var>$digest</var> = <span class="php-keyword1">array</span>()</span>, <span>null|string <var>$entityBody</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.html#747-800" title="Go to source code">calcAuthDigest</a>( <span>string <var>$user</var></span>, <span>string <var>$password</var></span>, <span>string <var>$type</var> = <code><a href="class-Zend.Http.Client.html#AUTH_BASIC">Zend\Http\Client::<b>AUTH_BASIC</b></a></code></span>, <span>array <var>$digest</var> = []</span>, <span>null|string <var>$entityBody</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Calculate the response value according to the HTTP authentication type</p>
@@ -4619,7 +4619,7 @@ MIME type will be returned</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_encodeFormData">#</a>
-		<code><a href="source-class-Zend.Http.Client.html#1282-1309" title="Go to source code">encodeFormData</a>( <span>string <var>$boundary</var></span>, <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>, <span>string <var>$filename</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Zend.Http.Client.html#1282-1309" title="Go to source code">encodeFormData</a>( <span>string <var>$boundary</var></span>, <span>string <var>$name</var></span>, <span>mixed <var>$value</var></span>, <span>string <var>$filename</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$headers</var> = []</span> )</code>
 
 		<div class="description short">
 			<p>Encode data to a multipart/form-data part suitable for a POST request.</p>
@@ -4716,7 +4716,7 @@ key to indicate an array.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_doRequest">#</a>
-		<code><a href="source-class-Zend.Http.Client.html#1355-1390" title="Go to source code">doRequest</a>( <span><code><a href="class-Zend.Uri.Http.html">Zend\Uri\Http</a></code> <var>$uri</var></span>, <span>string <var>$method</var></span>, <span>boolean <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$headers</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$body</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-Zend.Http.Client.html#1355-1390" title="Go to source code">doRequest</a>( <span><code><a href="class-Zend.Uri.Http.html">Zend\Uri\Http</a></code> <var>$uri</var></span>, <span>string <var>$method</var></span>, <span>boolean <var>$secure</var> = <span class="php-keyword1">false</span></span>, <span>array <var>$headers</var> = []</span>, <span>string <var>$body</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Separating this from send method allows subclasses to wrap
@@ -5176,7 +5176,7 @@ specified user, password and authentication method.</p>
 		<td class="value">
 			<div>
 				<a href="#$auth" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5226,7 +5226,7 @@ specified user, password and authentication method.</p>
 		<td class="value">
 			<div>
 				<a href="#$cookies" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5351,7 +5351,7 @@ specified user, password and authentication method.</p>
 		<td class="value">
 			<div>
 				<a href="#$config" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'maxredirects'</span>    =&gt; <span class="php-num">5</span>,
     <span class="php-quote">'strictredirects'</span> =&gt; <span class="php-keyword1">false</span>,
     <span class="php-quote">'useragent'</span>       =&gt; <span class="php-quote">'Zend\Http\Client'</span>,
@@ -5364,7 +5364,7 @@ specified user, password and authentication method.</p>
     <span class="php-quote">'encodecookies'</span>   =&gt; <span class="php-keyword1">true</span>,
     <span class="php-quote">'argseparator'</span>    =&gt; <span class="php-keyword1">null</span>,
     <span class="php-quote">'rfc3986strict'</span>   =&gt; <span class="php-keyword1">false</span>
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -5411,6 +5411,6 @@ and is then reused on every call to this method</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2805,7 +2805,7 @@ as well as retrieve all unknown values.</p>
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.InputFilter.html">InputFilter</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.InputFilter.BaseInputFilter.html#17-622" title="Go to source code">zendframework/zend-inputfilter/src/BaseInputFilter.php</a>
+			<b>Located at</b> <a href="source-class-Zend.InputFilter.BaseInputFilter.html#17-652" title="Go to source code">zendframework/zend-inputfilter/src/BaseInputFilter.php</a>
 		<br>
 	</div>
 
@@ -2880,6 +2880,8 @@ allows to perform various operations (add elements...)</p>
 
 
 
+				<h4>Implementation of</h4>
+				<div class="list"><code><a href="class-Countable.html#_count">Countable::count()</a></code></div>
 		</div>
 		</div></td>
 	</tr>
@@ -3116,7 +3118,7 @@ allows to perform various operations (add elements...)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setData">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#180-202" title="Go to source code">setData</a>( <span>array|Traversable <var>$data</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#180-202" title="Go to source code">setData</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Set data to use when validating and filtering</p>
@@ -3161,7 +3163,7 @@ allows to perform various operations (add elements...)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isValid">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#204-223" title="Go to source code">isValid</a>( <span>mixed|null <var>$context</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#204-222" title="Go to source code">isValid</a>( <span>mixed|null <var>$context</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Is the data set valid?</p>
@@ -3206,7 +3208,7 @@ allows to perform various operations (add elements...)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validateInputs">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#225-283" title="Go to source code">validateInputs</a>( <span>array <var>$inputs</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>mixed|null <var>$context</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#224-313" title="Go to source code">validateInputs</a>( <span>array <var>$inputs</var></span>, <span>array|<code><a href="class-ArrayAccess.html">ArrayAccess</a></code> <var>$data</var> = []</span>, <span>mixed|null <var>$context</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Validate a set of inputs against the current data</p>
@@ -3249,7 +3251,7 @@ allows to perform various operations (add elements...)</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setValidationGroup">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#285-344" title="Go to source code">setValidationGroup</a>( <span>mixed <var>$name</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#315-374" title="Go to source code">setValidationGroup</a>( <span>mixed <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Provide a list of one or more elements indicating the complete set to validate</p>
@@ -3302,7 +3304,7 @@ each specifying a single input.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInvalidInput">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#346-357" title="Go to source code">getInvalidInput</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#376-387" title="Go to source code">getInvalidInput</a>( )</code>
 
 		<div class="description short">
 			<p>Return a list of inputs that were invalid.</p>
@@ -3341,7 +3343,7 @@ that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValidInput">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#359-370" title="Go to source code">getValidInput</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#389-400" title="Go to source code">getValidInput</a>( )</code>
 
 		<div class="description short">
 			<p>Return a list of inputs that were valid.</p>
@@ -3380,7 +3382,7 @@ that passed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValue">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#372-395" title="Go to source code">getValue</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#402-425" title="Go to source code">getValue</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Retrieve a value from a named input</p>
@@ -3425,7 +3427,7 @@ that passed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValues">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#397-419" title="Go to source code">getValues</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#427-449" title="Go to source code">getValues</a>( )</code>
 
 		<div class="description short">
 			<p>Return a list of filtered values</p>
@@ -3464,7 +3466,7 @@ validation failed, this should raise an exception.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRawValue">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#421-439" title="Go to source code">getRawValue</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#451-469" title="Go to source code">getRawValue</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Retrieve a raw (unfiltered) value from a named input</p>
@@ -3509,7 +3511,7 @@ validation failed, this should raise an exception.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRawValues">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#441-461" title="Go to source code">getRawValues</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#471-491" title="Go to source code">getRawValues</a>( )</code>
 
 		<div class="description short">
 			<p>Return a list of unfiltered values</p>
@@ -3548,7 +3550,7 @@ with the values unfiltered.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMessages">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#463-479" title="Go to source code">getMessages</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#493-509" title="Go to source code">getMessages</a>( )</code>
 
 		<div class="description short">
 			<p>Return a list of validation failure messages</p>
@@ -3587,7 +3589,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validateValidationGroup">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#481-498" title="Go to source code">validateValidationGroup</a>( <span>array <var>$inputs</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#511-528" title="Go to source code">validateValidationGroup</a>( <span>array <var>$inputs</var></span> )</code>
 
 		<div class="description short">
 			<p>Ensure all names of a validation group exist as input in the filter</p>
@@ -3626,7 +3628,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_populate">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#500-540" title="Go to source code">populate</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#530-570" title="Go to source code">populate</a>( )</code>
 
 		<div class="description short">
 			<p>Populate the values of all attached inputs</p>
@@ -3656,7 +3658,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasUnknown">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#542-565" title="Go to source code">hasUnknown</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#572-595" title="Go to source code">hasUnknown</a>( )</code>
 
 		<div class="description short">
 			<p>Is the data set has unknown input ?</p>
@@ -3696,7 +3698,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUnknown">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#567-595" title="Go to source code">getUnknown</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#597-625" title="Go to source code">getUnknown</a>( )</code>
 
 		<div class="description short">
 			<p>Return the unknown input</p>
@@ -3736,7 +3738,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInputs">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#597-605" title="Go to source code">getInputs</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#627-635" title="Go to source code">getInputs</a>( )</code>
 
 		<div class="description short">
 			<p>Get an array of all inputs</p>
@@ -3770,7 +3772,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_merge">#</a>
-		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#607-621" title="Go to source code">merge</a>( <span><code><a href="class-Zend.InputFilter.BaseInputFilter.html">Zend\InputFilter\BaseInputFilter</a></code> <var>$inputFilter</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.BaseInputFilter.html#637-651" title="Go to source code">merge</a>( <span><code><a href="class-Zend.InputFilter.BaseInputFilter.html">Zend\InputFilter\BaseInputFilter</a></code> <var>$inputFilter</var></span> )</code>
 
 		<div class="description short">
 			<p>Merges the inputs from an InputFilter into the current one</p>
@@ -3866,7 +3868,7 @@ Pairs should only be returned for inputs that failed validation.</p>
 		<td class="value">
 			<div>
 				<a href="#$inputs" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -3960,6 +3962,6 @@ Pairs should only be returned for inputs that failed validation.</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

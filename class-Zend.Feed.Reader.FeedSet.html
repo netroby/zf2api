@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2755,17 +2755,18 @@
 
 	<dl class="tree">
 		<dd style="padding-left:0px">
-ArrayObject
+			<a href="class-ArrayObject.html"><span>ArrayObject</span></a>
+			
 			 implements 
-<span>IteratorAggregate</span>, 
+				<a href="class-IteratorAggregate.html"><span>IteratorAggregate</span></a>, 
 			
-<span>Traversable</span>, 
+				<a href="class-Traversable.html"><span>Traversable</span></a>, 
 			
-<span>ArrayAccess</span>, 
+				<a href="class-ArrayAccess.html"><span>ArrayAccess</span></a>, 
 			
-<span>Serializable</span>, 
+				<a href="class-Serializable.html"><span>Serializable</span></a>, 
 			
-<span>Countable</span>
+				<a href="class-Countable.html"><span>Countable</span></a>
 			
 			
 		</dd>
@@ -2790,7 +2791,7 @@ ArrayObject
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Feed.html">Feed</a>\<a href="namespace-Zend.Feed.Reader.html">Reader</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Feed.Reader.FeedSet.html#16-126" title="Go to source code">zendframework/zend-feed/src/Reader/FeedSet.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Feed.Reader.FeedSet.html#16-130" title="Go to source code">zendframework/zend-feed/src/Reader/FeedSet.php</a>
 		<br>
 	</div>
 
@@ -2810,7 +2811,7 @@ ArrayObject
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addLinks">#</a>
-		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#26-62" title="Go to source code">addLinks</a>( <span>DOMNodeList <var>$links</var></span>, <span>string <var>$uri</var></span> )</code>
+		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#24-60" title="Go to source code">addLinks</a>( <span><code><a href="class-DOMNodeList.html">DOMNodeList</a></code> <var>$links</var></span>, <span>string <var>$uri</var></span> )</code>
 
 		<div class="description short">
 			<p>Import a DOMNodeList from any document containing a set of links
@@ -2858,7 +2859,7 @@ loaded automatically when each links 'feed' array key is accessed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_absolutiseUri">#</a>
-		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#64-85" title="Go to source code">absolutiseUri</a>( <span> <var>$link</var></span>, <span> <var>$uri</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#62-89" title="Go to source code">absolutiseUri</a>( <span> <var>$link</var></span>, <span> <var>$uri</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Attempt to turn a relative URI into an absolute URI</p>
@@ -2888,7 +2889,7 @@ loaded automatically when each links 'feed' array key is accessed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_canonicalizePath">#</a>
-		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#87-105" title="Go to source code">canonicalizePath</a>( <span> <var>$path</var></span> )</code>
+		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#91-109" title="Go to source code">canonicalizePath</a>( <span> <var>$path</var></span> )</code>
 
 		<div class="description short">
 			<p>Canonicalize relative path</p>
@@ -2918,7 +2919,7 @@ loaded automatically when each links 'feed' array key is accessed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_offsetGet">#</a>
-		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#107-125" title="Go to source code">offsetGet</a>( <span>string <var>$offset</var></span> )</code>
+		<code><a href="source-class-Zend.Feed.Reader.FeedSet.html#111-129" title="Go to source code">offsetGet</a>( <span>string <var>$offset</var></span> )</code>
 
 		<div class="description short">
 			<p>Supports lazy loading of feeds using Reader::import() but
@@ -2944,7 +2945,7 @@ delegates any other operations to the parent class.</p>
 
 
 				<h4>Overrides</h4>
-				<div class="list"><code>ArrayObject::offsetGet()</code></div>
+				<div class="list"><code><a href="class-ArrayObject.html#_offsetGet">ArrayObject::offsetGet()</a></code></div>
 
 		</div>
 		</div></td>
@@ -2952,30 +2953,30 @@ delegates any other operations to the parent class.</p>
 	</table>
 
 	<table class="summary inherited">
-	<caption>Methods inherited from ArrayObject</caption>
+	<caption>Methods inherited from <a href="class-ArrayObject.html#methods">ArrayObject</a></caption>
 	<tr>
 		<td><code>
-__construct(), 
-append(), 
-asort(), 
-count(), 
-exchangeArray(), 
-getArrayCopy(), 
-getFlags(), 
-getIterator(), 
-getIteratorClass(), 
-ksort(), 
-natcasesort(), 
-natsort(), 
-offsetExists(), 
-offsetSet(), 
-offsetUnset(), 
-serialize(), 
-setFlags(), 
-setIteratorClass(), 
-uasort(), 
-uksort(), 
-unserialize()
+			<a href="class-ArrayObject.html#___construct">__construct()</a>, 
+			<a href="class-ArrayObject.html#_append">append()</a>, 
+			<a href="class-ArrayObject.html#_asort">asort()</a>, 
+			<a href="class-ArrayObject.html#_count">count()</a>, 
+			<a href="class-ArrayObject.html#_exchangeArray">exchangeArray()</a>, 
+			<a href="class-ArrayObject.html#_getArrayCopy">getArrayCopy()</a>, 
+			<a href="class-ArrayObject.html#_getFlags">getFlags()</a>, 
+			<a href="class-ArrayObject.html#_getIterator">getIterator()</a>, 
+			<a href="class-ArrayObject.html#_getIteratorClass">getIteratorClass()</a>, 
+			<a href="class-ArrayObject.html#_ksort">ksort()</a>, 
+			<a href="class-ArrayObject.html#_natcasesort">natcasesort()</a>, 
+			<a href="class-ArrayObject.html#_natsort">natsort()</a>, 
+			<a href="class-ArrayObject.html#_offsetExists">offsetExists()</a>, 
+			<a href="class-ArrayObject.html#_offsetSet">offsetSet()</a>, 
+			<a href="class-ArrayObject.html#_offsetUnset">offsetUnset()</a>, 
+			<a href="class-ArrayObject.html#_serialize">serialize()</a>, 
+			<a href="class-ArrayObject.html#_setFlags">setFlags()</a>, 
+			<a href="class-ArrayObject.html#_setIteratorClass">setIteratorClass()</a>, 
+			<a href="class-ArrayObject.html#_uasort">uasort()</a>, 
+			<a href="class-ArrayObject.html#_uksort">uksort()</a>, 
+			<a href="class-ArrayObject.html#_unserialize">unserialize()</a>
 		</code></td>
 	</tr>
 	</table>
@@ -2988,11 +2989,11 @@ unserialize()
 
 
 	<table class="summary inherited">
-	<caption>Constants inherited from ArrayObject</caption>
+	<caption>Constants inherited from <a href="class-ArrayObject.html#constants">ArrayObject</a></caption>
 	<tr>
 		<td><code>
-<b>ARRAY_AS_PROPS</b>, 
-<b>STD_PROP_LIST</b>
+			<a href="class-ArrayObject.html#ARRAY_AS_PROPS"><b>ARRAY_AS_PROPS</b></a>, 
+			<a href="class-ArrayObject.html#STD_PROP_LIST"><b>STD_PROP_LIST</b></a>
 		</code></td>
 	</tr>
 	</table>
@@ -3008,7 +3009,7 @@ unserialize()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Feed.Reader.FeedSet.html#20" title="Go to source code"><var>$rss</var></a>
+				<a href="source-class-Zend.Feed.Reader.FeedSet.html#18" title="Go to source code"><var>$rss</var></a>
 
 			<div class="description short">
 				
@@ -3033,7 +3034,7 @@ unserialize()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Feed.Reader.FeedSet.html#22" title="Go to source code"><var>$rdf</var></a>
+				<a href="source-class-Zend.Feed.Reader.FeedSet.html#20" title="Go to source code"><var>$rdf</var></a>
 
 			<div class="description short">
 				
@@ -3058,7 +3059,7 @@ unserialize()
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Feed.Reader.FeedSet.html#24" title="Go to source code"><var>$atom</var></a>
+				<a href="source-class-Zend.Feed.Reader.FeedSet.html#22" title="Go to source code"><var>$atom</var></a>
 
 			<div class="description short">
 				
@@ -3091,6 +3092,6 @@ unserialize()
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

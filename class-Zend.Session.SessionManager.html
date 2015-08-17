@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2782,7 +2782,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Session.html">Session</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Session.SessionManager.html#15-452" title="Go to source code">zendframework/zend-session/src/SessionManager.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Session.SessionManager.html#15-448" title="Go to source code">zendframework/zend-session/src/SessionManager.php</a>
 		<br>
 	</div>
 
@@ -2802,7 +2802,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#41-58" title="Go to source code">__construct</a>( <span><code><a href="class-Zend.Session.Config.ConfigInterface.html">Zend\Session\Config\ConfigInterface</a></code> <var>$config</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Zend.Session.Storage.StorageInterface.html">Zend\Session\Storage\StorageInterface</a></code> <var>$storage</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Zend.Session.SaveHandler.SaveHandlerInterface.html">Zend\Session\SaveHandler\SaveHandlerInterface</a></code> <var>$saveHandler</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$validators</var> = <span class="php-keyword1">array</span>() </span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#41-58" title="Go to source code">__construct</a>( <span><code><a href="class-Zend.Session.Config.ConfigInterface.html">Zend\Session\Config\ConfigInterface</a></code> <var>$config</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Zend.Session.Storage.StorageInterface.html">Zend\Session\Storage\StorageInterface</a></code> <var>$storage</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Zend.Session.SaveHandler.SaveHandlerInterface.html">Zend\Session\SaveHandler\SaveHandlerInterface</a></code> <var>$saveHandler</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$validators</var> = [] </span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -2849,7 +2849,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sessionExists">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#60-75" title="Go to source code">sessionExists</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#60-78" title="Go to source code">sessionExists</a>( )</code>
 
 		<div class="description short">
 			<p>Does a session exist and is it currently active?</p>
@@ -2883,7 +2883,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#77-132" title="Go to source code">start</a>( <span>boolean <var>$preserveStorage</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#80-135" title="Go to source code">start</a>( <span>boolean <var>$preserveStorage</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Start session</p>
@@ -2927,7 +2927,7 @@ exception if validation fails.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_initializeValidatorChain">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#134-151" title="Go to source code">initializeValidatorChain</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#137-154" title="Go to source code">initializeValidatorChain</a>( )</code>
 
 		<div class="description short">
 			<p>Create validators, insert reference value and add them to the validator chain</p>
@@ -2957,7 +2957,7 @@ exception if validation fails.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_destroy">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#153-179" title="Go to source code">destroy</a>( <span>array <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#156-182" title="Go to source code">destroy</a>( <span>array <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Destroy/end a session</p>
@@ -2992,7 +2992,7 @@ exception if validation fails.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_writeClose">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#181-208" title="Go to source code">writeClose</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#184-211" title="Go to source code">writeClose</a>( )</code>
 
 		<div class="description short">
 			<p>Write session to save handler and close</p>
@@ -3024,7 +3024,7 @@ exception if validation fails.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#210-237" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#213-240" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Attempt to set the session name</p>
@@ -3070,7 +3070,7 @@ validation, an exception will be raised.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#239-256" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#242-259" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			<p>Get session name</p>
@@ -3106,7 +3106,7 @@ validation, an exception will be raised.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setId">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#258-273" title="Go to source code">setId</a>( <span>string <var>$id</var></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#261-276" title="Go to source code">setId</a>( <span>string <var>$id</var></span> )</code>
 
 		<div class="description short">
 			<p>Set session ID</p>
@@ -3147,7 +3147,7 @@ validation, an exception will be raised.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getId">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#275-285" title="Go to source code">getId</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#278-288" title="Go to source code">getId</a>( )</code>
 
 		<div class="description short">
 			<p>Get session ID</p>
@@ -3183,7 +3183,7 @@ validation, an exception will be raised.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_regenerateId">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#287-300" title="Go to source code">regenerateId</a>( <span>boolean <var>$deleteOldSession</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#290-303" title="Go to source code">regenerateId</a>( <span>boolean <var>$deleteOldSession</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Regenerate id</p>
@@ -3225,7 +3225,7 @@ native ID generation Can safely be called in the middle of a session.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rememberMe">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#302-317" title="Go to source code">rememberMe</a>( <span>null|integer <var>$ttl</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#305-320" title="Go to source code">rememberMe</a>( <span>null|integer <var>$ttl</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Set the TTL (in seconds) for the session cookie expiry</p>
@@ -3266,7 +3266,7 @@ native ID generation Can safely be called in the middle of a session.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_forgetMe">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#319-330" title="Go to source code">forgetMe</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#322-333" title="Go to source code">forgetMe</a>( )</code>
 
 		<div class="description short">
 			<p>Set a 0s TTL for the session cookie</p>
@@ -3302,7 +3302,7 @@ native ID generation Can safely be called in the middle of a session.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setValidatorChain">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#332-344" title="Go to source code">setValidatorChain</a>( <span><code><a href="class-Zend.EventManager.EventManagerInterface.html">Zend\EventManager\EventManagerInterface</a></code> <var>$chain</var></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#335-347" title="Go to source code">setValidatorChain</a>( <span><code><a href="class-Zend.EventManager.EventManagerInterface.html">Zend\EventManager\EventManagerInterface</a></code> <var>$chain</var></span> )</code>
 
 		<div class="description short">
 			<p>Set the validator chain to use when validating a session</p>
@@ -3343,7 +3343,7 @@ native ID generation Can safely be called in the middle of a session.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValidatorChain">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#346-359" title="Go to source code">getValidatorChain</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#349-362" title="Go to source code">getValidatorChain</a>( )</code>
 
 		<div class="description short">
 			<p>Get the validator chain to use when validating a session</p>
@@ -3379,7 +3379,7 @@ native ID generation Can safely be called in the middle of a session.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isValid">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#361-381" title="Go to source code">isValid</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#364-384" title="Go to source code">isValid</a>( )</code>
 
 		<div class="description short">
 			<p>Is this session valid?</p>
@@ -3416,7 +3416,7 @@ true or one has failed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_expireSessionCookie">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#383-405" title="Go to source code">expireSessionCookie</a>( )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#386-408" title="Go to source code">expireSessionCookie</a>( )</code>
 
 		<div class="description short">
 			<p>Expire the session cookie</p>
@@ -3448,7 +3448,7 @@ true or one has failed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setSessionCookieLifetime">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#407-430" title="Go to source code">setSessionCookieLifetime</a>( <span>integer <var>$ttl</var></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#410-433" title="Go to source code">setSessionCookieLifetime</a>( <span>integer <var>$ttl</var></span> )</code>
 
 		<div class="description short">
 			<p>Set the session cookie lifetime</p>
@@ -3486,7 +3486,7 @@ cookie), regenerates the session ID, and restarts the session.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_registerSaveHandler">#</a>
-		<code><a href="source-class-Zend.Session.SessionManager.html#432-451" title="Go to source code">registerSaveHandler</a>( <span><code><a href="class-Zend.Session.SaveHandler.SaveHandlerInterface.html">Zend\Session\SaveHandler\SaveHandlerInterface</a></code> <var>$saveHandler</var></span> )</code>
+		<code><a href="source-class-Zend.Session.SessionManager.html#435-447" title="Go to source code">registerSaveHandler</a>( <span><code><a href="class-Zend.Session.SaveHandler.SaveHandlerInterface.html">Zend\Session\SaveHandler\SaveHandlerInterface</a></code> <var>$saveHandler</var></span> )</code>
 
 		<div class="description short">
 			<p>Register Save Handler with ext/session</p>
@@ -3569,10 +3569,10 @@ register the save handler with ext/session.</p>
 		<td class="value">
 			<div>
 				<a href="#$defaultDestroyOptions" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'send_expire_cookie'</span> =&gt; <span class="php-keyword1">true</span>,
     <span class="php-quote">'clear_storage'</span>      =&gt; <span class="php-keyword1">false</span>,
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -3654,6 +3654,6 @@ register the save handler with ext/session.</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

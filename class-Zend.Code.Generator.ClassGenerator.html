@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2793,7 +2793,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Code.html">Code</a>\<a href="namespace-Zend.Code.Generator.html">Generator</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Code.Generator.ClassGenerator.html#14-987" title="Go to source code">zendframework/zend-code/src/Generator/ClassGenerator.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Code.Generator.ClassGenerator.html#14-1011" title="Go to source code">zendframework/zend-code/src/Generator/ClassGenerator.php</a>
 		<br>
 	</div>
 
@@ -2907,7 +2907,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#214-260" title="Go to source code">__construct</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$namespaceName</var> = <span class="php-keyword1">null</span></span>, <span>array|string <var>$flags</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$extends</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$interfaces</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$properties</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$methods</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-Zend.Code.Generator.DocBlockGenerator.html">Zend\Code\Generator\DocBlockGenerator</a></code> <var>$docBlock</var> = <span class="php-keyword1">null</span> </span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#214-260" title="Go to source code">__construct</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$namespaceName</var> = <span class="php-keyword1">null</span></span>, <span>array|string <var>$flags</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$extends</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$interfaces</var> = []</span>, <span>array <var>$properties</var> = []</span>, <span>array <var>$methods</var> = []</span>, <span><code><a href="class-Zend.Code.Generator.DocBlockGenerator.html">Zend\Code\Generator\DocBlockGenerator</a></code> <var>$docBlock</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -3814,7 +3814,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addConstant">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#510-535" title="Go to source code">addConstant</a>( <span>string <var>$name</var></span>, <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#510-534" title="Go to source code">addConstant</a>( <span>string <var>$name</var></span>, <span>string|integer|null|float|array <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Add Constant</p>
@@ -3827,9 +3827,9 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$name</var></dt>
-					<dd></dd>
+					<dd>non-empty string</dd>
 					<dt><var>$value</var></dt>
-					<dd></dd>
+					<dd>scalar</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -3859,7 +3859,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addConstants">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#537-555" title="Go to source code">addConstants</a>( <span>array <var>$constants</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#536-554" title="Go to source code">addConstants</a>( <span>array <var>$constants</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3898,7 +3898,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addProperties">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#557-576" title="Go to source code">addProperties</a>( <span>array <var>$properties</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#556-575" title="Go to source code">addProperties</a>( <span>array <var>$properties</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3937,7 +3937,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addProperty">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#578-604" title="Go to source code">addProperty</a>( <span>string <var>$name</var></span>, <span>string|array <var>$defaultValue</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$flags</var> = <code><a href="class-Zend.Code.Generator.AbstractMemberGenerator.html#FLAG_PUBLIC">Zend\Code\Generator\AbstractMemberGenerator::<b>FLAG_PUBLIC</b></a></code></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#577-603" title="Go to source code">addProperty</a>( <span>string <var>$name</var></span>, <span>string|array <var>$defaultValue</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$flags</var> = <code><a href="class-Zend.Code.Generator.AbstractMemberGenerator.html#FLAG_PUBLIC">Zend\Code\Generator\AbstractMemberGenerator::<b>FLAG_PUBLIC</b></a></code></span> )</code>
 
 		<div class="description short">
 			<p>Add Property from scalars</p>
@@ -3984,7 +3984,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addPropertyFromGenerator">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#606-632" title="Go to source code">addPropertyFromGenerator</a>( <span><code><a href="class-Zend.Code.Generator.PropertyGenerator.html">Zend\Code\Generator\PropertyGenerator</a></code> <var>$property</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#605-631" title="Go to source code">addPropertyFromGenerator</a>( <span><code><a href="class-Zend.Code.Generator.PropertyGenerator.html">Zend\Code\Generator\PropertyGenerator</a></code> <var>$property</var></span> )</code>
 
 		<div class="description short">
 			<p>Add property from PropertyGenerator</p>
@@ -4027,7 +4027,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProperties">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#634-640" title="Go to source code">getProperties</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#633-639" title="Go to source code">getProperties</a>( )</code>
 
 		<div class="description short">
 			
@@ -4061,7 +4061,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProperty">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#642-655" title="Go to source code">getProperty</a>( <span>string <var>$propertyName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#641-654" title="Go to source code">getProperty</a>( <span>string <var>$propertyName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4100,7 +4100,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addUse">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#657-668" title="Go to source code">addUse</a>( <span>string <var>$use</var></span>, <span>string|null <var>$useAlias</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#656-667" title="Go to source code">addUse</a>( <span>string <var>$use</var></span>, <span>string|null <var>$useAlias</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Add a class to "use" classes</p>
@@ -4141,7 +4141,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getUses">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#670-678" title="Go to source code">getUses</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#669-677" title="Go to source code">getUses</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the "use" classes</p>
@@ -4175,7 +4175,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasProperty">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#680-687" title="Go to source code">hasProperty</a>( <span>string <var>$propertyName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#679-686" title="Go to source code">hasProperty</a>( <span>string <var>$propertyName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4214,7 +4214,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addMethods">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#689-708" title="Go to source code">addMethods</a>( <span>array <var>$methods</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#688-707" title="Go to source code">addMethods</a>( <span>array <var>$methods</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4253,7 +4253,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addMethod">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#710-737" title="Go to source code">addMethod</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$parameters</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$flags</var> = <code><a href="class-Zend.Code.Generator.AbstractMemberGenerator.html#FLAG_PUBLIC">Zend\Code\Generator\AbstractMemberGenerator::<b>FLAG_PUBLIC</b></a></code></span>, <span>string <var>$body</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$docBlock</var> = <span class="php-keyword1">null</span> </span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#709-736" title="Go to source code">addMethod</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$parameters</var> = []</span>, <span>integer <var>$flags</var> = <code><a href="class-Zend.Code.Generator.AbstractMemberGenerator.html#FLAG_PUBLIC">Zend\Code\Generator\AbstractMemberGenerator::<b>FLAG_PUBLIC</b></a></code></span>, <span>string <var>$body</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$docBlock</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 		<div class="description short">
 			<p>Add Method from scalars</p>
@@ -4304,7 +4304,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addMethodFromGenerator">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#739-759" title="Go to source code">addMethodFromGenerator</a>( <span><code><a href="class-Zend.Code.Generator.MethodGenerator.html">Zend\Code\Generator\MethodGenerator</a></code> <var>$method</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#738-758" title="Go to source code">addMethodFromGenerator</a>( <span><code><a href="class-Zend.Code.Generator.MethodGenerator.html">Zend\Code\Generator\MethodGenerator</a></code> <var>$method</var></span> )</code>
 
 		<div class="description short">
 			<p>Add Method from MethodGenerator</p>
@@ -4347,7 +4347,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMethods">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#761-767" title="Go to source code">getMethods</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#760-766" title="Go to source code">getMethods</a>( )</code>
 
 		<div class="description short">
 			
@@ -4381,7 +4381,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMethod">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#769-776" title="Go to source code">getMethod</a>( <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#768-775" title="Go to source code">getMethod</a>( <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4420,7 +4420,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeMethod">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#778-789" title="Go to source code">removeMethod</a>( <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#777-788" title="Go to source code">removeMethod</a>( <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4459,7 +4459,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasMethod">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#791-798" title="Go to source code">hasMethod</a>( <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#790-797" title="Go to source code">hasMethod</a>( <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4498,7 +4498,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTrait">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#800-807" title="Go to source code">addTrait</a>( <span> <var>$trait</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#799-806" title="Go to source code">addTrait</a>( <span> <var>$trait</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4532,7 +4532,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTraits">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#809-816" title="Go to source code">addTraits</a>( <span>array <var>$traits</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#808-815" title="Go to source code">addTraits</a>( <span>array <var>$traits</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4566,7 +4566,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasTrait">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#818-824" title="Go to source code">hasTrait</a>( <span> <var>$traitName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#817-823" title="Go to source code">hasTrait</a>( <span> <var>$traitName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4600,7 +4600,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTraits">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#826-832" title="Go to source code">getTraits</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#825-831" title="Go to source code">getTraits</a>( )</code>
 
 		<div class="description short">
 			
@@ -4634,7 +4634,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeTrait">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#834-840" title="Go to source code">removeTrait</a>( <span> <var>$traitName</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#833-839" title="Go to source code">removeTrait</a>( <span> <var>$traitName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4668,7 +4668,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTraitAlias">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#842-849" title="Go to source code">addTraitAlias</a>( <span> <var>$method</var></span>, <span> <var>$alias</var></span>, <span> <var>$visibility</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#841-848" title="Go to source code">addTraitAlias</a>( <span> <var>$method</var></span>, <span> <var>$alias</var></span>, <span> <var>$visibility</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -4702,7 +4702,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTraitAliases">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#851-857" title="Go to source code">getTraitAliases</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#850-856" title="Go to source code">getTraitAliases</a>( )</code>
 
 		<div class="description short">
 			
@@ -4736,7 +4736,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTraitOverride">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#859-866" title="Go to source code">addTraitOverride</a>( <span> <var>$method</var></span>, <span> <var>$traitsToReplace</var></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#858-865" title="Go to source code">addTraitOverride</a>( <span> <var>$method</var></span>, <span> <var>$traitsToReplace</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4770,7 +4770,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_removeTraitOverride">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#868-876" title="Go to source code">removeTraitOverride</a>( <span> <var>$method</var></span>, <span> <var>$overridesToRemove</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#867-875" title="Go to source code">removeTraitOverride</a>( <span> <var>$method</var></span>, <span> <var>$overridesToRemove</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -4804,7 +4804,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTraitOverrides">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#878-884" title="Go to source code">getTraitOverrides</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#877-883" title="Go to source code">getTraitOverrides</a>( )</code>
 
 		<div class="description short">
 			
@@ -4838,7 +4838,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isSourceDirty">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#886-908" title="Go to source code">isSourceDirty</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#885-907" title="Go to source code">isSourceDirty</a>( )</code>
 
 		<div class="description short">
 			
@@ -4874,7 +4874,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_generate">#</a>
-		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#910-986" title="Go to source code">generate</a>( )</code>
+		<code><a href="source-class-Zend.Code.Generator.ClassGenerator.html#909-985" title="Go to source code">generate</a>( )</code>
 
 		<div class="description short">
 			
@@ -5178,7 +5178,7 @@
 		<td class="value">
 			<div>
 				<a href="#$implementedInterfaces" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5203,7 +5203,7 @@
 		<td class="value">
 			<div>
 				<a href="#$properties" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5228,7 +5228,7 @@
 		<td class="value">
 			<div>
 				<a href="#$constants" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5253,7 +5253,7 @@
 		<td class="value">
 			<div>
 				<a href="#$methods" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5307,6 +5307,6 @@
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

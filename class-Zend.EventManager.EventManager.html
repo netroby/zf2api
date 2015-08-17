@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2819,7 +2819,7 @@ system for your objects.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.EventManager.EventManager.html#49-60" title="Go to source code">__construct</a>( <span>null|string|integer|array|Traversable <var>$identifiers</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.EventManager.EventManager.html#49-60" title="Go to source code">__construct</a>( <span>null|string|integer|array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$identifiers</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -3049,7 +3049,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setIdentifiers">#</a>
-		<code><a href="source-class-Zend.EventManager.EventManager.html#135-149" title="Go to source code">setIdentifiers</a>( <span>string|integer|array|Traversable <var>$identifiers</var></span> )</code>
+		<code><a href="source-class-Zend.EventManager.EventManager.html#135-149" title="Go to source code">setIdentifiers</a>( <span>string|integer|array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$identifiers</var></span> )</code>
 
 		<div class="description short">
 			<p>Set the identifiers (overrides any currently set identifiers)</p>
@@ -3090,7 +3090,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addIdentifiers">#</a>
-		<code><a href="source-class-Zend.EventManager.EventManager.html#151-165" title="Go to source code">addIdentifiers</a>( <span>string|integer|array|Traversable <var>$identifiers</var></span> )</code>
+		<code><a href="source-class-Zend.EventManager.EventManager.html#151-165" title="Go to source code">addIdentifiers</a>( <span>string|integer|array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$identifiers</var></span> )</code>
 
 		<div class="description short">
 			<p>Add some identifier(s) (appends to any currently set identifiers)</p>
@@ -3131,7 +3131,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_trigger">#</a>
-		<code><a href="source-class-Zend.EventManager.EventManager.html#167-206" title="Go to source code">trigger</a>( <span>string|<code><a href="class-Zend.EventManager.EventInterface.html">Zend\EventManager\EventInterface</a></code> <var>$event</var></span>, <span>string|object <var>$target</var> = <span class="php-keyword1">null</span></span>, <span>array|ArrayAccess <var>$argv</var> = []</span>, <span>null|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.EventManager.EventManager.html#167-206" title="Go to source code">trigger</a>( <span>string|<code><a href="class-Zend.EventManager.EventInterface.html">Zend\EventManager\EventInterface</a></code> <var>$event</var></span>, <span>string|object <var>$target</var> = <span class="php-keyword1">null</span></span>, <span>array|<code><a href="class-ArrayAccess.html">ArrayAccess</a></code> <var>$argv</var> = []</span>, <span>null|callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Trigger all listeners for a given event</p>
@@ -3182,7 +3182,7 @@ returned.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_triggerUntil">#</a>
-		<code><a href="source-class-Zend.EventManager.EventManager.html#208-230" title="Go to source code">triggerUntil</a>( <span>string|<code><a href="class-Zend.EventManager.EventInterface.html">Zend\EventManager\EventInterface</a></code> <var>$event</var></span>, <span>string|object <var>$target</var></span>, <span>array|ArrayAccess <var>$argv</var> = <span class="php-keyword1">null</span></span>, <span>callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.EventManager.EventManager.html#208-230" title="Go to source code">triggerUntil</a>( <span>string|<code><a href="class-Zend.EventManager.EventInterface.html">Zend\EventManager\EventInterface</a></code> <var>$event</var></span>, <span>string|object <var>$target</var></span>, <span>array|<code><a href="class-ArrayAccess.html">ArrayAccess</a></code> <var>$argv</var> = <span class="php-keyword1">null</span></span>, <span>callable <var>$callback</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Trigger listeners until return value of one causes a callback to
@@ -3545,7 +3545,7 @@ of all previously attached listeners.</p>
 		<td class="attributes"><code>
 			 public 
 
-			ArrayObject
+			<code><a href="class-ArrayObject.html">ArrayObject</a></code>
 			
 			</code>
 		</td>
@@ -3574,7 +3574,7 @@ passed to trigger().</p>
 
 				<h4>Returns</h4>
 				<div class="list">
-					ArrayObject
+					<code><a href="class-ArrayObject.html">ArrayObject</a></code>
 				</div>
 
 
@@ -3681,7 +3681,7 @@ identifiers registered by this instance</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_insertListeners">#</a>
-		<code><a href="source-class-Zend.EventManager.EventManager.html#503-525" title="Go to source code">insertListeners</a>( <span><code><a href="class-Zend.Stdlib.PriorityQueue.html">Zend\Stdlib\PriorityQueue</a></code> <var>$masterListeners</var></span>, <span>array|Traversable <var>$listeners</var></span> )</code>
+		<code><a href="source-class-Zend.EventManager.EventManager.html#503-525" title="Go to source code">insertListeners</a>( <span><code><a href="class-Zend.Stdlib.PriorityQueue.html">Zend\Stdlib\PriorityQueue</a></code> <var>$masterListeners</var></span>, <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$listeners</var></span> )</code>
 
 		<div class="description short">
 			<p>Add listeners to the master queue of listeners</p>
@@ -3838,6 +3838,6 @@ identifiers registered by this instance</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>

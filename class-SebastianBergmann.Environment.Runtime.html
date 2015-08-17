@@ -141,6 +141,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+				<li>
 					<a href="namespace-phpDocumentor.html">
 						phpDocumentor<span></span>
 					</a>
@@ -2378,11 +2383,6 @@
 						</li>
 							</ul></li></ul></li>
 				<li>
-					<a href="namespace-Zend.Stdlib.JsonSerializable.html">
-						JsonSerializable					</a>
-
-						</li>
-				<li>
 					<a href="namespace-Zend.Stdlib.StringWrapper.html">
 						StringWrapper					</a>
 
@@ -2759,17 +2759,9 @@
 		
 		
 		<b>Namespace:</b> <a href="namespace-SebastianBergmann.html">SebastianBergmann</a>\<a href="namespace-SebastianBergmann.Environment.html">Environment</a><br>
-		<b>Package:</b> Environment<br>
+		
 
-				<b>Copyright:</b>
-				Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>License:</b>
-				<a href="http://www.opensource.org/licenses/BSD-3-Clause">The BSD 3-Clause License</a><br>
-				<b>Author:</b>
-				Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>Link:</b>
-				<a href="http://www.github.com/sebastianbergmann/environment">http://www.github.com/sebastianbergmann/environment</a><br>
-			<b>Located at</b> <a href="source-class-SebastianBergmann.Environment.Runtime.html#13-175" title="Go to source code">sebastian/environment/src/Runtime.php</a>
+			<b>Located at</b> <a href="source-class-SebastianBergmann.Environment.Runtime.html#13-192" title="Go to source code">sebastian/environment/src/Runtime.php</a>
 		<br>
 	</div>
 
@@ -2789,16 +2781,16 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_canCollectCodeCoverage">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#29-38" title="Go to source code">canCollectCodeCoverage</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#23-32" title="Go to source code">canCollectCodeCoverage</a>( )</code>
 
 		<div class="description short">
-			<p>Returns true when the runtime used is HHVM or
-the runtime used is PHP + Xdebug.</p>
+			<p>Returns true when Xdebug is supported or
+the runtime used is PHPDBG (PHP >= 7.0).</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns true when the runtime used is HHVM or
-the runtime used is PHP + Xdebug.</p>
+			<p>Returns true when Xdebug is supported or
+the runtime used is PHPDBG (PHP >= 7.0).</p>
 
 
 
@@ -2825,7 +2817,7 @@ the runtime used is PHP + Xdebug.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBinary">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#40-100" title="Go to source code">getBinary</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#34-94" title="Go to source code">getBinary</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the path to the binary of the current runtime.
@@ -2861,7 +2853,7 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getNameWithVersion">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#102-108" title="Go to source code">getNameWithVersion</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#96-102" title="Go to source code">getNameWithVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -2895,7 +2887,7 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#110-120" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#104-116" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -2933,7 +2925,7 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVendorUrl">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#122-132" title="Go to source code">getVendorUrl</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#118-128" title="Go to source code">getVendorUrl</a>( )</code>
 
 		<div class="description short">
 			
@@ -2967,7 +2959,7 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getVersion">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#134-144" title="Go to source code">getVersion</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#130-140" title="Go to source code">getVersion</a>( )</code>
 
 		<div class="description short">
 			
@@ -3005,7 +2997,7 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_hasXdebug">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#146-154" title="Go to source code">hasXdebug</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#142-150" title="Go to source code">hasXdebug</a>( )</code>
 
 		<div class="description short">
 			<p>Returns true when the runtime used is PHP and Xdebug is loaded.</p>
@@ -3043,7 +3035,7 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isHHVM">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#156-164" title="Go to source code">isHHVM</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#152-160" title="Go to source code">isHHVM</a>( )</code>
 
 		<div class="description short">
 			<p>Returns true when the runtime used is HHVM.</p>
@@ -3088,14 +3080,14 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isPHP">#</a>
-		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#166-174" title="Go to source code">isPHP</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#162-170" title="Go to source code">isPHP</a>( )</code>
 
 		<div class="description short">
-			<p>Returns true when the runtime used is PHP.</p>
+			<p>Returns true when the runtime used is PHP without the PHPDBG SAPI.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Returns true when the runtime used is PHP.</p>
+			<p>Returns true when the runtime used is PHP without the PHPDBG SAPI.</p>
 
 
 
@@ -3111,6 +3103,76 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 						<code><a href="class-SebastianBergmann.Environment.RuntimeTest.html#_testXdebugCanBeDetected">SebastianBergmann\Environment\RuntimeTest::testXdebugCanBeDetected()</a></code><br>
 						<code><a href="class-SebastianBergmann.Environment.RuntimeTest.html#_testNameAndVersionCanBeRetrieved">SebastianBergmann\Environment\RuntimeTest::testNameAndVersionCanBeRetrieved()</a></code><br>
 				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isPHPDBG" id="_isPHPDBG">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isPHPDBG">#</a>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#172-180" title="Go to source code">isPHPDBG</a>( )</code>
+
+		<div class="description short">
+			<p>Returns true when the runtime used is PHP with the PHPDBG SAPI.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns true when the runtime used is PHP with the PHPDBG SAPI.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="hasPHPDBGCodeCoverage" id="_hasPHPDBGCodeCoverage">
+
+		<td class="attributes"><code>
+			 public 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_hasPHPDBGCodeCoverage">#</a>
+		<code><a href="source-class-SebastianBergmann.Environment.Runtime.html#182-191" title="Go to source code">hasPHPDBGCodeCoverage</a>( )</code>
+
+		<div class="description short">
+			<p>Returns true when the runtime used is PHP with the PHPDBG SAPI
+and the phpdbg_*_oplog() functions are available (PHP >= 7.0).</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns true when the runtime used is PHP with the PHPDBG SAPI
+and the phpdbg_*_oplog() functions are available (PHP >= 7.0).</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
 
 
 		</div>
@@ -3143,6 +3205,6 @@ Appends ' --php' to the path when the runtime is HHVM.</p>
 </div>
 </div>
 <script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?d0c914f4989fe129b9595df2753d4b94518a35f9"></script>
+<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
 </body>
 </html>
