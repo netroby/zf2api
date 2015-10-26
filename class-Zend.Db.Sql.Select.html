@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -4712,44 +4724,44 @@
 		<td class="value">
 			<div>
 				<a href="#$specifications" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(
+				<code>[
     <span class="php-quote">'statementStart'</span> =&gt; <span class="php-quote">'%1$s'</span>,
-    self::SELECT =&gt; <span class="php-keyword1">array</span>(
-        <span class="php-quote">'SELECT %1$s FROM %2$s'</span> =&gt; <span class="php-keyword1">array</span>(
-            <span class="php-keyword1">array</span>(<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s AS %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>),
+    self::SELECT =&gt; [
+        <span class="php-quote">'SELECT %1$s FROM %2$s'</span> =&gt; [
+            [<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s AS %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>],
             <span class="php-keyword1">null</span>
-        ),
-        <span class="php-quote">'SELECT %1$s %2$s FROM %3$s'</span> =&gt; <span class="php-keyword1">array</span>(
+        ],
+        <span class="php-quote">'SELECT %1$s %2$s FROM %3$s'</span> =&gt; [
             <span class="php-keyword1">null</span>,
-            <span class="php-keyword1">array</span>(<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s AS %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>),
+            [<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s AS %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>],
             <span class="php-keyword1">null</span>
-        ),
-        <span class="php-quote">'SELECT %1$s'</span> =&gt; <span class="php-keyword1">array</span>(
-            <span class="php-keyword1">array</span>(<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s AS %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>),
-        ),
-    ),
-    self::JOINS  =&gt; <span class="php-keyword1">array</span>(
-        <span class="php-quote">'%1$s'</span> =&gt; <span class="php-keyword1">array</span>(
-            <span class="php-keyword1">array</span>(<span class="php-num">3</span> =&gt; <span class="php-quote">'%1$s JOIN %2$s ON %3$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">' '</span>)
-        )
-    ),
+        ],
+        <span class="php-quote">'SELECT %1$s'</span> =&gt; [
+            [<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s AS %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>],
+        ],
+    ],
+    self::JOINS  =&gt; [
+        <span class="php-quote">'%1$s'</span> =&gt; [
+            [<span class="php-num">3</span> =&gt; <span class="php-quote">'%1$s JOIN %2$s ON %3$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">' '</span>]
+        ]
+    ],
     self::WHERE  =&gt; <span class="php-quote">'WHERE %1$s'</span>,
-    self::GROUP  =&gt; <span class="php-keyword1">array</span>(
-        <span class="php-quote">'GROUP BY %1$s'</span> =&gt; <span class="php-keyword1">array</span>(
-            <span class="php-keyword1">array</span>(<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>)
-        )
-    ),
+    self::GROUP  =&gt; [
+        <span class="php-quote">'GROUP BY %1$s'</span> =&gt; [
+            [<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>]
+        ]
+    ],
     self::HAVING =&gt; <span class="php-quote">'HAVING %1$s'</span>,
-    self::ORDER  =&gt; <span class="php-keyword1">array</span>(
-        <span class="php-quote">'ORDER BY %1$s'</span> =&gt; <span class="php-keyword1">array</span>(
-            <span class="php-keyword1">array</span>(<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>)
-        )
-    ),
+    self::ORDER  =&gt; [
+        <span class="php-quote">'ORDER BY %1$s'</span> =&gt; [
+            [<span class="php-num">1</span> =&gt; <span class="php-quote">'%1$s'</span>, <span class="php-num">2</span> =&gt; <span class="php-quote">'%1$s %2$s'</span>, <span class="php-quote">'combinedby'</span> =&gt; <span class="php-quote">', '</span>]
+        ]
+    ],
     self::LIMIT  =&gt; <span class="php-quote">'LIMIT %1$s'</span>,
     self::OFFSET =&gt; <span class="php-quote">'OFFSET %1$s'</span>,
     <span class="php-quote">'statementEnd'</span> =&gt; <span class="php-quote">'%1$s'</span>,
     self::COMBINE =&gt; <span class="php-quote">'%1$s ( %2$s )'</span>,
-)</code>
+]</code>
 			</div>
 		</td>
 	</tr>
@@ -4874,7 +4886,7 @@
 		<td class="value">
 			<div>
 				<a href="#$columns" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(self::SQL_STAR)</code>
+				<code>[self::SQL_STAR]</code>
 			</div>
 		</td>
 	</tr>
@@ -4899,7 +4911,7 @@
 		<td class="value">
 			<div>
 				<a href="#$joins" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -4949,7 +4961,7 @@
 		<td class="value">
 			<div>
 				<a href="#$order" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5074,7 +5086,7 @@
 		<td class="value">
 			<div>
 				<a href="#$combine" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>()</code>
+				<code>[]</code>
 			</div>
 		</td>
 	</tr>
@@ -5142,7 +5154,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

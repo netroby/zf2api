@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3556,7 +3576,7 @@ PHP SAPI Module.</p>
 
 				<b>Since:</b>
 				Class available since Release 2.0.0<br>
-			<b>Located at</b> <a href="source-class-PHPUnit_TextUI_TestRunner.html#13-1019" title="Go to source code">phpunit/phpunit/src/TextUI/TestRunner.php</a>
+			<b>Located at</b> <a href="source-class-PHPUnit_TextUI_TestRunner.html#13-1031" title="Go to source code">phpunit/phpunit/src/TextUI/TestRunner.php</a>
 		<br>
 	</div>
 
@@ -3576,7 +3596,7 @@ PHP SAPI Module.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#55-69" title="Go to source code">__construct</a>( <span><code><a href="class-PHPUnit_Runner_TestSuiteLoader.html">PHPUnit_Runner_TestSuiteLoader</a></code> <var>$loader</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-PHP_CodeCoverage_Filter.html">PHP_CodeCoverage_Filter</a></code> <var>$filter</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#55-70" title="Go to source code">__construct</a>( <span><code><a href="class-PHPUnit_Runner_TestSuiteLoader.html">PHPUnit_Runner_TestSuiteLoader</a></code> <var>$loader</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-PHP_CodeCoverage_Filter.html">PHP_CodeCoverage_Filter</a></code> <var>$filter</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -3617,7 +3637,7 @@ PHP SAPI Module.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#71-95" title="Go to source code">run</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code>|<code><a href="class-ReflectionClass.html">ReflectionClass</a></code> <var>$test</var></span>, <span>array <var>$arguments</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#72-98" title="Go to source code">run</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code>|<code><a href="class-ReflectionClass.html">ReflectionClass</a></code> <var>$test</var></span>, <span>array <var>$arguments</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -3662,7 +3682,7 @@ PHP SAPI Module.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createTestResult">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#97-103" title="Go to source code">createTestResult</a>( )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#100-106" title="Go to source code">createTestResult</a>( )</code>
 
 		<div class="description short">
 			
@@ -3696,7 +3716,7 @@ PHP SAPI Module.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_doRun">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#138-533" title="Go to source code">doRun</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$suite</var></span>, <span>array <var>$arguments</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#141-541" title="Go to source code">doRun</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$suite</var></span>, <span>array <var>$arguments</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -3737,7 +3757,7 @@ PHP SAPI Module.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setPrinter">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#535-541" title="Go to source code">setPrinter</a>( <span><code><a href="class-PHPUnit_TextUI_ResultPrinter.html">PHPUnit_TextUI_ResultPrinter</a></code> <var>$resultPrinter</var></span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#543-549" title="Go to source code">setPrinter</a>( <span><code><a href="class-PHPUnit_TextUI_ResultPrinter.html">PHPUnit_TextUI_ResultPrinter</a></code> <var>$resultPrinter</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3772,7 +3792,7 @@ PHP SAPI Module.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_runFailed">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#543-553" title="Go to source code">runFailed</a>( <span>string <var>$message</var></span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#551-561" title="Go to source code">runFailed</a>( <span>string <var>$message</var></span> )</code>
 
 		<div class="description short">
 			<p>Override to define how to handle a failed loading of
@@ -3809,7 +3829,7 @@ a test suite.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_write">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#555-570" title="Go to source code">write</a>( <span>string <var>$buffer</var></span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#563-579" title="Go to source code">write</a>( <span>string <var>$buffer</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3848,7 +3868,7 @@ a test suite.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLoader">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#572-585" title="Go to source code">getLoader</a>( )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#581-595" title="Go to source code">getLoader</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the loader to be used.</p>
@@ -3888,7 +3908,7 @@ a test suite.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_handleConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#587-978" title="Go to source code">handleConfiguration</a>( <span>array <var>&amp; $arguments</var></span> )</code>
+		<code><a href="source-class-PHPUnit_TextUI_TestRunner.html#597-989" title="Go to source code">handleConfiguration</a>( <span>array <var>&amp; $arguments</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4143,7 +4163,7 @@ a test suite.</p>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

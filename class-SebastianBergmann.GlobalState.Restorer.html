@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2700,8 +2712,10 @@
 			<ul>
 				<li><a href="class-SebastianBergmann.GlobalState.Blacklist.html">Blacklist</a></li>
 				<li><a href="class-SebastianBergmann.GlobalState.BlacklistTest.html">BlacklistTest</a></li>
+				<li><a href="class-SebastianBergmann.GlobalState.CodeExporter.html">CodeExporter</a></li>
 				<li class="active"><a href="class-SebastianBergmann.GlobalState.Restorer.html">Restorer</a></li>
 				<li><a href="class-SebastianBergmann.GlobalState.Snapshot.html">Snapshot</a></li>
+				<li><a href="class-SebastianBergmann.GlobalState.SnapshotTest.html">SnapshotTest</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -2769,15 +2783,7 @@
 		<b>Namespace:</b> <a href="namespace-SebastianBergmann.html">SebastianBergmann</a>\<a href="namespace-SebastianBergmann.GlobalState.html">GlobalState</a><br>
 		
 
-				<b>Copyright:</b>
-				2001-2014 Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>License:</b>
-				<a href="http://www.opensource.org/licenses/BSD-3-Clause">The BSD 3-Clause License</a><br>
-				<b>Author:</b>
-				Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>Link:</b>
-				<a href="http://www.github.com/sebastianbergmann/global-state">http://www.github.com/sebastianbergmann/global-state</a><br>
-			<b>Located at</b> <a href="source-class-SebastianBergmann.GlobalState.Restorer.html#47-150" title="Go to source code">sebastian/global-state/src/Restorer.php</a>
+			<b>Located at</b> <a href="source-class-SebastianBergmann.GlobalState.Restorer.html#15-141" title="Go to source code">sebastian/global-state/src/Restorer.php</a>
 		<br>
 	</div>
 
@@ -2797,7 +2803,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_restoreFunctions">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Restorer.html#57-75" title="Go to source code">restoreFunctions</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Snapshot.html">SebastianBergmann\GlobalState\Snapshot</a></code> <var>$snapshot</var></span> )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Restorer.html#20-38" title="Go to source code">restoreFunctions</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Snapshot.html">SebastianBergmann\GlobalState\Snapshot</a></code> <var>$snapshot</var></span> )</code>
 
 		<div class="description short">
 			<p>Deletes function definitions that are not defined in a snapshot.</p>
@@ -2840,7 +2846,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_restoreGlobalVariables">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Restorer.html#77-103" title="Go to source code">restoreGlobalVariables</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Snapshot.html">SebastianBergmann\GlobalState\Snapshot</a></code> <var>$snapshot</var></span> )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Restorer.html#40-66" title="Go to source code">restoreGlobalVariables</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Snapshot.html">SebastianBergmann\GlobalState\Snapshot</a></code> <var>$snapshot</var></span> )</code>
 
 		<div class="description short">
 			<p>Restores all global and super-global variables from a snapshot.</p>
@@ -2875,7 +2881,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_restoreStaticAttributes">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Restorer.html#105-119" title="Go to source code">restoreStaticAttributes</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Snapshot.html">SebastianBergmann\GlobalState\Snapshot</a></code> <var>$snapshot</var></span> )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Restorer.html#68-110" title="Go to source code">restoreStaticAttributes</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Snapshot.html">SebastianBergmann\GlobalState\Snapshot</a></code> <var>$snapshot</var></span> )</code>
 
 		<div class="description short">
 			<p>Restores all static attributes in user-defined classes from this snapshot.</p>
@@ -2924,7 +2930,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

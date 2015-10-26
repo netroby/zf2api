@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3550,7 +3570,7 @@
 
 				<b>Since:</b>
 				Class available since Release 2.0.0<br>
-			<b>Located at</b> <a href="source-class-PHPUnit_Framework_TestResult.html#11-1083" title="Go to source code">phpunit/phpunit/src/Framework/TestResult.php</a>
+			<b>Located at</b> <a href="source-class-PHPUnit_Framework_TestResult.html#11-1128" title="Go to source code">phpunit/phpunit/src/Framework/TestResult.php</a>
 		<br>
 	</div>
 
@@ -3754,7 +3774,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_startTestSuite">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#284-299" title="Go to source code">startTestSuite</a>( <span><code><a href="class-PHPUnit_Framework_TestSuite.html">PHPUnit_Framework_TestSuite</a></code> <var>$suite</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#284-300" title="Go to source code">startTestSuite</a>( <span><code><a href="class-PHPUnit_Framework_TestSuite.html">PHPUnit_Framework_TestSuite</a></code> <var>$suite</var></span> )</code>
 
 		<div class="description short">
 			<p>Informs the result that a testsuite will be started.</p>
@@ -3793,7 +3813,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_endTestSuite">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#301-312" title="Go to source code">endTestSuite</a>( <span><code><a href="class-PHPUnit_Framework_TestSuite.html">PHPUnit_Framework_TestSuite</a></code> <var>$suite</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#302-314" title="Go to source code">endTestSuite</a>( <span><code><a href="class-PHPUnit_Framework_TestSuite.html">PHPUnit_Framework_TestSuite</a></code> <var>$suite</var></span> )</code>
 
 		<div class="description short">
 			<p>Informs the result that a testsuite was completed.</p>
@@ -3832,7 +3852,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_startTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#314-327" title="Go to source code">startTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#316-329" title="Go to source code">startTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span> )</code>
 
 		<div class="description short">
 			<p>Informs the result that a test will be started.</p>
@@ -3867,7 +3887,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_endTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#329-355" title="Go to source code">endTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span>float <var>$time</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#331-357" title="Go to source code">endTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span>float <var>$time</var></span> )</code>
 
 		<div class="description short">
 			<p>Informs the result that a test was completed.</p>
@@ -3904,7 +3924,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_allHarmless">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#357-366" title="Go to source code">allHarmless</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#359-369" title="Go to source code">allHarmless</a>( )</code>
 
 		<div class="description short">
 			<p>Returns true if no risky test occurred.</p>
@@ -3942,7 +3962,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_riskyCount">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#368-377" title="Go to source code">riskyCount</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#371-381" title="Go to source code">riskyCount</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the number of risky tests.</p>
@@ -3980,7 +4000,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_allCompletelyImplemented">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#379-387" title="Go to source code">allCompletelyImplemented</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#383-391" title="Go to source code">allCompletelyImplemented</a>( )</code>
 
 		<div class="description short">
 			<p>Returns true if no incomplete test occurred.</p>
@@ -4014,7 +4034,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_notImplementedCount">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#389-397" title="Go to source code">notImplementedCount</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#393-401" title="Go to source code">notImplementedCount</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the number of incomplete tests.</p>
@@ -4048,7 +4068,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_risky">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#399-408" title="Go to source code">risky</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#403-413" title="Go to source code">risky</a>( )</code>
 
 		<div class="description short">
 			<p>Returns an Enumeration for the risky tests.</p>
@@ -4086,7 +4106,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_notImplemented">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#410-418" title="Go to source code">notImplemented</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#415-423" title="Go to source code">notImplemented</a>( )</code>
 
 		<div class="description short">
 			<p>Returns an Enumeration for the incomplete tests.</p>
@@ -4120,7 +4140,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_noneSkipped">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#420-429" title="Go to source code">noneSkipped</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#425-435" title="Go to source code">noneSkipped</a>( )</code>
 
 		<div class="description short">
 			<p>Returns true if no test has been skipped.</p>
@@ -4158,7 +4178,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_skippedCount">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#431-440" title="Go to source code">skippedCount</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#437-447" title="Go to source code">skippedCount</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the number of skipped tests.</p>
@@ -4196,7 +4216,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_skipped">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#442-451" title="Go to source code">skipped</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#449-459" title="Go to source code">skipped</a>( )</code>
 
 		<div class="description short">
 			<p>Returns an Enumeration for the skipped tests.</p>
@@ -4234,7 +4254,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_errorCount">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#453-461" title="Go to source code">errorCount</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#461-469" title="Go to source code">errorCount</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the number of detected errors.</p>
@@ -4268,7 +4288,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_errors">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#463-471" title="Go to source code">errors</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#471-479" title="Go to source code">errors</a>( )</code>
 
 		<div class="description short">
 			<p>Returns an Enumeration for the errors.</p>
@@ -4302,7 +4322,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_failureCount">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#473-481" title="Go to source code">failureCount</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#481-489" title="Go to source code">failureCount</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the number of detected failures.</p>
@@ -4336,7 +4356,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_failures">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#483-491" title="Go to source code">failures</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#491-499" title="Go to source code">failures</a>( )</code>
 
 		<div class="description short">
 			<p>Returns an Enumeration for the failures.</p>
@@ -4370,7 +4390,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_passed">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#493-502" title="Go to source code">passed</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#501-511" title="Go to source code">passed</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the names of the tests that have passed.</p>
@@ -4408,7 +4428,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_topTestSuite">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#504-513" title="Go to source code">topTestSuite</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#513-523" title="Go to source code">topTestSuite</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the (top) test suite.</p>
@@ -4446,7 +4466,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCollectCodeCoverageInformation">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#515-524" title="Go to source code">getCollectCodeCoverageInformation</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#525-535" title="Go to source code">getCollectCodeCoverageInformation</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether code coverage information should be collected.</p>
@@ -4484,7 +4504,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#526-723" title="Go to source code">run</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#537-734" title="Go to source code">run</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span> )</code>
 
 		<div class="description short">
 			<p>Runs a TestCase.</p>
@@ -4519,7 +4539,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_count">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#725-733" title="Go to source code">count</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#736-744" title="Go to source code">count</a>( )</code>
 
 		<div class="description short">
 			<p>Gets the number of run tests.</p>
@@ -4555,7 +4575,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_shouldStop">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#735-743" title="Go to source code">shouldStop</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#746-754" title="Go to source code">shouldStop</a>( )</code>
 
 		<div class="description short">
 			<p>Checks whether the test run should stop.</p>
@@ -4589,7 +4609,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stop">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#745-751" title="Go to source code">stop</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#756-762" title="Go to source code">stop</a>( )</code>
 
 		<div class="description short">
 			<p>Marks that the test run should stop.</p>
@@ -4619,7 +4639,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getCodeCoverage">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#753-762" title="Go to source code">getCodeCoverage</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#764-774" title="Go to source code">getCodeCoverage</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the PHP_CodeCoverage object.</p>
@@ -4657,7 +4677,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setCodeCoverage">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#764-773" title="Go to source code">setCodeCoverage</a>( <span><code><a href="class-PHP_CodeCoverage.html">PHP_CodeCoverage</a></code> <var>$codeCoverage</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#776-786" title="Go to source code">setCodeCoverage</a>( <span><code><a href="class-PHP_CodeCoverage.html">PHP_CodeCoverage</a></code> <var>$codeCoverage</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the PHP_CodeCoverage object.</p>
@@ -4696,7 +4716,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_convertErrorsToExceptions">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#775-789" title="Go to source code">convertErrorsToExceptions</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#788-804" title="Go to source code">convertErrorsToExceptions</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables or disables the error-to-exception conversion.</p>
@@ -4739,7 +4759,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getConvertErrorsToExceptions">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#791-800" title="Go to source code">getConvertErrorsToExceptions</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#806-816" title="Go to source code">getConvertErrorsToExceptions</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the error-to-exception conversion setting.</p>
@@ -4777,7 +4797,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopOnError">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#802-816" title="Go to source code">stopOnError</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#818-834" title="Go to source code">stopOnError</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables or disables the stopping when an error occurs.</p>
@@ -4820,7 +4840,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopOnFailure">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#818-832" title="Go to source code">stopOnFailure</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#836-852" title="Go to source code">stopOnFailure</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables or disables the stopping when a failure occurs.</p>
@@ -4863,7 +4883,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beStrictAboutTestsThatDoNotTestAnything">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#834-846" title="Go to source code">beStrictAboutTestsThatDoNotTestAnything</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#854-868" title="Go to source code">beStrictAboutTestsThatDoNotTestAnything</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4906,7 +4926,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isStrictAboutTestsThatDoNotTestAnything">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#848-855" title="Go to source code">isStrictAboutTestsThatDoNotTestAnything</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#870-878" title="Go to source code">isStrictAboutTestsThatDoNotTestAnything</a>( )</code>
 
 		<div class="description short">
 			
@@ -4944,7 +4964,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beStrictAboutOutputDuringTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#857-869" title="Go to source code">beStrictAboutOutputDuringTests</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#880-894" title="Go to source code">beStrictAboutOutputDuringTests</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4987,7 +5007,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isStrictAboutOutputDuringTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#871-878" title="Go to source code">isStrictAboutOutputDuringTests</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#896-904" title="Go to source code">isStrictAboutOutputDuringTests</a>( )</code>
 
 		<div class="description short">
 			
@@ -5025,7 +5045,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beStrictAboutTestSize">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#880-892" title="Go to source code">beStrictAboutTestSize</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#906-920" title="Go to source code">beStrictAboutTestSize</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			
@@ -5068,7 +5088,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isStrictAboutTestSize">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#894-901" title="Go to source code">isStrictAboutTestSize</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#922-930" title="Go to source code">isStrictAboutTestSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -5106,7 +5126,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_beStrictAboutTodoAnnotatedTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#903-915" title="Go to source code">beStrictAboutTodoAnnotatedTests</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#932-946" title="Go to source code">beStrictAboutTodoAnnotatedTests</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			
@@ -5149,7 +5169,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isStrictAboutTodoAnnotatedTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#917-924" title="Go to source code">isStrictAboutTodoAnnotatedTests</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#948-956" title="Go to source code">isStrictAboutTodoAnnotatedTests</a>( )</code>
 
 		<div class="description short">
 			
@@ -5187,7 +5207,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopOnRisky">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#926-940" title="Go to source code">stopOnRisky</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#958-974" title="Go to source code">stopOnRisky</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables or disables the stopping for risky tests.</p>
@@ -5230,7 +5250,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopOnIncomplete">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#942-956" title="Go to source code">stopOnIncomplete</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#976-992" title="Go to source code">stopOnIncomplete</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables or disables the stopping for incomplete tests.</p>
@@ -5273,7 +5293,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_stopOnSkipped">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#958-972" title="Go to source code">stopOnSkipped</a>( <span>boolean <var>$flag</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#994-1010" title="Go to source code">stopOnSkipped</a>( <span>boolean <var>$flag</var></span> )</code>
 
 		<div class="description short">
 			<p>Enables or disables the stopping for skipped tests.</p>
@@ -5316,7 +5336,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_time">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#974-982" title="Go to source code">time</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1012-1020" title="Go to source code">time</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the time spent running the tests.</p>
@@ -5350,7 +5370,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_wasSuccessful">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#984-992" title="Go to source code">wasSuccessful</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1022-1030" title="Go to source code">wasSuccessful</a>( )</code>
 
 		<div class="description short">
 			<p>Returns whether the entire test was successful or not.</p>
@@ -5384,7 +5404,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTimeoutForSmallTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#994-1008" title="Go to source code">setTimeoutForSmallTests</a>( <span>integer <var>$timeout</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1032-1048" title="Go to source code">setTimeoutForSmallTests</a>( <span>integer <var>$timeout</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the timeout for small tests.</p>
@@ -5427,7 +5447,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTimeoutForMediumTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1010-1024" title="Go to source code">setTimeoutForMediumTests</a>( <span>integer <var>$timeout</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1050-1066" title="Go to source code">setTimeoutForMediumTests</a>( <span>integer <var>$timeout</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the timeout for medium tests.</p>
@@ -5470,7 +5490,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTimeoutForLargeTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1026-1040" title="Go to source code">setTimeoutForLargeTests</a>( <span>integer <var>$timeout</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1068-1084" title="Go to source code">setTimeoutForLargeTests</a>( <span>integer <var>$timeout</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the timeout for large tests.</p>
@@ -5513,7 +5533,7 @@ The passed in exception caused the failure.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHierarchy">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1042-1082" title="Go to source code">getHierarchy</a>( <span>string <var>$className</var></span>, <span>boolean <var>$asReflectionObjects</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestResult.html#1086-1127" title="Go to source code">getHierarchy</a>( <span>string <var>$className</var></span>, <span>boolean <var>$asReflectionObjects</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the class hierarchy for a given class.</p>
@@ -6221,7 +6241,7 @@ The passed in exception caused the failure.</p>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3581,7 +3601,7 @@ constructor.</p>
 
 				<b>Since:</b>
 				Class available since Release 2.0.0<br>
-			<b>Located at</b> <a href="source-class-PHPUnit_Framework_TestSuite.html#11-1007" title="Go to source code">phpunit/phpunit/src/Framework/TestSuite.php</a>
+			<b>Located at</b> <a href="source-class-PHPUnit_Framework_TestSuite.html#11-1036" title="Go to source code">phpunit/phpunit/src/Framework/TestSuite.php</a>
 		<br>
 	</div>
 
@@ -3601,7 +3621,7 @@ constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#117-209" title="Go to source code">__construct</a>( <span>mixed <var>$theClass</var> = <span class="php-quote">''</span></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#117-210" title="Go to source code">__construct</a>( <span>mixed <var>$theClass</var> = <span class="php-quote">''</span></span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Constructs a new TestSuite:</p>
@@ -3652,7 +3672,7 @@ constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toString">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#211-219" title="Go to source code">toString</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#212-220" title="Go to source code">toString</a>( )</code>
 
 		<div class="description short">
 			<p>Returns a string representation of the test suite.</p>
@@ -3688,7 +3708,7 @@ constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#221-252" title="Go to source code">addTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span>array <var>$groups</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#222-253" title="Go to source code">addTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span>array <var>$groups</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Adds a test to the suite.</p>
@@ -3725,7 +3745,7 @@ constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTestSuite">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#254-300" title="Go to source code">addTestSuite</a>( <span>mixed <var>$testClass</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#255-302" title="Go to source code">addTestSuite</a>( <span>mixed <var>$testClass</var></span> )</code>
 
 		<div class="description short">
 			<p>Adds the tests from the given class to the suite.</p>
@@ -3764,7 +3784,7 @@ constructor.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTestFile">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#302-383" title="Go to source code">addTestFile</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#304-387" title="Go to source code">addTestFile</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Wraps both</p>
@@ -3831,7 +3851,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTestFiles">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#385-405" title="Go to source code">addTestFiles</a>( <span>array|<code><a href="class-Iterator.html">Iterator</a></code> <var>$filenames</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#389-411" title="Go to source code">addTestFiles</a>( <span>array|<code><a href="class-Iterator.html">Iterator</a></code> <var>$filenames</var></span> )</code>
 
 		<div class="description short">
 			<p>Wrapper for addTestFile() that adds multiple test files.</p>
@@ -3874,7 +3894,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_count">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#407-426" title="Go to source code">count</a>( <span>boolean <var>$preferCache</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#413-433" title="Go to source code">count</a>( <span>boolean <var>$preferCache</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			<p>Counts the number of test cases that will be run by this test.</p>
@@ -3915,7 +3935,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#428-605" title="Go to source code">createTest</a>( <span><code><a href="class-ReflectionClass.html">ReflectionClass</a></code> <var>$theClass</var></span>, <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#435-614" title="Go to source code">createTest</a>( <span><code><a href="class-ReflectionClass.html">ReflectionClass</a></code> <var>$theClass</var></span>, <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3960,7 +3980,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createResult">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#607-615" title="Go to source code">createResult</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#616-624" title="Go to source code">createResult</a>( )</code>
 
 		<div class="description short">
 			<p>Creates a default TestResult object.</p>
@@ -3994,7 +4014,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#617-625" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#626-634" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the name of the suite.</p>
@@ -4028,7 +4048,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGroups">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#627-636" title="Go to source code">getGroups</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#636-646" title="Go to source code">getGroups</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the test groups of the suite.</p>
@@ -4066,7 +4086,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGroupDetails">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#638-641" title="Go to source code">getGroupDetails</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#648-651" title="Go to source code">getGroupDetails</a>( )</code>
 
 		<div class="description short">
 			
@@ -4096,7 +4116,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setGroupDetails">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#643-652" title="Go to source code">setGroupDetails</a>( <span>array <var>$groups</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#653-663" title="Go to source code">setGroupDetails</a>( <span>array <var>$groups</var></span> )</code>
 
 		<div class="description short">
 			<p>Set tests groups of the test case</p>
@@ -4135,7 +4155,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_run">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#654-749" title="Go to source code">run</a>( <span><code><a href="class-PHPUnit_Framework_TestResult.html">PHPUnit_Framework_TestResult</a></code> <var>$result</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#665-761" title="Go to source code">run</a>( <span><code><a href="class-PHPUnit_Framework_TestResult.html">PHPUnit_Framework_TestResult</a></code> <var>$result</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Runs the tests and collects their result in a TestResult.</p>
@@ -4176,7 +4196,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setRunTestInSeparateProcess">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#751-763" title="Go to source code">setRunTestInSeparateProcess</a>( <span>boolean <var>$runTestInSeparateProcess</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#763-777" title="Go to source code">setRunTestInSeparateProcess</a>( <span>boolean <var>$runTestInSeparateProcess</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4219,7 +4239,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_runTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#765-775" title="Go to source code">runTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span><code><a href="class-PHPUnit_Framework_TestResult.html">PHPUnit_Framework_TestResult</a></code> <var>$result</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#779-790" title="Go to source code">runTest</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span><code><a href="class-PHPUnit_Framework_TestResult.html">PHPUnit_Framework_TestResult</a></code> <var>$result</var></span> )</code>
 
 		<div class="description short">
 			<p>Runs a test.</p>
@@ -4259,7 +4279,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#777-785" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#792-800" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			<p>Sets the name of the suite.</p>
@@ -4294,7 +4314,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAt">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#787-800" title="Go to source code">testAt</a>( <span>integer <var>$index</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#802-816" title="Go to source code">testAt</a>( <span>integer <var>$index</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the test at the given index.</p>
@@ -4333,7 +4353,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_tests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#802-810" title="Go to source code">tests</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#818-826" title="Go to source code">tests</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the tests as an enumeration.</p>
@@ -4367,7 +4387,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setTests">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#812-821" title="Go to source code">setTests</a>( <span>array <var>$tests</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#828-838" title="Go to source code">setTests</a>( <span>array <var>$tests</var></span> )</code>
 
 		<div class="description short">
 			<p>Set tests of the test suite</p>
@@ -4406,7 +4426,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_markTestSuiteSkipped">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#823-833" title="Go to source code">markTestSuiteSkipped</a>( <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#840-852" title="Go to source code">markTestSuiteSkipped</a>( <span>string <var>$message</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Mark the test suite as skipped.</p>
@@ -4449,7 +4469,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_addTestMethod">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#835-874" title="Go to source code">addTestMethod</a>( <span><code><a href="class-ReflectionClass.html">ReflectionClass</a></code> <var>$class</var></span>, <span><code><a href="class-ReflectionMethod.html">ReflectionMethod</a></code> <var>$method</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#854-893" title="Go to source code">addTestMethod</a>( <span><code><a href="class-ReflectionClass.html">ReflectionClass</a></code> <var>$class</var></span>, <span><code><a href="class-ReflectionMethod.html">ReflectionMethod</a></code> <var>$method</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4486,7 +4506,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isTestMethod">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#876-892" title="Go to source code">isTestMethod</a>( <span><code><a href="class-ReflectionMethod.html">ReflectionMethod</a></code> <var>$method</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#895-912" title="Go to source code">isTestMethod</a>( <span><code><a href="class-ReflectionMethod.html">ReflectionMethod</a></code> <var>$method</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4525,7 +4545,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_warning">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#894-901" title="Go to source code">warning</a>( <span>string <var>$message</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#914-922" title="Go to source code">warning</a>( <span>string <var>$message</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4564,7 +4584,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_skipTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#903-913" title="Go to source code">skipTest</a>( <span>string <var>$class</var></span>, <span>string <var>$methodName</var></span>, <span>string <var>$message</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#924-936" title="Go to source code">skipTest</a>( <span>string <var>$class</var></span>, <span>string <var>$methodName</var></span>, <span>string <var>$message</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4611,7 +4631,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_incompleteTest">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#915-925" title="Go to source code">incompleteTest</a>( <span>string <var>$class</var></span>, <span>string <var>$methodName</var></span>, <span>string <var>$message</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#938-950" title="Go to source code">incompleteTest</a>( <span>string <var>$class</var></span>, <span>string <var>$methodName</var></span>, <span>string <var>$message</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4658,7 +4678,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDisallowChangesToGlobalState">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#927-936" title="Go to source code">setDisallowChangesToGlobalState</a>( <span>boolean <var>$disallowChangesToGlobalState</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#952-962" title="Go to source code">setDisallowChangesToGlobalState</a>( <span>boolean <var>$disallowChangesToGlobalState</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4697,7 +4717,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBackupGlobals">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#938-947" title="Go to source code">setBackupGlobals</a>( <span>boolean <var>$backupGlobals</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#964-974" title="Go to source code">setBackupGlobals</a>( <span>boolean <var>$backupGlobals</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4736,7 +4756,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBackupStaticAttributes">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#949-959" title="Go to source code">setBackupStaticAttributes</a>( <span>boolean <var>$backupStaticAttributes</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#976-987" title="Go to source code">setBackupStaticAttributes</a>( <span>boolean <var>$backupStaticAttributes</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4775,7 +4795,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getIterator">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#961-976" title="Go to source code">getIterator</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#989-1005" title="Go to source code">getIterator</a>( )</code>
 
 		<div class="description short">
 			<p>Returns an iterator for this test suite.</p>
@@ -4815,7 +4835,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_injectFilter">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#978-986" title="Go to source code">injectFilter</a>( <span><code><a href="class-PHPUnit_Runner_Filter_Factory.html">PHPUnit_Runner_Filter_Factory</a></code> <var>$filter</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#1007-1015" title="Go to source code">injectFilter</a>( <span><code><a href="class-PHPUnit_Runner_Filter_Factory.html">PHPUnit_Runner_Filter_Factory</a></code> <var>$filter</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4845,7 +4865,7 @@ leaving the current test run untouched.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#988-996" title="Go to source code">setUp</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#1017-1025" title="Go to source code">setUp</a>( )</code>
 
 		<div class="description short">
 			<p>Template Method that is called before the tests
@@ -4881,7 +4901,7 @@ of this test suite are run.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_tearDown">#</a>
-		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#998-1006" title="Go to source code">tearDown</a>( )</code>
+		<code><a href="source-class-PHPUnit_Framework_TestSuite.html#1027-1035" title="Go to source code">tearDown</a>( )</code>
 
 		<div class="description short">
 			<p>Template Method that is called after the tests
@@ -5159,7 +5179,7 @@ of this test suite have finished running.</p>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

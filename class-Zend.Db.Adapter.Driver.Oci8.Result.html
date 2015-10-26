@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li class="active">
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2769,7 +2781,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Db.html">Db</a>\<a href="namespace-Zend.Db.Adapter.html">Adapter</a>\<a href="namespace-Zend.Db.Adapter.Driver.html">Driver</a>\<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">Oci8</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#16-224" title="Go to source code">zendframework/zend-db/src/Adapter/Driver/Oci8/Result.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#16-231" title="Go to source code">zendframework/zend-db/src/Adapter/Driver/Oci8/Result.php</a>
 		<br>
 	</div>
 
@@ -2789,7 +2801,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_initialize">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#62-74" title="Go to source code">initialize</a>( <span>resource <var>$resource</var></span> )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#62-78" title="Go to source code">initialize</a>( <span>resource <var>$resource</var></span>, <span>null|integer <var>$generatedValue</var> = <span class="php-keyword1">null</span></span>, <span>null|integer <var>$rowCount</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Initialize</p>
@@ -2802,6 +2814,10 @@
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$resource</var></dt>
+					<dd></dd>
+					<dt><var>$generatedValue</var></dt>
+					<dd></dd>
+					<dt><var>$rowCount</var></dt>
 					<dd></dd>
 				</dl></div>
 
@@ -2828,7 +2844,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_buffer">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#76-86" title="Go to source code">buffer</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#80-90" title="Go to source code">buffer</a>( )</code>
 
 		<div class="description short">
 			<p>Force buffering at driver level</p>
@@ -2866,7 +2882,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isBuffered">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#88-96" title="Go to source code">isBuffered</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#92-100" title="Go to source code">isBuffered</a>( )</code>
 
 		<div class="description short">
 			<p>Is the result buffered?</p>
@@ -2902,7 +2918,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getResource">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#98-105" title="Go to source code">getResource</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#102-109" title="Go to source code">getResource</a>( )</code>
 
 		<div class="description short">
 			<p>Return the resource</p>
@@ -2938,7 +2954,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isQueryResult">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#107-115" title="Go to source code">isQueryResult</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#111-119" title="Go to source code">isQueryResult</a>( )</code>
 
 		<div class="description short">
 			<p>Is query result?</p>
@@ -2974,7 +2990,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAffectedRows">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#117-124" title="Go to source code">getAffectedRows</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#121-128" title="Go to source code">getAffectedRows</a>( )</code>
 
 		<div class="description short">
 			<p>Get affected rows</p>
@@ -3010,7 +3026,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_current">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#126-139" title="Go to source code">current</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#130-142" title="Go to source code">current</a>( )</code>
 
 		<div class="description short">
 			<p>Current</p>
@@ -3046,7 +3062,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loadData">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#141-156" title="Go to source code">loadData</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#144-158" title="Go to source code">loadData</a>( )</code>
 
 		<div class="description short">
 			<p>Load from oci8 result</p>
@@ -3080,7 +3096,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_next">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#158-164" title="Go to source code">next</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#160-166" title="Go to source code">next</a>( )</code>
 
 		<div class="description short">
 			<p>Next</p>
@@ -3112,7 +3128,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_key">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#166-173" title="Go to source code">key</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#168-175" title="Go to source code">key</a>( )</code>
 
 		<div class="description short">
 			<p>Key</p>
@@ -3148,7 +3164,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_rewind">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#175-183" title="Go to source code">rewind</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#177-185" title="Go to source code">rewind</a>( )</code>
 
 		<div class="description short">
 			<p>Rewind</p>
@@ -3180,7 +3196,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_valid">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#185-196" title="Go to source code">valid</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#187-197" title="Go to source code">valid</a>( )</code>
 
 		<div class="description short">
 			<p>Valid</p>
@@ -3209,14 +3225,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			integer
+			null|integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_count">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#198-206" title="Go to source code">count</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#199-213" title="Go to source code">count</a>( )</code>
 
 		<div class="description short">
 			<p>Count</p>
@@ -3229,7 +3245,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					integer
+					null|integer
 				</div>
 
 
@@ -3252,7 +3268,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFieldCount">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#208-214" title="Go to source code">getFieldCount</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#215-221" title="Go to source code">getFieldCount</a>( )</code>
 
 		<div class="description short">
 			
@@ -3281,14 +3297,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			mixed|null
+			null
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGeneratedValue">#</a>
-		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#216-223" title="Go to source code">getGeneratedValue</a>( )</code>
+		<code><a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#223-230" title="Go to source code">getGeneratedValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -3301,7 +3317,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					mixed|null
+					null
 				</div>
 
 
@@ -3352,14 +3368,14 @@
 			</div>
 		</td>
 	</tr>
-	<tr data-order="isBuffered" id="$isBuffered">
+	<tr data-order="rowCount" id="$rowCount">
 		<td class="attributes"><code>
 			protected  
-			boolean
+			null|integer
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#23-26" title="Go to source code"><var>$isBuffered</var></a>
+				<a href="source-class-Zend.Db.Adapter.Driver.Oci8.Result.html#23-26" title="Go to source code"><var>$rowCount</var></a>
 
 			<div class="description short">
 				
@@ -3372,7 +3388,7 @@
 		</td>
 		<td class="value">
 			<div>
-				<a href="#$isBuffered" class="anchor">#</a>
+				<a href="#$rowCount" class="anchor">#</a>
 				<code><span class="php-keyword1">null</span></code>
 			</div>
 		</td>
@@ -3498,7 +3514,7 @@
 		<td class="value">
 			<div>
 				<a href="#$statementBindValues" class="anchor">#</a>
-				<code><span class="php-keyword1">array</span>(<span class="php-quote">'keys'</span> =&gt; <span class="php-keyword1">null</span>, <span class="php-quote">'values'</span> =&gt; <span class="php-keyword1">array</span>())</code>
+				<code>[<span class="php-quote">'keys'</span> =&gt; <span class="php-keyword1">null</span>, <span class="php-quote">'values'</span> =&gt; []]</code>
 			</div>
 		</td>
 	</tr>
@@ -3541,7 +3557,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

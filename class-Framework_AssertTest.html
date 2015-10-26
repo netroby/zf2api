@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3563,7 +3583,7 @@
 
 				<b>Since:</b>
 				Class available since Release 2.0.0<br>
-			<b>Located at</b> <a href="source-class-Framework_AssertTest.html#11-4095" title="Go to source code">phpunit/phpunit/tests/Framework/AssertTest.php</a>
+			<b>Located at</b> <a href="source-class-Framework_AssertTest.html#11-4130" title="Go to source code">phpunit/phpunit/tests/Framework/AssertTest.php</a>
 		<br>
 	</div>
 
@@ -3583,7 +3603,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setUp">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#18-21" title="Go to source code">setUp</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#21-24" title="Go to source code">setUp</a>( )</code>
 
 		<div class="description short">
 			<p>Sets up the fixture, for example, open a network connection.
@@ -3617,7 +3637,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testFail">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#23-35" title="Go to source code">testFail</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#26-38" title="Go to source code">testFail</a>( )</code>
 
 		<div class="description short">
 			
@@ -3651,7 +3671,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSplObjectStorageContainsObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#37-56" title="Go to source code">testAssertSplObjectStorageContainsObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#40-59" title="Go to source code">testAssertSplObjectStorageContainsObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -3685,7 +3705,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayContainsObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#58-75" title="Go to source code">testAssertArrayContainsObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#61-78" title="Go to source code">testAssertArrayContainsObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -3719,7 +3739,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayContainsString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#77-91" title="Go to source code">testAssertArrayContainsString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#80-94" title="Go to source code">testAssertArrayContainsString</a>( )</code>
 
 		<div class="description short">
 			
@@ -3753,7 +3773,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayContainsNonObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#93-107" title="Go to source code">testAssertArrayContainsNonObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#96-110" title="Go to source code">testAssertArrayContainsNonObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -3787,7 +3807,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertContainsOnlyInstancesOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#109-130" title="Go to source code">testAssertContainsOnlyInstancesOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#112-133" title="Go to source code">testAssertContainsOnlyInstancesOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -3821,7 +3841,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasKeyThrowsExceptionForInvalidFirstArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#132-139" title="Go to source code">testAssertArrayHasKeyThrowsExceptionForInvalidFirstArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#135-142" title="Go to source code">testAssertArrayHasKeyThrowsExceptionForInvalidFirstArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -3859,7 +3879,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasKeyThrowsExceptionForInvalidSecondArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#141-148" title="Go to source code">testAssertArrayHasKeyThrowsExceptionForInvalidSecondArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#144-151" title="Go to source code">testAssertArrayHasKeyThrowsExceptionForInvalidSecondArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -3897,7 +3917,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasIntegerKey">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#150-164" title="Go to source code">testAssertArrayHasIntegerKey</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#153-167" title="Go to source code">testAssertArrayHasIntegerKey</a>( )</code>
 
 		<div class="description short">
 			
@@ -3919,7 +3939,7 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="testassertArraySubset" id="_testassertArraySubset">
+	<tr data-order="testAssertArraySubset" id="_testAssertArraySubset">
 
 		<td class="attributes"><code>
 			 public 
@@ -3930,8 +3950,8 @@ This method is called before a test is executed.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_testassertArraySubset">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#166-194" title="Go to source code">testassertArraySubset</a>( )</code>
+		<a class="anchor" href="#_testAssertArraySubset">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#169-197" title="Go to source code">testAssertArraySubset</a>( )</code>
 
 		<div class="description short">
 			
@@ -3954,7 +3974,7 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="testassertArraySubsetWithDeepNestedArrays" id="_testassertArraySubsetWithDeepNestedArrays">
+	<tr data-order="testAssertArraySubsetWithDeepNestedArrays" id="_testAssertArraySubsetWithDeepNestedArrays">
 
 		<td class="attributes"><code>
 			 public 
@@ -3965,8 +3985,8 @@ This method is called before a test is executed.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_testassertArraySubsetWithDeepNestedArrays">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#196-224" title="Go to source code">testassertArraySubsetWithDeepNestedArrays</a>( )</code>
+		<a class="anchor" href="#_testAssertArraySubsetWithDeepNestedArrays">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#199-227" title="Go to source code">testAssertArraySubsetWithDeepNestedArrays</a>( )</code>
 
 		<div class="description short">
 			
@@ -3989,7 +4009,7 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="testassertArraySubsetWithNoStrictCheckAndObjects" id="_testassertArraySubsetWithNoStrictCheckAndObjects">
+	<tr data-order="testAssertArraySubsetWithNoStrictCheckAndObjects" id="_testAssertArraySubsetWithNoStrictCheckAndObjects">
 
 		<td class="attributes"><code>
 			 public 
@@ -4000,8 +4020,8 @@ This method is called before a test is executed.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_testassertArraySubsetWithNoStrictCheckAndObjects">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#226-238" title="Go to source code">testassertArraySubsetWithNoStrictCheckAndObjects</a>( )</code>
+		<a class="anchor" href="#_testAssertArraySubsetWithNoStrictCheckAndObjects">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#229-241" title="Go to source code">testAssertArraySubsetWithNoStrictCheckAndObjects</a>( )</code>
 
 		<div class="description short">
 			
@@ -4024,7 +4044,7 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="testassertArraySubsetWithStrictCheckAndObjects" id="_testassertArraySubsetWithStrictCheckAndObjects">
+	<tr data-order="testAssertArraySubsetWithStrictCheckAndObjects" id="_testAssertArraySubsetWithStrictCheckAndObjects">
 
 		<td class="attributes"><code>
 			 public 
@@ -4035,8 +4055,8 @@ This method is called before a test is executed.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_testassertArraySubsetWithStrictCheckAndObjects">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#240-259" title="Go to source code">testassertArraySubsetWithStrictCheckAndObjects</a>( )</code>
+		<a class="anchor" href="#_testAssertArraySubsetWithStrictCheckAndObjects">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#243-262" title="Go to source code">testAssertArraySubsetWithStrictCheckAndObjects</a>( )</code>
 
 		<div class="description short">
 			
@@ -4059,7 +4079,7 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="testassertArraySubsetRaisesExceptionForInvalidArguments" id="_testassertArraySubsetRaisesExceptionForInvalidArguments">
+	<tr data-order="testAssertArraySubsetRaisesExceptionForInvalidArguments" id="_testAssertArraySubsetRaisesExceptionForInvalidArguments">
 
 		<td class="attributes"><code>
 			 public 
@@ -4070,8 +4090,8 @@ This method is called before a test is executed.</p>
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_testassertArraySubsetRaisesExceptionForInvalidArguments">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#261-271" title="Go to source code">testassertArraySubsetRaisesExceptionForInvalidArguments</a>( <span> <var>$partial</var></span>, <span> <var>$subject</var></span> )</code>
+		<a class="anchor" href="#_testAssertArraySubsetRaisesExceptionForInvalidArguments">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#264-274" title="Go to source code">testAssertArraySubsetRaisesExceptionForInvalidArguments</a>( <span> <var>$partial</var></span>, <span> <var>$subject</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4111,14 +4131,14 @@ This method is called before a test is executed.</p>
 		<td class="attributes"><code>
 			 public 
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_assertArraySubsetInvalidArgumentProvider">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#273-279" title="Go to source code">assertArraySubsetInvalidArgumentProvider</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#276-285" title="Go to source code">assertArraySubsetInvalidArgumentProvider</a>( )</code>
 
 		<div class="description short">
 			
@@ -4129,6 +4149,10 @@ This method is called before a test is executed.</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
 
 
 
@@ -4148,7 +4172,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotHasKeyThrowsExceptionForInvalidFirstArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#281-288" title="Go to source code">testAssertArrayNotHasKeyThrowsExceptionForInvalidFirstArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#287-294" title="Go to source code">testAssertArrayNotHasKeyThrowsExceptionForInvalidFirstArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -4186,7 +4210,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotHasKeyThrowsExceptionForInvalidSecondArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#290-297" title="Go to source code">testAssertArrayNotHasKeyThrowsExceptionForInvalidSecondArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#296-303" title="Go to source code">testAssertArrayNotHasKeyThrowsExceptionForInvalidSecondArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -4224,7 +4248,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotHasIntegerKey">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#299-313" title="Go to source code">testAssertArrayNotHasIntegerKey</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#305-319" title="Go to source code">testAssertArrayNotHasIntegerKey</a>( )</code>
 
 		<div class="description short">
 			
@@ -4258,7 +4282,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasStringKey">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#315-329" title="Go to source code">testAssertArrayHasStringKey</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#321-335" title="Go to source code">testAssertArrayHasStringKey</a>( )</code>
 
 		<div class="description short">
 			
@@ -4292,7 +4316,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotHasStringKey">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#331-345" title="Go to source code">testAssertArrayNotHasStringKey</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#337-351" title="Go to source code">testAssertArrayNotHasStringKey</a>( )</code>
 
 		<div class="description short">
 			
@@ -4326,7 +4350,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasKeyAcceptsArrayObjectValue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#347-355" title="Go to source code">testAssertArrayHasKeyAcceptsArrayObjectValue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#353-361" title="Go to source code">testAssertArrayHasKeyAcceptsArrayObjectValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4360,7 +4384,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasKeyProperlyFailsWithArrayObjectValue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#357-366" title="Go to source code">testAssertArrayHasKeyProperlyFailsWithArrayObjectValue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#363-372" title="Go to source code">testAssertArrayHasKeyProperlyFailsWithArrayObjectValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4398,7 +4422,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasKeyAcceptsArrayAccessValue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#368-376" title="Go to source code">testAssertArrayHasKeyAcceptsArrayAccessValue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#374-382" title="Go to source code">testAssertArrayHasKeyAcceptsArrayAccessValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4432,7 +4456,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayHasKeyProperlyFailsWithArrayAccessValue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#378-387" title="Go to source code">testAssertArrayHasKeyProperlyFailsWithArrayAccessValue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#384-393" title="Go to source code">testAssertArrayHasKeyProperlyFailsWithArrayAccessValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4470,7 +4494,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotHasKeyAcceptsArrayAccessValue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#389-397" title="Go to source code">testAssertArrayNotHasKeyAcceptsArrayAccessValue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#395-403" title="Go to source code">testAssertArrayNotHasKeyAcceptsArrayAccessValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4504,7 +4528,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotHasKeyPropertlyFailsWithArrayAccessValue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#399-408" title="Go to source code">testAssertArrayNotHasKeyPropertlyFailsWithArrayAccessValue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#405-414" title="Go to source code">testAssertArrayNotHasKeyPropertlyFailsWithArrayAccessValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4542,7 +4566,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertContainsThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#410-417" title="Go to source code">testAssertContainsThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#416-423" title="Go to source code">testAssertContainsThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -4580,7 +4604,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertIteratorContainsObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#419-435" title="Go to source code">testAssertIteratorContainsObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#425-441" title="Go to source code">testAssertIteratorContainsObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -4614,7 +4638,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertIteratorContainsString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#437-451" title="Go to source code">testAssertIteratorContainsString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#443-457" title="Go to source code">testAssertIteratorContainsString</a>( )</code>
 
 		<div class="description short">
 			
@@ -4648,7 +4672,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringContainsString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#453-467" title="Go to source code">testAssertStringContainsString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#459-473" title="Go to source code">testAssertStringContainsString</a>( )</code>
 
 		<div class="description short">
 			
@@ -4682,7 +4706,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotContainsThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#469-476" title="Go to source code">testAssertNotContainsThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#475-482" title="Go to source code">testAssertNotContainsThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -4720,7 +4744,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSplObjectStorageNotContainsObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#478-497" title="Go to source code">testAssertSplObjectStorageNotContainsObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#484-503" title="Go to source code">testAssertSplObjectStorageNotContainsObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -4754,7 +4778,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotContainsObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#499-516" title="Go to source code">testAssertArrayNotContainsObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#505-522" title="Go to source code">testAssertArrayNotContainsObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -4788,7 +4812,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotContainsString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#518-532" title="Go to source code">testAssertArrayNotContainsString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#524-538" title="Go to source code">testAssertArrayNotContainsString</a>( )</code>
 
 		<div class="description short">
 			
@@ -4822,7 +4846,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotContainsNonObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#534-548" title="Go to source code">testAssertArrayNotContainsNonObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#540-554" title="Go to source code">testAssertArrayNotContainsNonObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -4856,7 +4880,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotContainsString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#550-564" title="Go to source code">testAssertStringNotContainsString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#556-570" title="Go to source code">testAssertStringNotContainsString</a>( )</code>
 
 		<div class="description short">
 			
@@ -4890,7 +4914,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertContainsOnlyThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#566-573" title="Go to source code">testAssertContainsOnlyThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#572-579" title="Go to source code">testAssertContainsOnlyThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -4928,7 +4952,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotContainsOnlyThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#575-582" title="Go to source code">testAssertNotContainsOnlyThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#581-588" title="Go to source code">testAssertNotContainsOnlyThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -4966,7 +4990,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertContainsOnlyInstancesOfThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#584-591" title="Go to source code">testAssertContainsOnlyInstancesOfThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#590-597" title="Go to source code">testAssertContainsOnlyInstancesOfThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -5004,7 +5028,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayContainsOnlyIntegers">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#593-607" title="Go to source code">testAssertArrayContainsOnlyIntegers</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#599-613" title="Go to source code">testAssertArrayContainsOnlyIntegers</a>( )</code>
 
 		<div class="description short">
 			
@@ -5038,7 +5062,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotContainsOnlyIntegers">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#609-623" title="Go to source code">testAssertArrayNotContainsOnlyIntegers</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#615-629" title="Go to source code">testAssertArrayNotContainsOnlyIntegers</a>( )</code>
 
 		<div class="description short">
 			
@@ -5072,7 +5096,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayContainsOnlyStdClass">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#625-639" title="Go to source code">testAssertArrayContainsOnlyStdClass</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#631-645" title="Go to source code">testAssertArrayContainsOnlyStdClass</a>( )</code>
 
 		<div class="description short">
 			
@@ -5106,7 +5130,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertArrayNotContainsOnlyStdClass">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#641-655" title="Go to source code">testAssertArrayNotContainsOnlyStdClass</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#647-661" title="Go to source code">testAssertArrayNotContainsOnlyStdClass</a>( )</code>
 
 		<div class="description short">
 			
@@ -5128,36 +5152,6 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="createDOMDocument" id="_createDOMDocument">
-
-		<td class="attributes"><code>
-			 protected 
-
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_createDOMDocument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#657-664" title="Go to source code">createDOMDocument</a>( <span> <var>$content</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
 	<tr data-order="sameValues" id="_sameValues">
 
 		<td class="attributes"><code>
@@ -5170,7 +5164,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sameValues">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#666-695" title="Go to source code">sameValues</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#663-692" title="Go to source code">sameValues</a>( )</code>
 
 		<div class="description short">
 			
@@ -5200,7 +5194,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_notEqualValues">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#697-838" title="Go to source code">notEqualValues</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#694-835" title="Go to source code">notEqualValues</a>( )</code>
 
 		<div class="description short">
 			
@@ -5230,7 +5224,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_equalValues">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#840-950" title="Go to source code">equalValues</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#837-947" title="Go to source code">equalValues</a>( )</code>
 
 		<div class="description short">
 			
@@ -5260,7 +5254,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_equalProvider">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#952-956" title="Go to source code">equalProvider</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#949-953" title="Go to source code">equalProvider</a>( )</code>
 
 		<div class="description short">
 			
@@ -5290,7 +5284,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_notEqualProvider">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#958-961" title="Go to source code">notEqualProvider</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#955-958" title="Go to source code">notEqualProvider</a>( )</code>
 
 		<div class="description short">
 			
@@ -5320,7 +5314,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sameProvider">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#963-966" title="Go to source code">sameProvider</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#960-963" title="Go to source code">sameProvider</a>( )</code>
 
 		<div class="description short">
 			
@@ -5350,7 +5344,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_notSameProvider">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#968-973" title="Go to source code">notSameProvider</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#965-970" title="Go to source code">notSameProvider</a>( )</code>
 
 		<div class="description short">
 			
@@ -5380,7 +5374,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertEqualsSucceeds">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#975-982" title="Go to source code">testAssertEqualsSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#972-979" title="Go to source code">testAssertEqualsSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -5418,7 +5412,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertEqualsFails">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#984-997" title="Go to source code">testAssertEqualsFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#981-994" title="Go to source code">testAssertEqualsFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -5456,7 +5450,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotEqualsSucceeds">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#999-1006" title="Go to source code">testAssertNotEqualsSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#996-1003" title="Go to source code">testAssertNotEqualsSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -5494,7 +5488,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotEqualsFails">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1008-1021" title="Go to source code">testAssertNotEqualsFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1005-1018" title="Go to source code">testAssertNotEqualsFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span>, <span> <var>$delta</var> = <span class="php-num">0.0</span></span>, <span> <var>$canonicalize</var> = <span class="php-keyword1">false</span></span>, <span> <var>$ignoreCase</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -5532,7 +5526,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSameSucceeds">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1023-1030" title="Go to source code">testAssertSameSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1020-1027" title="Go to source code">testAssertSameSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
 
 		<div class="description short">
 			
@@ -5570,7 +5564,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSameFails">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1032-1045" title="Go to source code">testAssertSameFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1029-1042" title="Go to source code">testAssertSameFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
 
 		<div class="description short">
 			
@@ -5608,7 +5602,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSameSucceeds">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1047-1054" title="Go to source code">testAssertNotSameSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1044-1051" title="Go to source code">testAssertNotSameSucceeds</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
 
 		<div class="description short">
 			
@@ -5646,7 +5640,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSameFails">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1056-1069" title="Go to source code">testAssertNotSameFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1053-1066" title="Go to source code">testAssertNotSameFails</a>( <span> <var>$a</var></span>, <span> <var>$b</var></span> )</code>
 
 		<div class="description short">
 			
@@ -5684,7 +5678,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertXmlFileEqualsXmlFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1071-1091" title="Go to source code">testAssertXmlFileEqualsXmlFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1068-1088" title="Go to source code">testAssertXmlFileEqualsXmlFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -5718,7 +5712,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertXmlFileNotEqualsXmlFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1093-1113" title="Go to source code">testAssertXmlFileNotEqualsXmlFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1090-1110" title="Go to source code">testAssertXmlFileNotEqualsXmlFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -5752,7 +5746,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertXmlStringEqualsXmlFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1115-1135" title="Go to source code">testAssertXmlStringEqualsXmlFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1112-1132" title="Go to source code">testAssertXmlStringEqualsXmlFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -5786,7 +5780,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXmlStringNotEqualsXmlFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1137-1157" title="Go to source code">testXmlStringNotEqualsXmlFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1134-1154" title="Go to source code">testXmlStringNotEqualsXmlFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -5820,7 +5814,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertXmlStringEqualsXmlString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1159-1173" title="Go to source code">testAssertXmlStringEqualsXmlString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1156-1170" title="Go to source code">testAssertXmlStringEqualsXmlString</a>( )</code>
 
 		<div class="description short">
 			
@@ -5842,6 +5836,86 @@ This method is called before a test is executed.</p>
 		</div>
 		</div></td>
 	</tr>
+	<tr data-order="testAssertXmlStringEqualsXmlString2" id="_testAssertXmlStringEqualsXmlString2">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAssertXmlStringEqualsXmlString2">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#1172-1180" title="Go to source code">testAssertXmlStringEqualsXmlString2</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						PHPUnit_Framework_Assert::assertXmlStringEqualsXmlString<br>
+				</div>
+				<h4>Expectedexception</h4>
+				<div class="list">
+						PHPUnit_Framework_Exception<br>
+				</div>
+				<h4>Ticket</h4>
+				<div class="list">
+						1860<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testAssertXmlStringEqualsXmlString3" id="_testAssertXmlStringEqualsXmlString3">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testAssertXmlStringEqualsXmlString3">#</a>
+		<code><a href="source-class-Framework_AssertTest.html#1182-1203" title="Go to source code">testAssertXmlStringEqualsXmlString3</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+				<h4>Covers</h4>
+				<div class="list">
+						PHPUnit_Framework_Assert::assertXmlStringEqualsXmlString<br>
+				</div>
+				<h4>Ticket</h4>
+				<div class="list">
+						1860<br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
 	<tr data-order="testAssertXmlStringNotEqualsXmlString" id="_testAssertXmlStringNotEqualsXmlString">
 
 		<td class="attributes"><code>
@@ -5854,7 +5928,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertXmlStringNotEqualsXmlString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1175-1189" title="Go to source code">testAssertXmlStringNotEqualsXmlString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1205-1219" title="Go to source code">testAssertXmlStringNotEqualsXmlString</a>( )</code>
 
 		<div class="description short">
 			
@@ -5888,7 +5962,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXMLStructureIsSame">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1191-1205" title="Go to source code">testXMLStructureIsSame</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1221-1235" title="Go to source code">testXMLStructureIsSame</a>( )</code>
 
 		<div class="description short">
 			
@@ -5922,7 +5996,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXMLStructureWrongNumberOfAttributes">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1207-1222" title="Go to source code">testXMLStructureWrongNumberOfAttributes</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1237-1252" title="Go to source code">testXMLStructureWrongNumberOfAttributes</a>( )</code>
 
 		<div class="description short">
 			
@@ -5960,7 +6034,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXMLStructureWrongNumberOfNodes">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1224-1239" title="Go to source code">testXMLStructureWrongNumberOfNodes</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1254-1269" title="Go to source code">testXMLStructureWrongNumberOfNodes</a>( )</code>
 
 		<div class="description short">
 			
@@ -5998,7 +6072,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXMLStructureIsSameButDataIsNot">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1241-1255" title="Go to source code">testXMLStructureIsSameButDataIsNot</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1271-1285" title="Go to source code">testXMLStructureIsSameButDataIsNot</a>( )</code>
 
 		<div class="description short">
 			
@@ -6032,7 +6106,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXMLStructureAttributesAreSameButValuesAreNot">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1257-1271" title="Go to source code">testXMLStructureAttributesAreSameButValuesAreNot</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1287-1301" title="Go to source code">testXMLStructureAttributesAreSameButValuesAreNot</a>( )</code>
 
 		<div class="description short">
 			
@@ -6066,7 +6140,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testXMLStructureIgnoreTextNodes">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1273-1287" title="Go to source code">testXMLStructureIgnoreTextNodes</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1303-1317" title="Go to source code">testXMLStructureIgnoreTextNodes</a>( )</code>
 
 		<div class="description short">
 			
@@ -6100,7 +6174,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEqualsNumeric">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1289-1303" title="Go to source code">testAssertStringEqualsNumeric</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1319-1333" title="Go to source code">testAssertStringEqualsNumeric</a>( )</code>
 
 		<div class="description short">
 			
@@ -6134,7 +6208,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEqualsNumeric2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1305-1311" title="Go to source code">testAssertStringEqualsNumeric2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1335-1341" title="Go to source code">testAssertStringEqualsNumeric2</a>( )</code>
 
 		<div class="description short">
 			
@@ -6168,7 +6242,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFileExistsThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1313-1320" title="Go to source code">testAssertFileExistsThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1343-1350" title="Go to source code">testAssertFileExistsThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -6206,7 +6280,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFileExists">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1322-1336" title="Go to source code">testAssertFileExists</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1352-1366" title="Go to source code">testAssertFileExists</a>( )</code>
 
 		<div class="description short">
 			
@@ -6240,7 +6314,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFileNotExistsThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1338-1345" title="Go to source code">testAssertFileNotExistsThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1368-1375" title="Go to source code">testAssertFileNotExistsThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -6278,7 +6352,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFileNotExists">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1347-1361" title="Go to source code">testAssertFileNotExists</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1377-1391" title="Go to source code">testAssertFileNotExists</a>( )</code>
 
 		<div class="description short">
 			
@@ -6312,7 +6386,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectHasAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1363-1379" title="Go to source code">testAssertObjectHasAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1393-1409" title="Go to source code">testAssertObjectHasAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -6346,7 +6420,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectNotHasAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1381-1397" title="Go to source code">testAssertObjectNotHasAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1411-1427" title="Go to source code">testAssertObjectNotHasAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -6380,7 +6454,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNull">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1399-1413" title="Go to source code">testAssertNull</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1429-1443" title="Go to source code">testAssertNull</a>( )</code>
 
 		<div class="description short">
 			
@@ -6414,7 +6488,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotNull">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1415-1429" title="Go to source code">testAssertNotNull</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1445-1459" title="Go to source code">testAssertNotNull</a>( )</code>
 
 		<div class="description short">
 			
@@ -6448,7 +6522,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertTrue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1431-1445" title="Go to source code">testAssertTrue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1461-1475" title="Go to source code">testAssertTrue</a>( )</code>
 
 		<div class="description short">
 			
@@ -6482,7 +6556,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotTrue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1447-1463" title="Go to source code">testAssertNotTrue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1477-1493" title="Go to source code">testAssertNotTrue</a>( )</code>
 
 		<div class="description short">
 			
@@ -6516,7 +6590,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFalse">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1465-1479" title="Go to source code">testAssertFalse</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1495-1509" title="Go to source code">testAssertFalse</a>( )</code>
 
 		<div class="description short">
 			
@@ -6550,7 +6624,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotFalse">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1481-1497" title="Go to source code">testAssertNotFalse</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1511-1527" title="Go to source code">testAssertNotFalse</a>( )</code>
 
 		<div class="description short">
 			
@@ -6584,7 +6658,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertRegExpThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1499-1506" title="Go to source code">testAssertRegExpThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1529-1536" title="Go to source code">testAssertRegExpThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -6622,7 +6696,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertRegExpThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1508-1515" title="Go to source code">testAssertRegExpThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1538-1545" title="Go to source code">testAssertRegExpThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -6660,7 +6734,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotRegExpThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1517-1524" title="Go to source code">testAssertNotRegExpThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1547-1554" title="Go to source code">testAssertNotRegExpThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -6698,7 +6772,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotRegExpThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1526-1533" title="Go to source code">testAssertNotRegExpThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1556-1563" title="Go to source code">testAssertNotRegExpThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -6736,7 +6810,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertRegExp">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1535-1549" title="Go to source code">testAssertRegExp</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1565-1579" title="Go to source code">testAssertRegExp</a>( )</code>
 
 		<div class="description short">
 			
@@ -6770,7 +6844,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotRegExp">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1551-1565" title="Go to source code">testAssertNotRegExp</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1581-1595" title="Go to source code">testAssertNotRegExp</a>( )</code>
 
 		<div class="description short">
 			
@@ -6804,7 +6878,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSame">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1567-1586" title="Go to source code">testAssertSame</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1597-1616" title="Go to source code">testAssertSame</a>( )</code>
 
 		<div class="description short">
 			
@@ -6838,7 +6912,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSame2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1588-1603" title="Go to source code">testAssertSame2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1618-1633" title="Go to source code">testAssertSame2</a>( )</code>
 
 		<div class="description short">
 			
@@ -6872,7 +6946,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSame">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1605-1634" title="Go to source code">testAssertNotSame</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1635-1664" title="Go to source code">testAssertNotSame</a>( )</code>
 
 		<div class="description short">
 			
@@ -6906,7 +6980,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSame2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1636-1651" title="Go to source code">testAssertNotSame2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1666-1681" title="Go to source code">testAssertNotSame2</a>( )</code>
 
 		<div class="description short">
 			
@@ -6940,7 +7014,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSameFailsNull">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1653-1665" title="Go to source code">testAssertNotSameFailsNull</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1683-1695" title="Go to source code">testAssertNotSameFailsNull</a>( )</code>
 
 		<div class="description short">
 			
@@ -6974,7 +7048,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGreaterThan">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1667-1681" title="Go to source code">testGreaterThan</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1697-1711" title="Go to source code">testGreaterThan</a>( )</code>
 
 		<div class="description short">
 			
@@ -7008,7 +7082,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAttributeGreaterThan">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1683-1701" title="Go to source code">testAttributeGreaterThan</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1713-1731" title="Go to source code">testAttributeGreaterThan</a>( )</code>
 
 		<div class="description short">
 			
@@ -7042,7 +7116,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGreaterThanOrEqual">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1703-1717" title="Go to source code">testGreaterThanOrEqual</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1733-1747" title="Go to source code">testGreaterThanOrEqual</a>( )</code>
 
 		<div class="description short">
 			
@@ -7076,7 +7150,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAttributeGreaterThanOrEqual">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1719-1737" title="Go to source code">testAttributeGreaterThanOrEqual</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1749-1767" title="Go to source code">testAttributeGreaterThanOrEqual</a>( )</code>
 
 		<div class="description short">
 			
@@ -7110,7 +7184,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testLessThan">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1739-1753" title="Go to source code">testLessThan</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1769-1783" title="Go to source code">testLessThan</a>( )</code>
 
 		<div class="description short">
 			
@@ -7144,7 +7218,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAttributeLessThan">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1755-1773" title="Go to source code">testAttributeLessThan</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1785-1803" title="Go to source code">testAttributeLessThan</a>( )</code>
 
 		<div class="description short">
 			
@@ -7178,7 +7252,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testLessThanOrEqual">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1775-1789" title="Go to source code">testLessThanOrEqual</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1805-1819" title="Go to source code">testLessThanOrEqual</a>( )</code>
 
 		<div class="description short">
 			
@@ -7212,7 +7286,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAttributeLessThanOrEqual">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1791-1809" title="Go to source code">testAttributeLessThanOrEqual</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1821-1839" title="Go to source code">testAttributeLessThanOrEqual</a>( )</code>
 
 		<div class="description short">
 			
@@ -7246,7 +7320,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testReadAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1811-1825" title="Go to source code">testReadAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1841-1855" title="Go to source code">testReadAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -7282,7 +7356,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testReadAttribute2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1827-1839" title="Go to source code">testReadAttribute2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1857-1869" title="Go to source code">testReadAttribute2</a>( )</code>
 
 		<div class="description short">
 			
@@ -7318,7 +7392,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testReadAttribute3">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1841-1850" title="Go to source code">testReadAttribute3</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1871-1880" title="Go to source code">testReadAttribute3</a>( )</code>
 
 		<div class="description short">
 			
@@ -7358,7 +7432,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testReadAttribute4">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1852-1861" title="Go to source code">testReadAttribute4</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1882-1891" title="Go to source code">testReadAttribute4</a>( )</code>
 
 		<div class="description short">
 			
@@ -7398,7 +7472,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testReadAttribute5">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1863-1872" title="Go to source code">testReadAttribute5</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1893-1902" title="Go to source code">testReadAttribute5</a>( )</code>
 
 		<div class="description short">
 			
@@ -7438,7 +7512,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testReadAttributeIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1874-1883" title="Go to source code">testReadAttributeIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1904-1913" title="Go to source code">testReadAttributeIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -7478,7 +7552,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetStaticAttributeRaisesExceptionForInvalidFirstArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1885-1892" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidFirstArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1915-1922" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidFirstArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -7516,7 +7590,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetStaticAttributeRaisesExceptionForInvalidFirstArgument2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1894-1901" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidFirstArgument2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1924-1931" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidFirstArgument2</a>( )</code>
 
 		<div class="description short">
 			
@@ -7554,7 +7628,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetStaticAttributeRaisesExceptionForInvalidSecondArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1903-1910" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidSecondArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1933-1940" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidSecondArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -7592,7 +7666,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetStaticAttributeRaisesExceptionForInvalidSecondArgument2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1912-1919" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidSecondArgument2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1942-1949" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidSecondArgument2</a>( )</code>
 
 		<div class="description short">
 			
@@ -7630,7 +7704,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetStaticAttributeRaisesExceptionForInvalidSecondArgument3">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1921-1928" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidSecondArgument3</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1951-1958" title="Go to source code">testGetStaticAttributeRaisesExceptionForInvalidSecondArgument3</a>( )</code>
 
 		<div class="description short">
 			
@@ -7668,7 +7742,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetObjectAttributeRaisesExceptionForInvalidFirstArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1930-1937" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidFirstArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1960-1967" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidFirstArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -7706,7 +7780,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetObjectAttributeRaisesExceptionForInvalidSecondArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1939-1946" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidSecondArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1969-1976" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidSecondArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -7744,7 +7818,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetObjectAttributeRaisesExceptionForInvalidSecondArgument2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1948-1955" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidSecondArgument2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1978-1985" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidSecondArgument2</a>( )</code>
 
 		<div class="description short">
 			
@@ -7782,7 +7856,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetObjectAttributeRaisesExceptionForInvalidSecondArgument3">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1957-1964" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidSecondArgument3</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1987-1994" title="Go to source code">testGetObjectAttributeRaisesExceptionForInvalidSecondArgument3</a>( )</code>
 
 		<div class="description short">
 			
@@ -7820,7 +7894,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGetObjectAttributeWorksForInheritedAttributes">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1966-1975" title="Go to source code">testGetObjectAttributeWorksForInheritedAttributes</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#1996-2005" title="Go to source code">testGetObjectAttributeWorksForInheritedAttributes</a>( )</code>
 
 		<div class="description short">
 			
@@ -7854,7 +7928,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1977-1993" title="Go to source code">testAssertPublicAttributeContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2007-2023" title="Go to source code">testAssertPublicAttributeContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -7888,7 +7962,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeContainsOnly">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#1995-2011" title="Go to source code">testAssertPublicAttributeContainsOnly</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2025-2041" title="Go to source code">testAssertPublicAttributeContainsOnly</a>( )</code>
 
 		<div class="description short">
 			
@@ -7922,7 +7996,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeNotContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2013-2029" title="Go to source code">testAssertPublicAttributeNotContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2043-2059" title="Go to source code">testAssertPublicAttributeNotContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -7956,7 +8030,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeNotContainsOnly">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2031-2047" title="Go to source code">testAssertPublicAttributeNotContainsOnly</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2061-2077" title="Go to source code">testAssertPublicAttributeNotContainsOnly</a>( )</code>
 
 		<div class="description short">
 			
@@ -7990,7 +8064,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertProtectedAttributeContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2049-2065" title="Go to source code">testAssertProtectedAttributeContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2079-2095" title="Go to source code">testAssertProtectedAttributeContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -8024,7 +8098,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertProtectedAttributeNotContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2067-2083" title="Go to source code">testAssertProtectedAttributeNotContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2097-2113" title="Go to source code">testAssertProtectedAttributeNotContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -8058,7 +8132,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPrivateAttributeContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2085-2101" title="Go to source code">testAssertPrivateAttributeContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2115-2131" title="Go to source code">testAssertPrivateAttributeContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -8092,7 +8166,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPrivateAttributeNotContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2103-2119" title="Go to source code">testAssertPrivateAttributeNotContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2133-2149" title="Go to source code">testAssertPrivateAttributeNotContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -8126,7 +8200,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeContainsNonObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2121-2137" title="Go to source code">testAssertAttributeContainsNonObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2151-2167" title="Go to source code">testAssertAttributeContainsNonObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -8160,7 +8234,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeNotContainsNonObject">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2139-2155" title="Go to source code">testAssertAttributeNotContainsNonObject</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2169-2185" title="Go to source code">testAssertAttributeNotContainsNonObject</a>( )</code>
 
 		<div class="description short">
 			
@@ -8194,7 +8268,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2157-2173" title="Go to source code">testAssertPublicAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2187-2203" title="Go to source code">testAssertPublicAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8228,7 +8302,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2175-2191" title="Go to source code">testAssertPublicAttributeNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2205-2221" title="Go to source code">testAssertPublicAttributeNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8262,7 +8336,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeSame">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2193-2209" title="Go to source code">testAssertPublicAttributeSame</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2223-2239" title="Go to source code">testAssertPublicAttributeSame</a>( )</code>
 
 		<div class="description short">
 			
@@ -8296,7 +8370,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicAttributeNotSame">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2211-2227" title="Go to source code">testAssertPublicAttributeNotSame</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2241-2257" title="Go to source code">testAssertPublicAttributeNotSame</a>( )</code>
 
 		<div class="description short">
 			
@@ -8330,7 +8404,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertProtectedAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2229-2245" title="Go to source code">testAssertProtectedAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2259-2275" title="Go to source code">testAssertProtectedAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8364,7 +8438,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertProtectedAttributeNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2247-2263" title="Go to source code">testAssertProtectedAttributeNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2277-2293" title="Go to source code">testAssertProtectedAttributeNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8398,7 +8472,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPrivateAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2265-2281" title="Go to source code">testAssertPrivateAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2295-2311" title="Go to source code">testAssertPrivateAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8432,7 +8506,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPrivateAttributeNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2283-2299" title="Go to source code">testAssertPrivateAttributeNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2313-2329" title="Go to source code">testAssertPrivateAttributeNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8466,7 +8540,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicStaticAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2301-2315" title="Go to source code">testAssertPublicStaticAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2331-2345" title="Go to source code">testAssertPublicStaticAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8500,7 +8574,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPublicStaticAttributeNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2317-2331" title="Go to source code">testAssertPublicStaticAttributeNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2347-2361" title="Go to source code">testAssertPublicStaticAttributeNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8534,7 +8608,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertProtectedStaticAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2333-2347" title="Go to source code">testAssertProtectedStaticAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2363-2377" title="Go to source code">testAssertProtectedStaticAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8568,7 +8642,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertProtectedStaticAttributeNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2349-2363" title="Go to source code">testAssertProtectedStaticAttributeNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2379-2393" title="Go to source code">testAssertProtectedStaticAttributeNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8602,7 +8676,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPrivateStaticAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2365-2379" title="Go to source code">testAssertPrivateStaticAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2395-2409" title="Go to source code">testAssertPrivateStaticAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8636,7 +8710,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertPrivateStaticAttributeNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2381-2395" title="Go to source code">testAssertPrivateStaticAttributeNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2411-2425" title="Go to source code">testAssertPrivateStaticAttributeNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -8670,7 +8744,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassHasAttributeThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2397-2404" title="Go to source code">testAssertClassHasAttributeThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2427-2434" title="Go to source code">testAssertClassHasAttributeThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -8708,7 +8782,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassHasAttributeThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2406-2413" title="Go to source code">testAssertClassHasAttributeThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2436-2443" title="Go to source code">testAssertClassHasAttributeThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -8746,7 +8820,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassHasAttributeThrowsExceptionIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2415-2422" title="Go to source code">testAssertClassHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2445-2452" title="Go to source code">testAssertClassHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -8784,7 +8858,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassNotHasAttributeThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2424-2431" title="Go to source code">testAssertClassNotHasAttributeThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2454-2461" title="Go to source code">testAssertClassNotHasAttributeThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -8822,7 +8896,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassNotHasAttributeThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2433-2440" title="Go to source code">testAssertClassNotHasAttributeThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2463-2470" title="Go to source code">testAssertClassNotHasAttributeThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -8860,7 +8934,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2442-2449" title="Go to source code">testAssertClassNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2472-2479" title="Go to source code">testAssertClassNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -8898,7 +8972,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassHasStaticAttributeThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2451-2458" title="Go to source code">testAssertClassHasStaticAttributeThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2481-2488" title="Go to source code">testAssertClassHasStaticAttributeThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -8936,7 +9010,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassHasStaticAttributeThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2460-2467" title="Go to source code">testAssertClassHasStaticAttributeThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2490-2497" title="Go to source code">testAssertClassHasStaticAttributeThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -8974,7 +9048,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2469-2476" title="Go to source code">testAssertClassHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2499-2506" title="Go to source code">testAssertClassHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -9012,7 +9086,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassNotHasStaticAttributeThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2478-2485" title="Go to source code">testAssertClassNotHasStaticAttributeThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2508-2515" title="Go to source code">testAssertClassNotHasStaticAttributeThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -9050,7 +9124,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassNotHasStaticAttributeThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2487-2494" title="Go to source code">testAssertClassNotHasStaticAttributeThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2517-2524" title="Go to source code">testAssertClassNotHasStaticAttributeThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -9088,7 +9162,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertClassNotHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2496-2503" title="Go to source code">testAssertClassNotHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2526-2533" title="Go to source code">testAssertClassNotHasStaticAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -9126,7 +9200,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectHasAttributeThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2505-2512" title="Go to source code">testAssertObjectHasAttributeThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2535-2542" title="Go to source code">testAssertObjectHasAttributeThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -9164,7 +9238,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectHasAttributeThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2514-2521" title="Go to source code">testAssertObjectHasAttributeThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2544-2551" title="Go to source code">testAssertObjectHasAttributeThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -9202,7 +9276,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectHasAttributeThrowsExceptionIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2523-2530" title="Go to source code">testAssertObjectHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2553-2560" title="Go to source code">testAssertObjectHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -9240,7 +9314,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectNotHasAttributeThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2532-2539" title="Go to source code">testAssertObjectNotHasAttributeThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2562-2569" title="Go to source code">testAssertObjectNotHasAttributeThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -9278,7 +9352,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectNotHasAttributeThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2541-2548" title="Go to source code">testAssertObjectNotHasAttributeThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2571-2578" title="Go to source code">testAssertObjectNotHasAttributeThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -9316,7 +9390,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertObjectNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2550-2557" title="Go to source code">testAssertObjectNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2580-2587" title="Go to source code">testAssertObjectNotHasAttributeThrowsExceptionIfAttributeNameIsNotValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -9354,7 +9428,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testClassHasPublicAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2559-2573" title="Go to source code">testClassHasPublicAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2589-2603" title="Go to source code">testClassHasPublicAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9388,7 +9462,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testClassNotHasPublicAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2575-2589" title="Go to source code">testClassNotHasPublicAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2605-2619" title="Go to source code">testClassNotHasPublicAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9422,7 +9496,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testClassHasPublicStaticAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2591-2605" title="Go to source code">testClassHasPublicStaticAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2621-2635" title="Go to source code">testClassHasPublicStaticAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9456,7 +9530,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testClassNotHasPublicStaticAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2607-2621" title="Go to source code">testClassNotHasPublicStaticAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2637-2651" title="Go to source code">testClassNotHasPublicStaticAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9490,7 +9564,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectHasPublicAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2623-2639" title="Go to source code">testObjectHasPublicAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2653-2669" title="Go to source code">testObjectHasPublicAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9524,7 +9598,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectNotHasPublicAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2641-2657" title="Go to source code">testObjectNotHasPublicAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2671-2687" title="Go to source code">testObjectNotHasPublicAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9558,7 +9632,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectHasOnTheFlyAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2659-2676" title="Go to source code">testObjectHasOnTheFlyAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2689-2706" title="Go to source code">testObjectHasOnTheFlyAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9592,7 +9666,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectNotHasOnTheFlyAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2678-2695" title="Go to source code">testObjectNotHasOnTheFlyAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2708-2725" title="Go to source code">testObjectNotHasOnTheFlyAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9626,7 +9700,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectHasProtectedAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2697-2713" title="Go to source code">testObjectHasProtectedAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2727-2743" title="Go to source code">testObjectHasProtectedAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9660,7 +9734,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectNotHasProtectedAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2715-2731" title="Go to source code">testObjectNotHasProtectedAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2745-2761" title="Go to source code">testObjectNotHasProtectedAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9694,7 +9768,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectHasPrivateAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2733-2749" title="Go to source code">testObjectHasPrivateAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2763-2779" title="Go to source code">testObjectHasPrivateAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9728,7 +9802,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testObjectNotHasPrivateAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2751-2767" title="Go to source code">testObjectNotHasPrivateAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2781-2797" title="Go to source code">testObjectNotHasPrivateAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -9762,7 +9836,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAttributeEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2769-2783" title="Go to source code">testAssertThatAttributeEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2799-2813" title="Go to source code">testAssertThatAttributeEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -9798,7 +9872,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAttributeEquals2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2785-2800" title="Go to source code">testAssertThatAttributeEquals2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2815-2830" title="Go to source code">testAssertThatAttributeEquals2</a>( )</code>
 
 		<div class="description short">
 			
@@ -9838,7 +9912,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAttributeEqualTo">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2802-2813" title="Go to source code">testAssertThatAttributeEqualTo</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2832-2843" title="Go to source code">testAssertThatAttributeEqualTo</a>( )</code>
 
 		<div class="description short">
 			
@@ -9874,7 +9948,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAnything">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2815-2822" title="Go to source code">testAssertThatAnything</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2845-2852" title="Go to source code">testAssertThatAnything</a>( )</code>
 
 		<div class="description short">
 			
@@ -9909,7 +9983,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIsTrue">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2824-2831" title="Go to source code">testAssertThatIsTrue</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2854-2861" title="Go to source code">testAssertThatIsTrue</a>( )</code>
 
 		<div class="description short">
 			
@@ -9944,7 +10018,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIsFalse">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2833-2840" title="Go to source code">testAssertThatIsFalse</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2863-2870" title="Go to source code">testAssertThatIsFalse</a>( )</code>
 
 		<div class="description short">
 			
@@ -9979,7 +10053,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIsJson">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2842-2849" title="Go to source code">testAssertThatIsJson</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2872-2879" title="Go to source code">testAssertThatIsJson</a>( )</code>
 
 		<div class="description short">
 			
@@ -10014,7 +10088,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAnythingAndAnything">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2851-2864" title="Go to source code">testAssertThatAnythingAndAnything</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2881-2894" title="Go to source code">testAssertThatAnythingAndAnything</a>( )</code>
 
 		<div class="description short">
 			
@@ -10050,7 +10124,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAnythingOrAnything">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2866-2879" title="Go to source code">testAssertThatAnythingOrAnything</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2896-2909" title="Go to source code">testAssertThatAnythingOrAnything</a>( )</code>
 
 		<div class="description short">
 			
@@ -10086,7 +10160,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatAnythingXorNotAnything">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2881-2896" title="Go to source code">testAssertThatAnythingXorNotAnything</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2911-2926" title="Go to source code">testAssertThatAnythingXorNotAnything</a>( )</code>
 
 		<div class="description short">
 			
@@ -10123,7 +10197,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2898-2905" title="Go to source code">testAssertThatContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2928-2935" title="Go to source code">testAssertThatContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -10158,7 +10232,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatStringContains">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2907-2914" title="Go to source code">testAssertThatStringContains</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2937-2944" title="Go to source code">testAssertThatStringContains</a>( )</code>
 
 		<div class="description short">
 			
@@ -10193,7 +10267,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatContainsOnly">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2916-2923" title="Go to source code">testAssertThatContainsOnly</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2946-2953" title="Go to source code">testAssertThatContainsOnly</a>( )</code>
 
 		<div class="description short">
 			
@@ -10228,7 +10302,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatContainsOnlyInstancesOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2924-2931" title="Go to source code">testAssertThatContainsOnlyInstancesOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2954-2961" title="Go to source code">testAssertThatContainsOnlyInstancesOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -10263,7 +10337,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatArrayHasKey">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2933-2940" title="Go to source code">testAssertThatArrayHasKey</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2963-2970" title="Go to source code">testAssertThatArrayHasKey</a>( )</code>
 
 		<div class="description short">
 			
@@ -10298,7 +10372,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatClassHasAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2942-2952" title="Go to source code">testAssertThatClassHasAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2972-2982" title="Go to source code">testAssertThatClassHasAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -10333,7 +10407,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatClassHasStaticAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2954-2964" title="Go to source code">testAssertThatClassHasStaticAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2984-2994" title="Go to source code">testAssertThatClassHasStaticAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -10368,7 +10442,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatObjectHasAttribute">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2966-2976" title="Go to source code">testAssertThatObjectHasAttribute</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#2996-3006" title="Go to source code">testAssertThatObjectHasAttribute</a>( )</code>
 
 		<div class="description short">
 			
@@ -10403,7 +10477,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatEqualTo">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2978-2985" title="Go to source code">testAssertThatEqualTo</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3008-3015" title="Go to source code">testAssertThatEqualTo</a>( )</code>
 
 		<div class="description short">
 			
@@ -10438,7 +10512,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIdenticalTo">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2987-2997" title="Go to source code">testAssertThatIdenticalTo</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3017-3027" title="Go to source code">testAssertThatIdenticalTo</a>( )</code>
 
 		<div class="description short">
 			
@@ -10473,7 +10547,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIsInstanceOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#2999-3006" title="Go to source code">testAssertThatIsInstanceOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3029-3036" title="Go to source code">testAssertThatIsInstanceOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -10508,7 +10582,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIsType">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3008-3015" title="Go to source code">testAssertThatIsType</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3038-3045" title="Go to source code">testAssertThatIsType</a>( )</code>
 
 		<div class="description short">
 			
@@ -10543,7 +10617,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatIsEmpty">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3017-3024" title="Go to source code">testAssertThatIsEmpty</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3047-3054" title="Go to source code">testAssertThatIsEmpty</a>( )</code>
 
 		<div class="description short">
 			
@@ -10578,7 +10652,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatFileExists">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3026-3033" title="Go to source code">testAssertThatFileExists</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3056-3063" title="Go to source code">testAssertThatFileExists</a>( )</code>
 
 		<div class="description short">
 			
@@ -10613,7 +10687,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatGreaterThan">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3035-3042" title="Go to source code">testAssertThatGreaterThan</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3065-3072" title="Go to source code">testAssertThatGreaterThan</a>( )</code>
 
 		<div class="description short">
 			
@@ -10648,7 +10722,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatGreaterThanOrEqual">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3044-3051" title="Go to source code">testAssertThatGreaterThanOrEqual</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3074-3081" title="Go to source code">testAssertThatGreaterThanOrEqual</a>( )</code>
 
 		<div class="description short">
 			
@@ -10683,7 +10757,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatLessThan">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3053-3060" title="Go to source code">testAssertThatLessThan</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3083-3090" title="Go to source code">testAssertThatLessThan</a>( )</code>
 
 		<div class="description short">
 			
@@ -10718,7 +10792,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatLessThanOrEqual">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3062-3069" title="Go to source code">testAssertThatLessThanOrEqual</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3092-3099" title="Go to source code">testAssertThatLessThanOrEqual</a>( )</code>
 
 		<div class="description short">
 			
@@ -10753,7 +10827,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatMatchesRegularExpression">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3071-3078" title="Go to source code">testAssertThatMatchesRegularExpression</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3101-3108" title="Go to source code">testAssertThatMatchesRegularExpression</a>( )</code>
 
 		<div class="description short">
 			
@@ -10788,7 +10862,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatCallback">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3080-3088" title="Go to source code">testAssertThatCallback</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3110-3120" title="Go to source code">testAssertThatCallback</a>( )</code>
 
 		<div class="description short">
 			
@@ -10823,7 +10897,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertThatCountOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3090-3097" title="Go to source code">testAssertThatCountOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3122-3129" title="Go to source code">testAssertThatCountOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -10858,7 +10932,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFileEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3099-3119" title="Go to source code">testAssertFileEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3131-3151" title="Go to source code">testAssertFileEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -10892,7 +10966,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertFileNotEquals">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3121-3141" title="Go to source code">testAssertFileNotEquals</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3153-3173" title="Go to source code">testAssertFileNotEquals</a>( )</code>
 
 		<div class="description short">
 			
@@ -10926,7 +11000,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEqualsFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3143-3163" title="Go to source code">testAssertStringEqualsFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3175-3195" title="Go to source code">testAssertStringEqualsFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -10960,7 +11034,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotEqualsFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3165-3185" title="Go to source code">testAssertStringNotEqualsFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3197-3217" title="Go to source code">testAssertStringNotEqualsFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -10994,7 +11068,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringStartsWithThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3187-3194" title="Go to source code">testAssertStringStartsWithThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3219-3226" title="Go to source code">testAssertStringStartsWithThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -11032,7 +11106,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringStartsWithThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3196-3203" title="Go to source code">testAssertStringStartsWithThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3228-3235" title="Go to source code">testAssertStringStartsWithThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -11070,7 +11144,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringStartsNotWithThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3205-3212" title="Go to source code">testAssertStringStartsNotWithThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3237-3244" title="Go to source code">testAssertStringStartsNotWithThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -11108,7 +11182,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringStartsNotWithThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3214-3221" title="Go to source code">testAssertStringStartsNotWithThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3246-3253" title="Go to source code">testAssertStringStartsNotWithThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -11146,7 +11220,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEndsWithThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3223-3230" title="Go to source code">testAssertStringEndsWithThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3255-3262" title="Go to source code">testAssertStringEndsWithThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -11184,7 +11258,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEndsWithThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3232-3239" title="Go to source code">testAssertStringEndsWithThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3264-3271" title="Go to source code">testAssertStringEndsWithThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -11222,7 +11296,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEndsNotWithThrowsException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3241-3248" title="Go to source code">testAssertStringEndsNotWithThrowsException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3273-3280" title="Go to source code">testAssertStringEndsNotWithThrowsException</a>( )</code>
 
 		<div class="description short">
 			
@@ -11260,7 +11334,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEndsNotWithThrowsException2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3250-3257" title="Go to source code">testAssertStringEndsNotWithThrowsException2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3282-3289" title="Go to source code">testAssertStringEndsNotWithThrowsException2</a>( )</code>
 
 		<div class="description short">
 			
@@ -11298,7 +11372,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringStartsWith">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3259-3273" title="Go to source code">testAssertStringStartsWith</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3291-3305" title="Go to source code">testAssertStringStartsWith</a>( )</code>
 
 		<div class="description short">
 			
@@ -11332,7 +11406,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringStartsNotWith">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3275-3289" title="Go to source code">testAssertStringStartsNotWith</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3307-3321" title="Go to source code">testAssertStringStartsNotWith</a>( )</code>
 
 		<div class="description short">
 			
@@ -11366,7 +11440,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEndsWith">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3291-3305" title="Go to source code">testAssertStringEndsWith</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3323-3337" title="Go to source code">testAssertStringEndsWith</a>( )</code>
 
 		<div class="description short">
 			
@@ -11400,7 +11474,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringEndsNotWith">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3307-3321" title="Go to source code">testAssertStringEndsNotWith</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3339-3353" title="Go to source code">testAssertStringEndsNotWith</a>( )</code>
 
 		<div class="description short">
 			
@@ -11434,7 +11508,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormatRaisesExceptionForInvalidFirstArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3323-3330" title="Go to source code">testAssertStringMatchesFormatRaisesExceptionForInvalidFirstArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3355-3362" title="Go to source code">testAssertStringMatchesFormatRaisesExceptionForInvalidFirstArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -11472,7 +11546,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormatRaisesExceptionForInvalidSecondArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3332-3339" title="Go to source code">testAssertStringMatchesFormatRaisesExceptionForInvalidSecondArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3364-3371" title="Go to source code">testAssertStringMatchesFormatRaisesExceptionForInvalidSecondArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -11510,7 +11584,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormat">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3341-3347" title="Go to source code">testAssertStringMatchesFormat</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3373-3379" title="Go to source code">testAssertStringMatchesFormat</a>( )</code>
 
 		<div class="description short">
 			
@@ -11544,7 +11618,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormatFailure">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3349-3356" title="Go to source code">testAssertStringMatchesFormatFailure</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3381-3388" title="Go to source code">testAssertStringMatchesFormatFailure</a>( )</code>
 
 		<div class="description short">
 			
@@ -11582,7 +11656,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotMatchesFormatRaisesExceptionForInvalidFirstArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3358-3365" title="Go to source code">testAssertStringNotMatchesFormatRaisesExceptionForInvalidFirstArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3390-3397" title="Go to source code">testAssertStringNotMatchesFormatRaisesExceptionForInvalidFirstArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -11620,7 +11694,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotMatchesFormatRaisesExceptionForInvalidSecondArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3367-3374" title="Go to source code">testAssertStringNotMatchesFormatRaisesExceptionForInvalidSecondArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3399-3406" title="Go to source code">testAssertStringNotMatchesFormatRaisesExceptionForInvalidSecondArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -11658,7 +11732,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotMatchesFormat">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3376-3390" title="Go to source code">testAssertStringNotMatchesFormat</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3408-3422" title="Go to source code">testAssertStringNotMatchesFormat</a>( )</code>
 
 		<div class="description short">
 			
@@ -11692,7 +11766,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertEmpty">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3392-3406" title="Go to source code">testAssertEmpty</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3424-3438" title="Go to source code">testAssertEmpty</a>( )</code>
 
 		<div class="description short">
 			
@@ -11726,7 +11800,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotEmpty">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3408-3422" title="Go to source code">testAssertNotEmpty</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3440-3454" title="Go to source code">testAssertNotEmpty</a>( )</code>
 
 		<div class="description short">
 			
@@ -11760,7 +11834,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeEmpty">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3424-3442" title="Go to source code">testAssertAttributeEmpty</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3456-3474" title="Go to source code">testAssertAttributeEmpty</a>( )</code>
 
 		<div class="description short">
 			
@@ -11794,7 +11868,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeNotEmpty">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3444-3462" title="Go to source code">testAssertAttributeNotEmpty</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3476-3494" title="Go to source code">testAssertAttributeNotEmpty</a>( )</code>
 
 		<div class="description short">
 			
@@ -11828,7 +11902,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testMarkTestIncomplete">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3464-3478" title="Go to source code">testMarkTestIncomplete</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3496-3510" title="Go to source code">testMarkTestIncomplete</a>( )</code>
 
 		<div class="description short">
 			
@@ -11862,7 +11936,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testMarkTestSkipped">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3480-3494" title="Go to source code">testMarkTestSkipped</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3512-3526" title="Go to source code">testMarkTestSkipped</a>( )</code>
 
 		<div class="description short">
 			
@@ -11896,7 +11970,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertCount">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3496-3510" title="Go to source code">testAssertCount</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3528-3542" title="Go to source code">testAssertCount</a>( )</code>
 
 		<div class="description short">
 			
@@ -11930,7 +12004,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertCountTraversable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3512-3526" title="Go to source code">testAssertCountTraversable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3544-3558" title="Go to source code">testAssertCountTraversable</a>( )</code>
 
 		<div class="description short">
 			
@@ -11964,7 +12038,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertCountThrowsExceptionIfExpectedCountIsNoInteger">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3528-3542" title="Go to source code">testAssertCountThrowsExceptionIfExpectedCountIsNoInteger</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3560-3574" title="Go to source code">testAssertCountThrowsExceptionIfExpectedCountIsNoInteger</a>( )</code>
 
 		<div class="description short">
 			
@@ -11998,7 +12072,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertCountThrowsExceptionIfElementIsNotCountable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3544-3558" title="Go to source code">testAssertCountThrowsExceptionIfElementIsNotCountable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3576-3590" title="Go to source code">testAssertCountThrowsExceptionIfElementIsNotCountable</a>( )</code>
 
 		<div class="description short">
 			
@@ -12032,7 +12106,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeCount">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3560-3569" title="Go to source code">testAssertAttributeCount</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3592-3601" title="Go to source code">testAssertAttributeCount</a>( )</code>
 
 		<div class="description short">
 			
@@ -12066,7 +12140,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotCount">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3571-3585" title="Go to source code">testAssertNotCount</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3603-3617" title="Go to source code">testAssertNotCount</a>( )</code>
 
 		<div class="description short">
 			
@@ -12100,7 +12174,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotCountThrowsExceptionIfExpectedCountIsNoInteger">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3587-3594" title="Go to source code">testAssertNotCountThrowsExceptionIfExpectedCountIsNoInteger</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3619-3626" title="Go to source code">testAssertNotCountThrowsExceptionIfExpectedCountIsNoInteger</a>( )</code>
 
 		<div class="description short">
 			
@@ -12138,7 +12212,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotCountThrowsExceptionIfElementIsNotCountable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3596-3603" title="Go to source code">testAssertNotCountThrowsExceptionIfElementIsNotCountable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3628-3635" title="Go to source code">testAssertNotCountThrowsExceptionIfElementIsNotCountable</a>( )</code>
 
 		<div class="description short">
 			
@@ -12176,7 +12250,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeNotCount">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3605-3614" title="Go to source code">testAssertAttributeNotCount</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3637-3646" title="Go to source code">testAssertAttributeNotCount</a>( )</code>
 
 		<div class="description short">
 			
@@ -12210,7 +12284,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSameSize">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3616-3630" title="Go to source code">testAssertSameSize</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3648-3662" title="Go to source code">testAssertSameSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -12244,7 +12318,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSameSizeThrowsExceptionIfExpectedIsNotCountable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3632-3646" title="Go to source code">testAssertSameSizeThrowsExceptionIfExpectedIsNotCountable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3664-3678" title="Go to source code">testAssertSameSizeThrowsExceptionIfExpectedIsNotCountable</a>( )</code>
 
 		<div class="description short">
 			
@@ -12278,7 +12352,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertSameSizeThrowsExceptionIfActualIsNotCountable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3648-3662" title="Go to source code">testAssertSameSizeThrowsExceptionIfActualIsNotCountable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3680-3694" title="Go to source code">testAssertSameSizeThrowsExceptionIfActualIsNotCountable</a>( )</code>
 
 		<div class="description short">
 			
@@ -12312,7 +12386,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSameSize">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3664-3678" title="Go to source code">testAssertNotSameSize</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3696-3710" title="Go to source code">testAssertNotSameSize</a>( )</code>
 
 		<div class="description short">
 			
@@ -12346,7 +12420,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSameSizeThrowsExceptionIfExpectedIsNotCountable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3680-3687" title="Go to source code">testAssertNotSameSizeThrowsExceptionIfExpectedIsNotCountable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3712-3719" title="Go to source code">testAssertNotSameSizeThrowsExceptionIfExpectedIsNotCountable</a>( )</code>
 
 		<div class="description short">
 			
@@ -12384,7 +12458,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotSameSizeThrowsExceptionIfActualIsNotCountable">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3689-3696" title="Go to source code">testAssertNotSameSizeThrowsExceptionIfActualIsNotCountable</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3721-3728" title="Go to source code">testAssertNotSameSizeThrowsExceptionIfActualIsNotCountable</a>( )</code>
 
 		<div class="description short">
 			
@@ -12422,7 +12496,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonRaisesExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3698-3705" title="Go to source code">testAssertJsonRaisesExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3730-3737" title="Go to source code">testAssertJsonRaisesExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -12460,7 +12534,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJson">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3707-3713" title="Go to source code">testAssertJson</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3739-3745" title="Go to source code">testAssertJson</a>( )</code>
 
 		<div class="description short">
 			
@@ -12494,7 +12568,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringEqualsJsonString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3715-3725" title="Go to source code">testAssertJsonStringEqualsJsonString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3747-3757" title="Go to source code">testAssertJsonStringEqualsJsonString</a>( )</code>
 
 		<div class="description short">
 			
@@ -12528,7 +12602,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringEqualsJsonStringErrorRaised">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3727-3739" title="Go to source code">testAssertJsonStringEqualsJsonStringErrorRaised</a>( <span> <var>$expected</var></span>, <span> <var>$actual</var></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3759-3771" title="Go to source code">testAssertJsonStringEqualsJsonStringErrorRaised</a>( <span> <var>$expected</var></span>, <span> <var>$actual</var></span> )</code>
 
 		<div class="description short">
 			
@@ -12566,7 +12640,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringNotEqualsJsonString">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3741-3751" title="Go to source code">testAssertJsonStringNotEqualsJsonString</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3773-3783" title="Go to source code">testAssertJsonStringNotEqualsJsonString</a>( )</code>
 
 		<div class="description short">
 			
@@ -12600,7 +12674,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringNotEqualsJsonStringErrorRaised">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3753-3765" title="Go to source code">testAssertJsonStringNotEqualsJsonStringErrorRaised</a>( <span> <var>$expected</var></span>, <span> <var>$actual</var></span> )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3785-3797" title="Go to source code">testAssertJsonStringNotEqualsJsonStringErrorRaised</a>( <span> <var>$expected</var></span>, <span> <var>$actual</var></span> )</code>
 
 		<div class="description short">
 			
@@ -12638,7 +12712,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringEqualsJsonFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3767-3776" title="Go to source code">testAssertJsonStringEqualsJsonFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3799-3808" title="Go to source code">testAssertJsonStringEqualsJsonFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -12672,7 +12746,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringEqualsJsonFileExpectingExpectationFailedException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3778-3798" title="Go to source code">testAssertJsonStringEqualsJsonFileExpectingExpectationFailedException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3810-3830" title="Go to source code">testAssertJsonStringEqualsJsonFileExpectingExpectationFailedException</a>( )</code>
 
 		<div class="description short">
 			
@@ -12706,7 +12780,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringEqualsJsonFileExpectingException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3800-3812" title="Go to source code">testAssertJsonStringEqualsJsonFileExpectingException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3832-3844" title="Go to source code">testAssertJsonStringEqualsJsonFileExpectingException</a>( )</code>
 
 		<div class="description short">
 			
@@ -12740,7 +12814,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringNotEqualsJsonFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3814-3823" title="Go to source code">testAssertJsonStringNotEqualsJsonFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3846-3855" title="Go to source code">testAssertJsonStringNotEqualsJsonFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -12774,7 +12848,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonStringNotEqualsJsonFileExpectingException">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3825-3837" title="Go to source code">testAssertJsonStringNotEqualsJsonFileExpectingException</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3857-3869" title="Go to source code">testAssertJsonStringNotEqualsJsonFileExpectingException</a>( )</code>
 
 		<div class="description short">
 			
@@ -12808,7 +12882,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonFileNotEqualsJsonFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3839-3848" title="Go to source code">testAssertJsonFileNotEqualsJsonFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3871-3880" title="Go to source code">testAssertJsonFileNotEqualsJsonFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -12842,7 +12916,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertJsonFileEqualsJsonFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3850-3858" title="Go to source code">testAssertJsonFileEqualsJsonFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3882-3890" title="Go to source code">testAssertJsonFileEqualsJsonFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -12876,7 +12950,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertInstanceOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3860-3874" title="Go to source code">testAssertInstanceOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3892-3906" title="Go to source code">testAssertInstanceOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -12910,7 +12984,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertInstanceOfThrowsExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3876-3883" title="Go to source code">testAssertInstanceOfThrowsExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3908-3915" title="Go to source code">testAssertInstanceOfThrowsExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -12948,7 +13022,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeInstanceOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3885-3894" title="Go to source code">testAssertAttributeInstanceOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3917-3926" title="Go to source code">testAssertAttributeInstanceOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -12982,7 +13056,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotInstanceOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3896-3910" title="Go to source code">testAssertNotInstanceOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3928-3942" title="Go to source code">testAssertNotInstanceOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -13016,7 +13090,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotInstanceOfThrowsExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3912-3919" title="Go to source code">testAssertNotInstanceOfThrowsExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3944-3951" title="Go to source code">testAssertNotInstanceOfThrowsExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -13054,7 +13128,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeNotInstanceOf">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3921-3930" title="Go to source code">testAssertAttributeNotInstanceOf</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3953-3962" title="Go to source code">testAssertAttributeNotInstanceOf</a>( )</code>
 
 		<div class="description short">
 			
@@ -13088,7 +13162,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertInternalType">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3932-3946" title="Go to source code">testAssertInternalType</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3964-3978" title="Go to source code">testAssertInternalType</a>( )</code>
 
 		<div class="description short">
 			
@@ -13122,7 +13196,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertInternalTypeDouble">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3948-3962" title="Go to source code">testAssertInternalTypeDouble</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3980-3994" title="Go to source code">testAssertInternalTypeDouble</a>( )</code>
 
 		<div class="description short">
 			
@@ -13156,7 +13230,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertInternalTypeThrowsExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3964-3971" title="Go to source code">testAssertInternalTypeThrowsExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#3996-4003" title="Go to source code">testAssertInternalTypeThrowsExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -13194,7 +13268,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeInternalType">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3973-3982" title="Go to source code">testAssertAttributeInternalType</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4005-4014" title="Go to source code">testAssertAttributeInternalType</a>( )</code>
 
 		<div class="description short">
 			
@@ -13228,7 +13302,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotInternalType">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#3984-3998" title="Go to source code">testAssertNotInternalType</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4016-4030" title="Go to source code">testAssertNotInternalType</a>( )</code>
 
 		<div class="description short">
 			
@@ -13262,7 +13336,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertNotInternalTypeThrowsExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4000-4007" title="Go to source code">testAssertNotInternalTypeThrowsExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4032-4039" title="Go to source code">testAssertNotInternalTypeThrowsExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -13300,7 +13374,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertAttributeNotInternalType">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4009-4018" title="Go to source code">testAssertAttributeNotInternalType</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4041-4050" title="Go to source code">testAssertAttributeNotInternalType</a>( )</code>
 
 		<div class="description short">
 			
@@ -13334,7 +13408,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4020-4027" title="Go to source code">testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4052-4059" title="Go to source code">testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -13372,7 +13446,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4029-4036" title="Go to source code">testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4061-4068" title="Go to source code">testAssertStringMatchesFormatFileThrowsExceptionForInvalidArgument2</a>( )</code>
 
 		<div class="description short">
 			
@@ -13410,7 +13484,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringMatchesFormatFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4038-4052" title="Go to source code">testAssertStringMatchesFormatFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4070-4084" title="Go to source code">testAssertStringMatchesFormatFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -13444,7 +13518,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4054-4061" title="Go to source code">testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4086-4093" title="Go to source code">testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument</a>( )</code>
 
 		<div class="description short">
 			
@@ -13482,7 +13556,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument2">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4063-4070" title="Go to source code">testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument2</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4095-4102" title="Go to source code">testAssertStringNotMatchesFormatFileThrowsExceptionForInvalidArgument2</a>( )</code>
 
 		<div class="description short">
 			
@@ -13520,7 +13594,7 @@ This method is called before a test is executed.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testAssertStringNotMatchesFormatFile">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4072-4086" title="Go to source code">testAssertStringNotMatchesFormatFile</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4104-4118" title="Go to source code">testAssertStringNotMatchesFormatFile</a>( )</code>
 
 		<div class="description short">
 			
@@ -13547,14 +13621,14 @@ This method is called before a test is executed.</p>
 		<td class="attributes"><code>
 			 public static
 
-			
+			array
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_validInvalidJsonDataprovider">#</a>
-		<code><a href="source-class-Framework_AssertTest.html#4088-4094" title="Go to source code">validInvalidJsonDataprovider</a>( )</code>
+		<code><a href="source-class-Framework_AssertTest.html#4120-4129" title="Go to source code">validInvalidJsonDataprovider</a>( )</code>
 
 		<div class="description short">
 			
@@ -13565,6 +13639,10 @@ This method is called before a test is executed.</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
 
 
 
@@ -13842,7 +13920,7 @@ This method is called before a test is executed.</p>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

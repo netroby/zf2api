@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2698,12 +2710,12 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Zend.InputFilter.ArrayInput.html">ArrayInput</a></li>
+				<li><a href="class-Zend.InputFilter.ArrayInput.html" class="deprecated">ArrayInput</a></li>
 				<li><a href="class-Zend.InputFilter.BaseInputFilter.html">BaseInputFilter</a></li>
 				<li><a href="class-Zend.InputFilter.CollectionInputFilter.html">CollectionInputFilter</a></li>
 				<li><a href="class-Zend.InputFilter.Factory.html">Factory</a></li>
 				<li><a href="class-Zend.InputFilter.FileInput.html">FileInput</a></li>
-				<li><a href="class-Zend.InputFilter.Input.html">Input</a></li>
+				<li><a href="class-Zend.InputFilter.Input.html" class="deprecated">Input</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilter.html">InputFilter</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterAbstractServiceFactory.html">InputFilterAbstractServiceFactory</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterPluginManager.html">InputFilterPluginManager</a></li>
@@ -2711,7 +2723,7 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-Zend.InputFilter.EmptyContextInterface.html">EmptyContextInterface</a></li>
+				<li><a href="class-Zend.InputFilter.EmptyContextInterface.html" class="deprecated">EmptyContextInterface</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterAwareInterface.html">InputFilterAwareInterface</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterInterface.html">InputFilterInterface</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterProviderInterface.html">InputFilterProviderInterface</a></li>
@@ -2770,12 +2782,12 @@
 
 	<div>
 		<h4>Direct known implementers</h4>
-			<a href="class-Zend.InputFilter.Input.html">Zend\InputFilter\Input</a>
+			<a href="class-Zend.InputFilter.Input.html"><span class="deprecated">Zend\InputFilter\Input</span></a>
 	</div>
 
 	<div>
 		<h4>Indirect known implementers</h4>
-			<a href="class-Zend.InputFilter.ArrayInput.html">Zend\InputFilter\ArrayInput</a>, 
+			<a href="class-Zend.InputFilter.ArrayInput.html"><span class="deprecated">Zend\InputFilter\ArrayInput</span></a>, 
 			<a href="class-Zend.InputFilter.FileInput.html">Zend\InputFilter\FileInput</a>
 	</div>
 
@@ -2787,7 +2799,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.InputFilter.html">InputFilter</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.InputFilter.InputInterface.html#15-125" title="Go to source code">zendframework/zend-inputfilter/src/InputInterface.php</a>
+			<b>Located at</b> <a href="source-class-Zend.InputFilter.InputInterface.html#15-129" title="Go to source code">zendframework/zend-inputfilter/src/InputInterface.php</a>
 		<br>
 	</div>
 
@@ -2795,7 +2807,7 @@
 
 	<table class="summary methods" id="methods">
 	<caption>Methods summary</caption>
-	<tr data-order="setAllowEmpty" id="_setAllowEmpty">
+	<tr data-order="setAllowEmpty" id="_setAllowEmpty" class="deprecated">
 
 		<td class="attributes"><code>
 			 public 
@@ -2807,7 +2819,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setAllowEmpty">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#17-21" title="Go to source code">setAllowEmpty</a>( <span>boolean <var>$allowEmpty</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#17-23" title="Go to source code">setAllowEmpty</a>( <span>boolean <var>$allowEmpty</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2816,6 +2828,10 @@
 		<div class="description detailed hidden">
 			
 
+				<h4>Deprecated</h4>
+				<div class="list">
+						2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain and set this to <code>true</code>.<br>
+				</div>
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
@@ -2846,7 +2862,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setBreakOnFailure">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#23-27" title="Go to source code">setBreakOnFailure</a>( <span>boolean <var>$breakOnFailure</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#25-29" title="Go to source code">setBreakOnFailure</a>( <span>boolean <var>$breakOnFailure</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2885,7 +2901,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setErrorMessage">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#29-33" title="Go to source code">setErrorMessage</a>( <span>string|null <var>$errorMessage</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#31-35" title="Go to source code">setErrorMessage</a>( <span>string|null <var>$errorMessage</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2924,7 +2940,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setFilterChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#35-39" title="Go to source code">setFilterChain</a>( <span><code><a href="class-Zend.Filter.FilterChain.html">Zend\Filter\FilterChain</a></code> <var>$filterChain</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#37-41" title="Go to source code">setFilterChain</a>( <span><code><a href="class-Zend.Filter.FilterChain.html">Zend\Filter\FilterChain</a></code> <var>$filterChain</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2963,7 +2979,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setName">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#41-45" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#43-47" title="Go to source code">setName</a>( <span>string <var>$name</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3002,7 +3018,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setRequired">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#47-51" title="Go to source code">setRequired</a>( <span>boolean <var>$required</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#49-53" title="Go to source code">setRequired</a>( <span>boolean <var>$required</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3041,7 +3057,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setValidatorChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#53-57" title="Go to source code">setValidatorChain</a>( <span><code><a href="class-Zend.Validator.ValidatorChain.html">Zend\Validator\ValidatorChain</a></code> <var>$validatorChain</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#55-59" title="Go to source code">setValidatorChain</a>( <span><code><a href="class-Zend.Validator.ValidatorChain.html">Zend\Validator\ValidatorChain</a></code> <var>$validatorChain</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3080,7 +3096,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setValue">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#59-63" title="Go to source code">setValue</a>( <span>mixed <var>$value</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#61-65" title="Go to source code">setValue</a>( <span>mixed <var>$value</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3119,7 +3135,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_merge">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#65-69" title="Go to source code">merge</a>( <span><code><a href="class-Zend.InputFilter.InputInterface.html">Zend\InputFilter\InputInterface</a></code> <var>$input</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#67-71" title="Go to source code">merge</a>( <span><code><a href="class-Zend.InputFilter.InputInterface.html">Zend\InputFilter\InputInterface</a></code> <var>$input</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3146,7 +3162,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="allowEmpty" id="_allowEmpty">
+	<tr data-order="allowEmpty" id="_allowEmpty" class="deprecated">
 
 		<td class="attributes"><code>
 			 public 
@@ -3158,7 +3174,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_allowEmpty">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#71-74" title="Go to source code">allowEmpty</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#73-78" title="Go to source code">allowEmpty</a>( )</code>
 
 		<div class="description short">
 			
@@ -3167,6 +3183,10 @@
 		<div class="description detailed hidden">
 			
 
+				<h4>Deprecated</h4>
+				<div class="list">
+						2.4.8 Add Zend\Validator\NotEmpty validator to the ValidatorChain.<br>
+				</div>
 
 
 				<h4>Returns</h4>
@@ -3192,7 +3212,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_breakOnFailure">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#76-79" title="Go to source code">breakOnFailure</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#80-83" title="Go to source code">breakOnFailure</a>( )</code>
 
 		<div class="description short">
 			
@@ -3226,7 +3246,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getErrorMessage">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#81-84" title="Go to source code">getErrorMessage</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#85-88" title="Go to source code">getErrorMessage</a>( )</code>
 
 		<div class="description short">
 			
@@ -3260,7 +3280,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFilterChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#86-89" title="Go to source code">getFilterChain</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#90-93" title="Go to source code">getFilterChain</a>( )</code>
 
 		<div class="description short">
 			
@@ -3294,7 +3314,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getName">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#91-94" title="Go to source code">getName</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#95-98" title="Go to source code">getName</a>( )</code>
 
 		<div class="description short">
 			
@@ -3328,7 +3348,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRawValue">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#96-99" title="Go to source code">getRawValue</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#100-103" title="Go to source code">getRawValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -3362,7 +3382,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isRequired">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#101-104" title="Go to source code">isRequired</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#105-108" title="Go to source code">isRequired</a>( )</code>
 
 		<div class="description short">
 			
@@ -3396,7 +3416,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValidatorChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#106-109" title="Go to source code">getValidatorChain</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#110-113" title="Go to source code">getValidatorChain</a>( )</code>
 
 		<div class="description short">
 			
@@ -3430,7 +3450,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getValue">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#111-114" title="Go to source code">getValue</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#115-118" title="Go to source code">getValue</a>( )</code>
 
 		<div class="description short">
 			
@@ -3464,7 +3484,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isValid">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#116-119" title="Go to source code">isValid</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#120-123" title="Go to source code">isValid</a>( )</code>
 
 		<div class="description short">
 			
@@ -3491,14 +3511,14 @@
 		<td class="attributes"><code>
 			 public 
 
-			array
+			string[]
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMessages">#</a>
-		<code><a href="source-class-Zend.InputFilter.InputInterface.html#121-124" title="Go to source code">getMessages</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.InputInterface.html#125-128" title="Go to source code">getMessages</a>( )</code>
 
 		<div class="description short">
 			
@@ -3511,7 +3531,7 @@
 
 				<h4>Returns</h4>
 				<div class="list">
-					array
+					string[]
 				</div>
 
 
@@ -3546,7 +3566,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

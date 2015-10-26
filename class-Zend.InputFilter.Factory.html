@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2698,12 +2710,12 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Zend.InputFilter.ArrayInput.html">ArrayInput</a></li>
+				<li><a href="class-Zend.InputFilter.ArrayInput.html" class="deprecated">ArrayInput</a></li>
 				<li><a href="class-Zend.InputFilter.BaseInputFilter.html">BaseInputFilter</a></li>
 				<li><a href="class-Zend.InputFilter.CollectionInputFilter.html">CollectionInputFilter</a></li>
 				<li class="active"><a href="class-Zend.InputFilter.Factory.html">Factory</a></li>
 				<li><a href="class-Zend.InputFilter.FileInput.html">FileInput</a></li>
-				<li><a href="class-Zend.InputFilter.Input.html">Input</a></li>
+				<li><a href="class-Zend.InputFilter.Input.html" class="deprecated">Input</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilter.html">InputFilter</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterAbstractServiceFactory.html">InputFilterAbstractServiceFactory</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterPluginManager.html">InputFilterPluginManager</a></li>
@@ -2711,7 +2723,7 @@
 
 			<h3>Interfaces</h3>
 			<ul>
-				<li><a href="class-Zend.InputFilter.EmptyContextInterface.html">EmptyContextInterface</a></li>
+				<li><a href="class-Zend.InputFilter.EmptyContextInterface.html" class="deprecated">EmptyContextInterface</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterAwareInterface.html">InputFilterAwareInterface</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterInterface.html">InputFilterInterface</a></li>
 				<li><a href="class-Zend.InputFilter.InputFilterProviderInterface.html">InputFilterProviderInterface</a></li>
@@ -2778,7 +2790,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.InputFilter.html">InputFilter</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.InputFilter.Factory.html#20-415" title="Go to source code">zendframework/zend-inputfilter/src/Factory.php</a>
+			<b>Located at</b> <a href="source-class-Zend.InputFilter.Factory.html#19-425" title="Go to source code">zendframework/zend-inputfilter/src/Factory.php</a>
 		<br>
 	</div>
 
@@ -2798,7 +2810,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#37-48" title="Go to source code">__construct</a>( <span><code><a href="class-Zend.InputFilter.InputFilterPluginManager.html">Zend\InputFilter\InputFilterPluginManager</a></code> <var>$inputFilterManager</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#36-47" title="Go to source code">__construct</a>( <span><code><a href="class-Zend.InputFilter.InputFilterPluginManager.html">Zend\InputFilter\InputFilterPluginManager</a></code> <var>$inputFilterManager</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -2833,7 +2845,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDefaultFilterChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#50-60" title="Go to source code">setDefaultFilterChain</a>( <span><code><a href="class-Zend.Filter.FilterChain.html">Zend\Filter\FilterChain</a></code> <var>$filterChain</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#49-59" title="Go to source code">setDefaultFilterChain</a>( <span><code><a href="class-Zend.Filter.FilterChain.html">Zend\Filter\FilterChain</a></code> <var>$filterChain</var></span> )</code>
 
 		<div class="description short">
 			<p>Set default filter chain to use</p>
@@ -2872,7 +2884,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDefaultFilterChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#62-70" title="Go to source code">getDefaultFilterChain</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#61-69" title="Go to source code">getDefaultFilterChain</a>( )</code>
 
 		<div class="description short">
 			<p>Get default filter chain, if any</p>
@@ -2906,7 +2918,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearDefaultFilterChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#72-80" title="Go to source code">clearDefaultFilterChain</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#71-79" title="Go to source code">clearDefaultFilterChain</a>( )</code>
 
 		<div class="description short">
 			<p>Clear the default filter chain (i.e., don't inject one into new inputs)</p>
@@ -2936,7 +2948,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setDefaultValidatorChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#82-92" title="Go to source code">setDefaultValidatorChain</a>( <span><code><a href="class-Zend.Validator.ValidatorChain.html">Zend\Validator\ValidatorChain</a></code> <var>$validatorChain</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#81-91" title="Go to source code">setDefaultValidatorChain</a>( <span><code><a href="class-Zend.Validator.ValidatorChain.html">Zend\Validator\ValidatorChain</a></code> <var>$validatorChain</var></span> )</code>
 
 		<div class="description short">
 			<p>Set default validator chain to use</p>
@@ -2975,7 +2987,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDefaultValidatorChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#94-102" title="Go to source code">getDefaultValidatorChain</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#93-101" title="Go to source code">getDefaultValidatorChain</a>( )</code>
 
 		<div class="description short">
 			<p>Get default validator chain, if any</p>
@@ -3009,7 +3021,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_clearDefaultValidatorChain">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#104-112" title="Go to source code">clearDefaultValidatorChain</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#103-111" title="Go to source code">clearDefaultValidatorChain</a>( )</code>
 
 		<div class="description short">
 			<p>Clear the default validator chain (i.e., don't inject one into new inputs)</p>
@@ -3039,7 +3051,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setInputFilterManager">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#114-131" title="Go to source code">setInputFilterManager</a>( <span><code><a href="class-Zend.InputFilter.InputFilterPluginManager.html">Zend\InputFilter\InputFilterPluginManager</a></code> <var>$inputFilterManager</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#113-130" title="Go to source code">setInputFilterManager</a>( <span><code><a href="class-Zend.InputFilter.InputFilterPluginManager.html">Zend\InputFilter\InputFilterPluginManager</a></code> <var>$inputFilterManager</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3078,7 +3090,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInputFilterManager">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#133-143" title="Go to source code">getInputFilterManager</a>( )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#132-142" title="Go to source code">getInputFilterManager</a>( )</code>
 
 		<div class="description short">
 			
@@ -3112,7 +3124,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createInput">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#145-272" title="Go to source code">createInput</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|<code><a href="class-Zend.InputFilter.InputProviderInterface.html">Zend\InputFilter\InputProviderInterface</a></code> <var>$inputSpecification</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#144-282" title="Go to source code">createInput</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|<code><a href="class-Zend.InputFilter.InputProviderInterface.html">Zend\InputFilter\InputProviderInterface</a></code> <var>$inputSpecification</var></span> )</code>
 
 		<div class="description short">
 			<p>Factory for input objects</p>
@@ -3156,7 +3168,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createInputFilter">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#274-339" title="Go to source code">createInputFilter</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|<code><a href="class-Zend.InputFilter.InputFilterProviderInterface.html">Zend\InputFilter\InputFilterProviderInterface</a></code> <var>$inputFilterSpecification</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#284-349" title="Go to source code">createInputFilter</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|<code><a href="class-Zend.InputFilter.InputFilterProviderInterface.html">Zend\InputFilter\InputFilterProviderInterface</a></code> <var>$inputFilterSpecification</var></span> )</code>
 
 		<div class="description short">
 			<p>Factory for input filters</p>
@@ -3200,7 +3212,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_populateFilters">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#341-375" title="Go to source code">populateFilters</a>( <span><code><a href="class-Zend.Filter.FilterChain.html">Zend\Filter\FilterChain</a></code> <var>$chain</var></span>, <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$filters</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#351-385" title="Go to source code">populateFilters</a>( <span><code><a href="class-Zend.Filter.FilterChain.html">Zend\Filter\FilterChain</a></code> <var>$chain</var></span>, <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$filters</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3241,7 +3253,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_populateValidators">#</a>
-		<code><a href="source-class-Zend.InputFilter.Factory.html#377-414" title="Go to source code">populateValidators</a>( <span><code><a href="class-Zend.Validator.ValidatorChain.html">Zend\Validator\ValidatorChain</a></code> <var>$chain</var></span>, <span>array|<code><a href="class-Traversable.html">Traversable</a></code> <var>$validators</var></span> )</code>
+		<code><a href="source-class-Zend.InputFilter.Factory.html#387-424" title="Go to source code">populateValidators</a>( <span><code><a href="class-Zend.Validator.ValidatorChain.html">Zend\Validator\ValidatorChain</a></code> <var>$chain</var></span>, <span>string[]|<code><a href="class-Zend.Validator.ValidatorInterface.html">Zend\Validator\ValidatorInterface</a>[]</code> <var>$validators</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3292,7 +3304,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.InputFilter.Factory.html#22-25" title="Go to source code"><var>$defaultFilterChain</var></a>
+				<a href="source-class-Zend.InputFilter.Factory.html#21-24" title="Go to source code"><var>$defaultFilterChain</var></a>
 
 			<div class="description short">
 				
@@ -3317,7 +3329,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.InputFilter.Factory.html#27-30" title="Go to source code"><var>$defaultValidatorChain</var></a>
+				<a href="source-class-Zend.InputFilter.Factory.html#26-29" title="Go to source code"><var>$defaultValidatorChain</var></a>
 
 			<div class="description short">
 				
@@ -3342,7 +3354,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.InputFilter.Factory.html#32-35" title="Go to source code"><var>$inputFilterManager</var></a>
+				<a href="source-class-Zend.InputFilter.Factory.html#31-34" title="Go to source code"><var>$inputFilterManager</var></a>
 
 			<div class="description short">
 				
@@ -3374,7 +3386,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

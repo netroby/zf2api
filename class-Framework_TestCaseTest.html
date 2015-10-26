@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3565,7 +3585,7 @@
 				Class available since Release 2.0.0<br>
 				<b>Covers:</b>
 				PHPUnit_Framework_TestCase<br>
-			<b>Located at</b> <a href="source-class-Framework_TestCaseTest.html#24-518" title="Go to source code">phpunit/phpunit/tests/Framework/TestCaseTest.php</a>
+			<b>Located at</b> <a href="source-class-Framework_TestCaseTest.html#24-550" title="Go to source code">phpunit/phpunit/tests/Framework/TestCaseTest.php</a>
 		<br>
 	</div>
 
@@ -3615,7 +3635,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSuccess">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#45-53" title="Go to source code">testSuccess</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#45-55" title="Go to source code">testSuccess</a>( )</code>
 
 		<div class="description short">
 			
@@ -3645,7 +3665,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testFailure">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#55-63" title="Go to source code">testFailure</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#57-67" title="Go to source code">testFailure</a>( )</code>
 
 		<div class="description short">
 			
@@ -3675,7 +3695,67 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testError">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#65-73" title="Go to source code">testError</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#69-79" title="Go to source code">testError</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testSkipped" id="_testSkipped">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testSkipped">#</a>
+		<code><a href="source-class-Framework_TestCaseTest.html#81-92" title="Go to source code">testSkipped</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="testIncomplete" id="_testIncomplete">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_testIncomplete">#</a>
+		<code><a href="source-class-Framework_TestCaseTest.html#94-105" title="Go to source code">testIncomplete</a>( )</code>
 
 		<div class="description short">
 			
@@ -3705,7 +3785,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionInSetUp">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#75-85" title="Go to source code">testExceptionInSetUp</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#107-117" title="Go to source code">testExceptionInSetUp</a>( )</code>
 
 		<div class="description short">
 			
@@ -3735,7 +3815,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionInAssertPreConditions">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#87-97" title="Go to source code">testExceptionInAssertPreConditions</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#119-129" title="Go to source code">testExceptionInAssertPreConditions</a>( )</code>
 
 		<div class="description short">
 			
@@ -3765,7 +3845,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionInTest">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#99-109" title="Go to source code">testExceptionInTest</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#131-141" title="Go to source code">testExceptionInTest</a>( )</code>
 
 		<div class="description short">
 			
@@ -3795,7 +3875,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionInAssertPostConditions">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#111-121" title="Go to source code">testExceptionInAssertPostConditions</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#143-153" title="Go to source code">testExceptionInAssertPostConditions</a>( )</code>
 
 		<div class="description short">
 			
@@ -3825,7 +3905,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionInTearDown">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#123-133" title="Go to source code">testExceptionInTearDown</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#155-165" title="Go to source code">testExceptionInTearDown</a>( )</code>
 
 		<div class="description short">
 			
@@ -3855,7 +3935,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testNoArgTestCasePasses">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#135-145" title="Go to source code">testNoArgTestCasePasses</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#167-177" title="Go to source code">testNoArgTestCasePasses</a>( )</code>
 
 		<div class="description short">
 			
@@ -3885,7 +3965,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testWasRun">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#147-153" title="Go to source code">testWasRun</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#179-185" title="Go to source code">testWasRun</a>( )</code>
 
 		<div class="description short">
 			
@@ -3915,7 +3995,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testException">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#155-164" title="Go to source code">testException</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#187-196" title="Go to source code">testException</a>( )</code>
 
 		<div class="description short">
 			
@@ -3945,7 +4025,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionWithMessage">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#166-175" title="Go to source code">testExceptionWithMessage</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#198-207" title="Go to source code">testExceptionWithMessage</a>( )</code>
 
 		<div class="description short">
 			
@@ -3975,7 +4055,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionWithWrongMessage">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#177-190" title="Go to source code">testExceptionWithWrongMessage</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#209-222" title="Go to source code">testExceptionWithWrongMessage</a>( )</code>
 
 		<div class="description short">
 			
@@ -4005,7 +4085,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionWithRegexpMessage">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#192-201" title="Go to source code">testExceptionWithRegexpMessage</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#224-233" title="Go to source code">testExceptionWithRegexpMessage</a>( )</code>
 
 		<div class="description short">
 			
@@ -4035,7 +4115,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionWithWrongRegexpMessage">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#203-216" title="Go to source code">testExceptionWithWrongRegexpMessage</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#235-248" title="Go to source code">testExceptionWithWrongRegexpMessage</a>( )</code>
 
 		<div class="description short">
 			
@@ -4065,7 +4145,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExceptionWithInvalidRegexpMessage">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#218-232" title="Go to source code">testExceptionWithInvalidRegexpMessage</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#250-264" title="Go to source code">testExceptionWithInvalidRegexpMessage</a>( )</code>
 
 		<div class="description short">
 			
@@ -4099,7 +4179,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testNoException">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#234-243" title="Go to source code">testNoException</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#266-275" title="Go to source code">testNoException</a>( )</code>
 
 		<div class="description short">
 			
@@ -4129,7 +4209,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testWrongException">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#245-254" title="Go to source code">testWrongException</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#277-286" title="Go to source code">testWrongException</a>( )</code>
 
 		<div class="description short">
 			
@@ -4159,7 +4239,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGlobalsBackupPre">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#256-299" title="Go to source code">testGlobalsBackupPre</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#288-331" title="Go to source code">testGlobalsBackupPre</a>( )</code>
 
 		<div class="description short">
 			
@@ -4193,7 +4273,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testGlobalsBackupPost">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#301-319" title="Go to source code">testGlobalsBackupPost</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#333-351" title="Go to source code">testGlobalsBackupPost</a>( )</code>
 
 		<div class="description short">
 			
@@ -4223,7 +4303,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testStaticAttributesBackupPre">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#321-329" title="Go to source code">testStaticAttributesBackupPre</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#353-361" title="Go to source code">testStaticAttributesBackupPre</a>( )</code>
 
 		<div class="description short">
 			
@@ -4261,7 +4341,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testStaticAttributesBackupPost">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#331-338" title="Go to source code">testStaticAttributesBackupPost</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#363-370" title="Go to source code">testStaticAttributesBackupPost</a>( )</code>
 
 		<div class="description short">
 			
@@ -4295,7 +4375,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testIsInIsolationReturnsFalse">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#340-347" title="Go to source code">testIsInIsolationReturnsFalse</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#372-379" title="Go to source code">testIsInIsolationReturnsFalse</a>( )</code>
 
 		<div class="description short">
 			
@@ -4325,7 +4405,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testIsInIsolationReturnsTrue">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#349-357" title="Go to source code">testIsInIsolationReturnsTrue</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#381-389" title="Go to source code">testIsInIsolationReturnsTrue</a>( )</code>
 
 		<div class="description short">
 			
@@ -4355,7 +4435,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExpectOutputStringFooActualFoo">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#359-366" title="Go to source code">testExpectOutputStringFooActualFoo</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#391-398" title="Go to source code">testExpectOutputStringFooActualFoo</a>( )</code>
 
 		<div class="description short">
 			
@@ -4385,7 +4465,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExpectOutputStringFooActualBar">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#368-375" title="Go to source code">testExpectOutputStringFooActualBar</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#400-407" title="Go to source code">testExpectOutputStringFooActualBar</a>( )</code>
 
 		<div class="description short">
 			
@@ -4415,7 +4495,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExpectOutputRegexFooActualFoo">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#377-384" title="Go to source code">testExpectOutputRegexFooActualFoo</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#409-416" title="Go to source code">testExpectOutputRegexFooActualFoo</a>( )</code>
 
 		<div class="description short">
 			
@@ -4445,7 +4525,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testExpectOutputRegexFooActualBar">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#386-393" title="Go to source code">testExpectOutputRegexFooActualBar</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#418-425" title="Go to source code">testExpectOutputRegexFooActualBar</a>( )</code>
 
 		<div class="description short">
 			
@@ -4475,7 +4555,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSkipsIfRequiresHigherVersionOfPHPUnit">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#395-405" title="Go to source code">testSkipsIfRequiresHigherVersionOfPHPUnit</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#427-437" title="Go to source code">testSkipsIfRequiresHigherVersionOfPHPUnit</a>( )</code>
 
 		<div class="description short">
 			
@@ -4505,7 +4585,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSkipsIfRequiresHigherVersionOfPHP">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#407-417" title="Go to source code">testSkipsIfRequiresHigherVersionOfPHP</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#439-449" title="Go to source code">testSkipsIfRequiresHigherVersionOfPHP</a>( )</code>
 
 		<div class="description short">
 			
@@ -4535,7 +4615,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSkipsIfRequiresNonExistingOs">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#419-429" title="Go to source code">testSkipsIfRequiresNonExistingOs</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#451-461" title="Go to source code">testSkipsIfRequiresNonExistingOs</a>( )</code>
 
 		<div class="description short">
 			
@@ -4565,7 +4645,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSkipsIfRequiresNonExistingFunction">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#431-441" title="Go to source code">testSkipsIfRequiresNonExistingFunction</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#463-473" title="Go to source code">testSkipsIfRequiresNonExistingFunction</a>( )</code>
 
 		<div class="description short">
 			
@@ -4595,7 +4675,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSkipsIfRequiresNonExistingExtension">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#443-452" title="Go to source code">testSkipsIfRequiresNonExistingExtension</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#475-484" title="Go to source code">testSkipsIfRequiresNonExistingExtension</a>( )</code>
 
 		<div class="description short">
 			
@@ -4625,7 +4705,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testSkipsProvidesMessagesForAllSkippingReasons">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#454-469" title="Go to source code">testSkipsProvidesMessagesForAllSkippingReasons</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#486-501" title="Go to source code">testSkipsProvidesMessagesForAllSkippingReasons</a>( )</code>
 
 		<div class="description short">
 			
@@ -4655,7 +4735,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testRequiringAnExistingMethodDoesNotSkip">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#471-476" title="Go to source code">testRequiringAnExistingMethodDoesNotSkip</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#503-508" title="Go to source code">testRequiringAnExistingMethodDoesNotSkip</a>( )</code>
 
 		<div class="description short">
 			
@@ -4685,7 +4765,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testRequiringAnExistingFunctionDoesNotSkip">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#478-483" title="Go to source code">testRequiringAnExistingFunctionDoesNotSkip</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#510-515" title="Go to source code">testRequiringAnExistingFunctionDoesNotSkip</a>( )</code>
 
 		<div class="description short">
 			
@@ -4715,7 +4795,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testRequiringAnExistingExtensionDoesNotSkip">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#485-490" title="Go to source code">testRequiringAnExistingExtensionDoesNotSkip</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#517-522" title="Go to source code">testRequiringAnExistingExtensionDoesNotSkip</a>( )</code>
 
 		<div class="description short">
 			
@@ -4745,7 +4825,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testRequiringAnExistingOsDoesNotSkip">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#492-497" title="Go to source code">testRequiringAnExistingOsDoesNotSkip</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#524-529" title="Go to source code">testRequiringAnExistingOsDoesNotSkip</a>( )</code>
 
 		<div class="description short">
 			
@@ -4775,7 +4855,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testCurrentWorkingDirectoryIsRestored">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#499-507" title="Go to source code">testCurrentWorkingDirectoryIsRestored</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#531-539" title="Go to source code">testCurrentWorkingDirectoryIsRestored</a>( )</code>
 
 		<div class="description short">
 			
@@ -4805,7 +4885,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_testTypeErrorCanBeExpected">#</a>
-		<code><a href="source-class-Framework_TestCaseTest.html#509-517" title="Go to source code">testTypeErrorCanBeExpected</a>( )</code>
+		<code><a href="source-class-Framework_TestCaseTest.html#541-549" title="Go to source code">testTypeErrorCanBeExpected</a>( )</code>
 
 		<div class="description short">
 			
@@ -5154,7 +5234,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

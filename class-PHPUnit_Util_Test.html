@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3541,7 +3561,7 @@
 
 				<b>Since:</b>
 				Class available since Release 3.0.0<br>
-			<b>Located at</b> <a href="source-class-PHPUnit_Util_Test.html#18-1019" title="Go to source code">phpunit/phpunit/src/Util/Test.php</a>
+			<b>Located at</b> <a href="source-class-PHPUnit_Util_Test.html#18-1084" title="Go to source code">phpunit/phpunit/src/Util/Test.php</a>
 		<br>
 	</div>
 
@@ -3561,7 +3581,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_describe">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#41-65" title="Go to source code">describe</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span>boolean <var>$asString</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#41-66" title="Go to source code">describe</a>( <span><code><a href="class-PHPUnit_Framework_Test.html">PHPUnit_Framework_Test</a></code> <var>$test</var></span>, <span>boolean <var>$asString</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			
@@ -3602,7 +3622,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLinesToBeCovered">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#67-86" title="Go to source code">getLinesToBeCovered</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#68-90" title="Go to source code">getLinesToBeCovered</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3651,7 +3671,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLinesToBeUsed">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#88-99" title="Go to source code">getLinesToBeUsed</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#92-105" title="Go to source code">getLinesToBeUsed</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns lines of code specified with the @uses annotation.</p>
@@ -3696,7 +3716,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRequirements">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#160-202" title="Go to source code">getRequirements</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#171-215" title="Go to source code">getRequirements</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the requirements for a test.</p>
@@ -3741,7 +3761,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getMissingRequirements">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#204-254" title="Go to source code">getMissingRequirements</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#217-269" title="Go to source code">getMissingRequirements</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the missing requirements for a test.</p>
@@ -3786,7 +3806,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getExpectedException">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#256-315" title="Go to source code">getExpectedException</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#271-332" title="Go to source code">getExpectedException</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the expected exception for a test.</p>
@@ -3831,7 +3851,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProvidedData">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#338-380" title="Go to source code">getProvidedData</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#356-401" title="Go to source code">getProvidedData</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the provided data for a method.</p>
@@ -3852,7 +3872,7 @@
 				<h4>Returns</h4>
 				<div class="list">
 					array|<code><a href="class-Iterator.html">Iterator</a></code><br><p>when a data provider is specified and exists
-                                               null           when no data provider is specified</p>
+                       null           when no data provider is specified</p>
 				</div>
 
 				<h4>Throws</h4>
@@ -3881,7 +3901,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDataFromTestWithAnnotation">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#432-460" title="Go to source code">getDataFromTestWithAnnotation</a>( <span>string <var>$docComment</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#455-485" title="Go to source code">getDataFromTestWithAnnotation</a>( <span>string <var>$docComment</var></span> )</code>
 
 		<div class="description short">
 			
@@ -3900,7 +3920,7 @@
 				<h4>Returns</h4>
 				<div class="list">
 					array<br><p>when @testWith annotation is defined
-                                               null  when @testWith annotation is omitted</p>
+              null  when @testWith annotation is omitted</p>
 				</div>
 
 				<h4>Throws</h4>
@@ -3925,7 +3945,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_parseTestMethodAnnotations">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#472-500" title="Go to source code">parseTestMethodAnnotations</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#497-528" title="Go to source code">parseTestMethodAnnotations</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			
@@ -3974,7 +3994,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBackupSettings">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#524-546" title="Go to source code">getBackupSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#554-578" title="Go to source code">getBackupSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the backup settings for a test.</p>
@@ -4019,7 +4039,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDependencies">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#548-577" title="Go to source code">getDependencies</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#580-611" title="Go to source code">getDependencies</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the dependencies for a test class or method.</p>
@@ -4064,7 +4084,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getErrorHandlerSettings">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#579-594" title="Go to source code">getErrorHandlerSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#613-630" title="Go to source code">getErrorHandlerSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the error handler settings for a test.</p>
@@ -4109,7 +4129,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGroups">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#596-650" title="Go to source code">getGroups</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var> = <span class="php-quote">''</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#632-688" title="Go to source code">getGroups</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var> = <span class="php-quote">''</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the groups for a test class or method.</p>
@@ -4154,7 +4174,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSize">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#652-679" title="Go to source code">getSize</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#690-719" title="Go to source code">getSize</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the size of the test.</p>
@@ -4199,7 +4219,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTickets">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#681-707" title="Go to source code">getTickets</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#721-749" title="Go to source code">getTickets</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the tickets for a test class or method.</p>
@@ -4244,7 +4264,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getProcessIsolationSettings">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#709-730" title="Go to source code">getProcessIsolationSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#751-774" title="Go to source code">getProcessIsolationSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the process isolation settings for a test.</p>
@@ -4289,7 +4309,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPreserveGlobalStateSettings">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#732-747" title="Go to source code">getPreserveGlobalStateSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#776-793" title="Go to source code">getPreserveGlobalStateSettings</a>( <span>string <var>$className</var></span>, <span>string <var>$methodName</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns the preserve global state settings for a test.</p>
@@ -4334,7 +4354,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getHookMethods">#</a>
-		<code><a href="source-class-PHPUnit_Util_Test.html#749-788" title="Go to source code">getHookMethods</a>( <span>string <var>$className</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Test.html#795-836" title="Go to source code">getHookMethods</a>( <span>string <var>$className</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4634,7 +4654,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

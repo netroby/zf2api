@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2700,8 +2712,10 @@
 			<ul>
 				<li><a href="class-SebastianBergmann.GlobalState.Blacklist.html">Blacklist</a></li>
 				<li><a href="class-SebastianBergmann.GlobalState.BlacklistTest.html">BlacklistTest</a></li>
+				<li><a href="class-SebastianBergmann.GlobalState.CodeExporter.html">CodeExporter</a></li>
 				<li><a href="class-SebastianBergmann.GlobalState.Restorer.html">Restorer</a></li>
 				<li class="active"><a href="class-SebastianBergmann.GlobalState.Snapshot.html">Snapshot</a></li>
+				<li><a href="class-SebastianBergmann.GlobalState.SnapshotTest.html">SnapshotTest</a></li>
 			</ul>
 
 			<h3>Interfaces</h3>
@@ -2769,15 +2783,7 @@
 		<b>Namespace:</b> <a href="namespace-SebastianBergmann.html">SebastianBergmann</a>\<a href="namespace-SebastianBergmann.GlobalState.html">GlobalState</a><br>
 		
 
-				<b>Copyright:</b>
-				2001-2014 Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>License:</b>
-				<a href="http://www.opensource.org/licenses/BSD-3-Clause">The BSD 3-Clause License</a><br>
-				<b>Author:</b>
-				Sebastian Bergmann <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;">&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6e;&#x40;&#x70;&#x68;&#x70;&#x75;&#x6e;&#x69;&#x74;&#x2e;&#x64;&#x65;</a><br>
-				<b>Link:</b>
-				<a href="http://www.github.com/sebastianbergmann/global-state">http://www.github.com/sebastianbergmann/global-state</a><br>
-			<b>Located at</b> <a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#48-443" title="Go to source code">sebastian/global-state/src/Snapshot.php</a>
+			<b>Located at</b> <a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#16-423" title="Go to source code">sebastian/global-state/src/Snapshot.php</a>
 		<br>
 	</div>
 
@@ -2797,7 +2803,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#118-176" title="Go to source code">__construct</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Blacklist.html">SebastianBergmann\GlobalState\Blacklist</a></code> <var>$blacklist</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$includeGlobalVariables</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeStaticAttributes</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeConstants</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeFunctions</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeClasses</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeInterfaces</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeTraits</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeIniSettings</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeIncludedFiles</var> = <span class="php-keyword1">true</span></span> )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#81-139" title="Go to source code">__construct</a>( <span><code><a href="class-SebastianBergmann.GlobalState.Blacklist.html">SebastianBergmann\GlobalState\Blacklist</a></code> <var>$blacklist</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$includeGlobalVariables</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeStaticAttributes</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeConstants</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeFunctions</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeClasses</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeInterfaces</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeTraits</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeIniSettings</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$includeIncludedFiles</var> = <span class="php-keyword1">true</span></span> )</code>
 
 		<div class="description short">
 			<p>Creates a snapshot of the current global state.</p>
@@ -2850,7 +2856,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_blacklist">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#178-184" title="Go to source code">blacklist</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#141-147" title="Go to source code">blacklist</a>( )</code>
 
 		<div class="description short">
 			
@@ -2884,7 +2890,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_globalVariables">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#186-192" title="Go to source code">globalVariables</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#149-155" title="Go to source code">globalVariables</a>( )</code>
 
 		<div class="description short">
 			
@@ -2918,7 +2924,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_superGlobalVariables">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#194-200" title="Go to source code">superGlobalVariables</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#157-163" title="Go to source code">superGlobalVariables</a>( )</code>
 
 		<div class="description short">
 			
@@ -2952,7 +2958,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_superGlobalArrays">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#202-210" title="Go to source code">superGlobalArrays</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#165-173" title="Go to source code">superGlobalArrays</a>( )</code>
 
 		<div class="description short">
 			<p>Returns a list of all super-global variable arrays.</p>
@@ -2986,7 +2992,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_staticAttributes">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#212-218" title="Go to source code">staticAttributes</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#175-181" title="Go to source code">staticAttributes</a>( )</code>
 
 		<div class="description short">
 			
@@ -3020,7 +3026,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_iniSettings">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#220-226" title="Go to source code">iniSettings</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#183-189" title="Go to source code">iniSettings</a>( )</code>
 
 		<div class="description short">
 			
@@ -3054,7 +3060,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_includedFiles">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#228-234" title="Go to source code">includedFiles</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#191-197" title="Go to source code">includedFiles</a>( )</code>
 
 		<div class="description short">
 			
@@ -3088,7 +3094,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_constants">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#236-242" title="Go to source code">constants</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#199-205" title="Go to source code">constants</a>( )</code>
 
 		<div class="description short">
 			
@@ -3122,7 +3128,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_functions">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#244-250" title="Go to source code">functions</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#207-213" title="Go to source code">functions</a>( )</code>
 
 		<div class="description short">
 			
@@ -3156,7 +3162,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_interfaces">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#252-258" title="Go to source code">interfaces</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#215-221" title="Go to source code">interfaces</a>( )</code>
 
 		<div class="description short">
 			
@@ -3190,7 +3196,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_classes">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#260-266" title="Go to source code">classes</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#223-229" title="Go to source code">classes</a>( )</code>
 
 		<div class="description short">
 			
@@ -3224,7 +3230,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_traits">#</a>
-		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#268-274" title="Go to source code">traits</a>( )</code>
+		<code><a href="source-class-SebastianBergmann.GlobalState.Snapshot.html#231-237" title="Go to source code">traits</a>( )</code>
 
 		<div class="description short">
 			
@@ -3272,7 +3278,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

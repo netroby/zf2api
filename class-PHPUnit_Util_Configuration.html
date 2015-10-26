@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2735,6 +2747,7 @@
 				<li><a href="class-CoverageMethodParenthesesTest.html" class="invalid">CoverageMethodParenthesesTest</a></li>
 				<li><a href="class-CoverageMethodParenthesesWhitespaceTest.html" class="invalid">CoverageMethodParenthesesWhitespaceTest</a></li>
 				<li><a href="class-CoverageMethodTest.html" class="invalid">CoverageMethodTest</a></li>
+				<li><a href="class-CoverageNamespacedFunctionTest.html">CoverageNamespacedFunctionTest</a></li>
 				<li><a href="class-CoverageNoneTest.html" class="invalid">CoverageNoneTest</a></li>
 				<li><a href="class-CoverageNothingTest.html" class="invalid">CoverageNothingTest</a></li>
 				<li><a href="class-CoverageNotPrivateTest.html" class="invalid">CoverageNotPrivateTest</a></li>
@@ -3238,10 +3251,13 @@
 				<li><a href="class-Struct.html">Struct</a></li>
 				<li><a href="class-Success.html">Success</a></li>
 				<li><a href="class-TemplateMethodsTest.html">TemplateMethodsTest</a></li>
+				<li><a href="class-Test.html">Test</a></li>
 				<li><a href="class-TestClass.html">TestClass</a></li>
 				<li><a href="class-TestError.html">TestError</a></li>
+				<li><a href="class-TestIncomplete.html">TestIncomplete</a></li>
 				<li><a href="class-TestIterator.html">TestIterator</a></li>
 				<li><a href="class-TestIterator2.html">TestIterator2</a></li>
+				<li><a href="class-TestSkipped.html">TestSkipped</a></li>
 				<li><a href="class-TestWithTest.html">TestWithTest</a></li>
 				<li><a href="class-Text_Template.html">Text_Template</a></li>
 				<li><a href="class-ThrowExceptionTestCase.html">ThrowExceptionTestCase</a></li>
@@ -3267,6 +3283,7 @@
 				<li><a href="class-i.html">i</a></li>
 				<li><a href="class-InterfaceWithStaticMethod.html">InterfaceWithStaticMethod</a></li>
 				<li><a href="class-iTemplate.html">iTemplate</a></li>
+				<li><a href="class-MockTestInterface.html">MockTestInterface</a></li>
 				<li><a href="class-PHP_CodeCoverage_Driver.html">PHP_CodeCoverage_Driver</a></li>
 				<li><a href="class-PHPUnit_Exception.html">PHPUnit_Exception</a></li>
 				<li><a href="class-PHPUnit_Framework_IncompleteTest.html">PHPUnit_Framework_IncompleteTest</a></li>
@@ -3451,7 +3468,10 @@
 				<li><a href="function-fileExists.html">fileExists</a></li>
 				<li><a href="function-foo.html" class="invalid">foo</a></li>
 				<li><a href="function-functionCallback.html">functionCallback</a></li>
+				<li><a href="function-getNewValidTlds.html">getNewValidTlds</a></li>
+				<li><a href="function-getOfficialTLDs.html">getOfficialTLDs</a></li>
 				<li><a href="function-getPunycodeDecoder.html">getPunycodeDecoder</a></li>
+				<li><a href="function-getVersionFromString.html">getVersionFromString</a></li>
 				<li><a href="function-globalFunction.html" class="invalid">globalFunction</a></li>
 				<li><a href="function-greaterThan.html">greaterThan</a></li>
 				<li><a href="function-greaterThanOrEqual.html">greaterThanOrEqual</a></li>
@@ -3666,7 +3686,7 @@
 
 				<b>Since:</b>
 				Class available since Release 3.2.0<br>
-			<b>Located at</b> <a href="source-class-PHPUnit_Util_Configuration.html#11-1133" title="Go to source code">phpunit/phpunit/src/Util/Configuration.php</a>
+			<b>Located at</b> <a href="source-class-PHPUnit_Util_Configuration.html#11-1155" title="Go to source code">phpunit/phpunit/src/Util/Configuration.php</a>
 		<br>
 	</div>
 
@@ -3721,7 +3741,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstance">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#169-194" title="Go to source code">getInstance</a>( <span>string <var>$filename</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#169-196" title="Go to source code">getInstance</a>( <span>string <var>$filename</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns a PHPUnit configuration object.</p>
@@ -3768,7 +3788,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFilename">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#196-205" title="Go to source code">getFilename</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#198-208" title="Go to source code">getFilename</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the realpath to the configuration file.</p>
@@ -3806,7 +3826,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getFilterConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#207-280" title="Go to source code">getFilterConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#210-284" title="Go to source code">getFilterConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the configuration for SUT filtering.</p>
@@ -3844,7 +3864,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getGroupConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#282-304" title="Go to source code">getGroupConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#286-309" title="Go to source code">getGroupConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the configuration for groups.</p>
@@ -3882,7 +3902,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getListenerConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#306-351" title="Go to source code">getListenerConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#311-357" title="Go to source code">getListenerConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the configuration for listeners.</p>
@@ -3920,7 +3940,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getLoggingConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#353-419" title="Go to source code">getLoggingConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#359-425" title="Go to source code">getLoggingConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the logging configuration.</p>
@@ -3954,7 +3974,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPHPConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#421-474" title="Go to source code">getPHPConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#427-481" title="Go to source code">getPHPConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the PHP configuration.</p>
@@ -3992,7 +4012,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_handlePHPConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#476-537" title="Go to source code">handlePHPConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#483-544" title="Go to source code">handlePHPConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Handles the PHP configuration.</p>
@@ -4026,7 +4046,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getPHPUnitConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#539-793" title="Go to source code">getPHPUnitConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#546-801" title="Go to source code">getPHPUnitConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the PHPUnit configuration.</p>
@@ -4064,7 +4084,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getSeleniumBrowserConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#795-843" title="Go to source code">getSeleniumBrowserConfiguration</a>( )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#803-852" title="Go to source code">getSeleniumBrowserConfiguration</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the SeleniumTestCase browser configuration.</p>
@@ -4102,7 +4122,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTestSuiteConfiguration">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#845-874" title="Go to source code">getTestSuiteConfiguration</a>( <span> <var>$testSuiteFilter</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#854-884" title="Go to source code">getTestSuiteConfiguration</a>( <span> <var>$testSuiteFilter</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Returns the test suite configuration.</p>
@@ -4140,7 +4160,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getTestSuite">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#876-992" title="Go to source code">getTestSuite</a>( <span><code><a href="class-DOMElement.html">DOMElement</a></code> <var>$testSuiteNode</var></span>, <span> <var>$testSuiteFilter</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#886-1004" title="Go to source code">getTestSuite</a>( <span><code><a href="class-DOMElement.html">DOMElement</a></code> <var>$testSuiteNode</var></span>, <span> <var>$testSuiteFilter</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			
@@ -4185,7 +4205,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getBoolean">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#994-1009" title="Go to source code">getBoolean</a>( <span>string <var>$value</var></span>, <span>boolean <var>$default</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#1006-1023" title="Go to source code">getBoolean</a>( <span>string <var>$value</var></span>, <span>boolean <var>$default</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4230,7 +4250,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInteger">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#1011-1024" title="Go to source code">getInteger</a>( <span>string <var>$value</var></span>, <span>boolean <var>$default</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#1025-1040" title="Go to source code">getInteger</a>( <span>string <var>$value</var></span>, <span>boolean <var>$default</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4275,7 +4295,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_readFilterDirectories">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#1026-1069" title="Go to source code">readFilterDirectories</a>( <span>string <var>$query</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#1042-1087" title="Go to source code">readFilterDirectories</a>( <span>string <var>$query</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4318,7 +4338,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_readFilterFiles">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#1071-1088" title="Go to source code">readFilterFiles</a>( <span>string <var>$query</var></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#1089-1108" title="Go to source code">readFilterFiles</a>( <span>string <var>$query</var></span> )</code>
 
 		<div class="description short">
 			
@@ -4361,7 +4381,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_toAbsolutePath">#</a>
-		<code><a href="source-class-PHPUnit_Util_Configuration.html#1090-1132" title="Go to source code">toAbsolutePath</a>( <span>string <var>$path</var></span>, <span>boolean <var>$useIncludePath</var> = <span class="php-keyword1">false</span></span> )</code>
+		<code><a href="source-class-PHPUnit_Util_Configuration.html#1110-1154" title="Go to source code">toAbsolutePath</a>( <span>string <var>$path</var></span>, <span>boolean <var>$useIncludePath</var> = <span class="php-keyword1">false</span></span> )</code>
 
 		<div class="description short">
 			
@@ -4498,7 +4518,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

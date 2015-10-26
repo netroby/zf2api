@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2708,6 +2720,10 @@
 				<li><a href="class-Zend.Db.TableGateway.Feature.SequenceFeature.html">SequenceFeature</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html">EventFeatureEventsInterface</a></li>
+			</ul>
 
 
 
@@ -2768,6 +2784,8 @@
 			<img src="resources/inherit.png" alt="Extended by">
 <b><span>Zend\Db\TableGateway\Feature\EventFeature</span></b>			
 			 implements 
+				<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html"><span>Zend\Db\TableGateway\Feature\EventFeatureEventsInterface</span></a>, 
+			
 				<a href="class-Zend.EventManager.EventsCapableInterface.html"><span>Zend\EventManager\EventsCapableInterface</span></a>
 			
 			
@@ -2787,7 +2805,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Db.html">Db</a>\<a href="namespace-Zend.Db.TableGateway.html">TableGateway</a>\<a href="namespace-Zend.Db.TableGateway.Feature.html">Feature</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#23-270" title="Go to source code">zendframework/zend-db/src/TableGateway/Feature/EventFeature.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#23-257" title="Go to source code">zendframework/zend-db/src/TableGateway/Feature/EventFeature.php</a>
 		<br>
 	</div>
 
@@ -2807,7 +2825,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#50-67" title="Go to source code">__construct</a>( <span><code><a href="class-Zend.EventManager.EventManagerInterface.html">Zend\EventManager\EventManagerInterface</a></code> <var>$eventManager</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Zend.Db.TableGateway.Feature.EventFeature.TableGatewayEvent.html">Zend\Db\TableGateway\Feature\EventFeature\TableGatewayEvent</a></code> <var>$tableGatewayEvent</var> = <span class="php-keyword1">null</span> </span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#37-54" title="Go to source code">__construct</a>( <span><code><a href="class-Zend.EventManager.EventManagerInterface.html">Zend\EventManager\EventManagerInterface</a></code> <var>$eventManager</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-Zend.Db.TableGateway.Feature.EventFeature.TableGatewayEvent.html">Zend\Db\TableGateway\Feature\EventFeature\TableGatewayEvent</a></code> <var>$tableGatewayEvent</var> = <span class="php-keyword1">null</span> </span> )</code>
 
 		<div class="description short">
 			
@@ -2844,7 +2862,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEventManager">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#69-77" title="Go to source code">getEventManager</a>( )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#56-64" title="Go to source code">getEventManager</a>( )</code>
 
 		<div class="description short">
 			<p>Retrieve composed event manager instance</p>
@@ -2880,7 +2898,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getEvent">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#79-87" title="Go to source code">getEvent</a>( )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#66-74" title="Go to source code">getEvent</a>( )</code>
 
 		<div class="description short">
 			<p>Retrieve composed event instance</p>
@@ -2914,7 +2932,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_preInitialize">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#89-107" title="Go to source code">preInitialize</a>( )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#76-94" title="Go to source code">preInitialize</a>( )</code>
 
 		<div class="description short">
 			<p>Initialize feature and trigger "preInitialize" event</p>
@@ -2948,7 +2966,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_postInitialize">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#109-118" title="Go to source code">postInitialize</a>( )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#96-105" title="Go to source code">postInitialize</a>( )</code>
 
 		<div class="description short">
 			<p>Trigger the "postInitialize" event</p>
@@ -2978,7 +2996,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_preSelect">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#120-134" title="Go to source code">preSelect</a>( <span><code><a href="class-Zend.Db.Sql.Select.html">Zend\Db\Sql\Select</a></code> <var>$select</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#107-121" title="Go to source code">preSelect</a>( <span><code><a href="class-Zend.Db.Sql.Select.html">Zend\Db\Sql\Select</a></code> <var>$select</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "preSelect" event</p>
@@ -3016,7 +3034,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_postSelect">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#136-158" title="Go to source code">postSelect</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span>, <span><code><a href="class-Zend.Db.ResultSet.ResultSetInterface.html">Zend\Db\ResultSet\ResultSetInterface</a></code> <var>$resultSet</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#123-145" title="Go to source code">postSelect</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span>, <span><code><a href="class-Zend.Db.ResultSet.ResultSetInterface.html">Zend\Db\ResultSet\ResultSetInterface</a></code> <var>$resultSet</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "postSelect" event</p>
@@ -3060,7 +3078,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_preInsert">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#160-174" title="Go to source code">preInsert</a>( <span><code><a href="class-Zend.Db.Sql.Insert.html">Zend\Db\Sql\Insert</a></code> <var>$insert</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#147-161" title="Go to source code">preInsert</a>( <span><code><a href="class-Zend.Db.Sql.Insert.html">Zend\Db\Sql\Insert</a></code> <var>$insert</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "preInsert" event</p>
@@ -3098,7 +3116,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_postInsert">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#176-195" title="Go to source code">postInsert</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#163-182" title="Go to source code">postInsert</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "postInsert" event</p>
@@ -3139,7 +3157,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_preUpdate">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#197-211" title="Go to source code">preUpdate</a>( <span><code><a href="class-Zend.Db.Sql.Update.html">Zend\Db\Sql\Update</a></code> <var>$update</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#184-198" title="Go to source code">preUpdate</a>( <span><code><a href="class-Zend.Db.Sql.Update.html">Zend\Db\Sql\Update</a></code> <var>$update</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "preUpdate" event</p>
@@ -3177,7 +3195,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_postUpdate">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#213-232" title="Go to source code">postUpdate</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#200-219" title="Go to source code">postUpdate</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "postUpdate" event</p>
@@ -3218,7 +3236,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_preDelete">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#234-248" title="Go to source code">preDelete</a>( <span><code><a href="class-Zend.Db.Sql.Delete.html">Zend\Db\Sql\Delete</a></code> <var>$delete</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#221-235" title="Go to source code">preDelete</a>( <span><code><a href="class-Zend.Db.Sql.Delete.html">Zend\Db\Sql\Delete</a></code> <var>$delete</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "preDelete" event</p>
@@ -3256,7 +3274,7 @@ instance. It then triggers the "preInitialize" event.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_postDelete">#</a>
-		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#250-269" title="Go to source code">postDelete</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span> )</code>
+		<code><a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#237-256" title="Go to source code">postDelete</a>( <span><code><a href="class-Zend.Db.Adapter.Driver.StatementInterface.html">Zend\Db\Adapter\Driver\StatementInterface</a></code> <var>$statement</var></span>, <span><code><a href="class-Zend.Db.Adapter.Driver.ResultInterface.html">Zend\Db\Adapter\Driver\ResultInterface</a></code> <var>$result</var></span> )</code>
 
 		<div class="description short">
 			<p>Trigger the "postDelete" event</p>
@@ -3336,250 +3354,24 @@ instance. It then triggers the "preInitialize" event.</p>
 
 
 
-	<table class="summary constants" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="EVENT_PRE_INITIALIZE" id="EVENT_PRE_INITIALIZE">
 
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#25" title="Go to source code"><b>EVENT_PRE_INITIALIZE</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_PRE_INITIALIZE" class="anchor">#</a>
-				<code><span class="php-quote">'preInitialize'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_POST_INITIALIZE" id="EVENT_POST_INITIALIZE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#26" title="Go to source code"><b>EVENT_POST_INITIALIZE</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_POST_INITIALIZE" class="anchor">#</a>
-				<code><span class="php-quote">'postInitialize'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_PRE_SELECT" id="EVENT_PRE_SELECT">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#28" title="Go to source code"><b>EVENT_PRE_SELECT</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_PRE_SELECT" class="anchor">#</a>
-				<code><span class="php-quote">'preSelect'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_POST_SELECT" id="EVENT_POST_SELECT">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#29" title="Go to source code"><b>EVENT_POST_SELECT</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_POST_SELECT" class="anchor">#</a>
-				<code><span class="php-quote">'postSelect'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_PRE_INSERT" id="EVENT_PRE_INSERT">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#31" title="Go to source code"><b>EVENT_PRE_INSERT</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_PRE_INSERT" class="anchor">#</a>
-				<code><span class="php-quote">'preInsert'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_POST_INSERT" id="EVENT_POST_INSERT">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#32" title="Go to source code"><b>EVENT_POST_INSERT</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_POST_INSERT" class="anchor">#</a>
-				<code><span class="php-quote">'postInsert'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_PRE_DELETE" id="EVENT_PRE_DELETE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#34" title="Go to source code"><b>EVENT_PRE_DELETE</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_PRE_DELETE" class="anchor">#</a>
-				<code><span class="php-quote">'preDelete'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_POST_DELETE" id="EVENT_POST_DELETE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#35" title="Go to source code"><b>EVENT_POST_DELETE</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_POST_DELETE" class="anchor">#</a>
-				<code><span class="php-quote">'postDelete'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_PRE_UPDATE" id="EVENT_PRE_UPDATE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#37" title="Go to source code"><b>EVENT_PRE_UPDATE</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_PRE_UPDATE" class="anchor">#</a>
-				<code><span class="php-quote">'preUpdate'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="EVENT_POST_UPDATE" id="EVENT_POST_UPDATE">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#38" title="Go to source code"><b>EVENT_POST_UPDATE</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#EVENT_POST_UPDATE" class="anchor">#</a>
-				<code><span class="php-quote">'postUpdate'</span></code>
-			</div>
-		</td>
+	<table class="summary inherited">
+	<caption>Constants inherited from <a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#constants">Zend\Db\TableGateway\Feature\EventFeatureEventsInterface</a></caption>
+	<tr>
+		<td><code>
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_POST_DELETE"><b>EVENT_POST_DELETE</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_POST_INITIALIZE"><b>EVENT_POST_INITIALIZE</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_POST_INSERT"><b>EVENT_POST_INSERT</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_POST_SELECT"><b>EVENT_POST_SELECT</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_POST_UPDATE"><b>EVENT_POST_UPDATE</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_PRE_DELETE"><b>EVENT_PRE_DELETE</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_PRE_INITIALIZE"><b>EVENT_PRE_INITIALIZE</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_PRE_INSERT"><b>EVENT_PRE_INSERT</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_PRE_SELECT"><b>EVENT_PRE_SELECT</b></a>, 
+			<a href="class-Zend.Db.TableGateway.Feature.EventFeatureEventsInterface.html#EVENT_PRE_UPDATE"><b>EVENT_PRE_UPDATE</b></a>
+		</code></td>
 	</tr>
 	</table>
-
 
 
 
@@ -3592,7 +3384,7 @@ instance. It then triggers the "preInitialize" event.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#40-43" title="Go to source code"><var>$eventManager</var></a>
+				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#27-30" title="Go to source code"><var>$eventManager</var></a>
 
 			<div class="description short">
 				
@@ -3617,7 +3409,7 @@ instance. It then triggers the "preInitialize" event.</p>
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#45-48" title="Go to source code"><var>$event</var></a>
+				<a href="source-class-Zend.Db.TableGateway.Feature.EventFeature.html#32-35" title="Go to source code"><var>$event</var></a>
 
 			<div class="description short">
 				
@@ -3683,7 +3475,7 @@ instance. It then triggers the "preInitialize" event.</p>
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>

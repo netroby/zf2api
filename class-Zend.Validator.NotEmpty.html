@@ -90,6 +90,11 @@
 						</li>
 							</ul></li>
 				<li>
+					<a href="namespace-foo.html">
+						foo					</a>
+
+						</li>
+				<li>
 					<a href="namespace-Foo.html">
 						Foo<span></span>
 					</a>
@@ -870,9 +875,16 @@
 						</li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.html">
-						Oci8					</a>
+						Oci8<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Zend.Db.Adapter.Driver.Oci8.Feature.html">
+						Feature					</a>
 
 						</li>
+							</ul></li>
 				<li>
 					<a href="namespace-Zend.Db.Adapter.Driver.Pdo.html">
 						Pdo<span></span>
@@ -2808,7 +2820,7 @@
 		<b>Namespace:</b> <a href="namespace-Zend.html">Zend</a>\<a href="namespace-Zend.Validator.html">Validator</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Zend.Validator.NotEmpty.html#15-302" title="Go to source code">zendframework/zend-validator/src/NotEmpty.php</a>
+			<b>Located at</b> <a href="source-class-Zend.Validator.NotEmpty.html#15-301" title="Go to source code">zendframework/zend-validator/src/NotEmpty.php</a>
 		<br>
 	</div>
 
@@ -2828,7 +2840,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Zend.Validator.NotEmpty.html#80-121" title="Go to source code">__construct</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|integer <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Validator.NotEmpty.html#79-120" title="Go to source code">__construct</a>( <span>array|<code><a href="class-Traversable.html">Traversable</a></code>|integer <var>$options</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -2865,7 +2877,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getType">#</a>
-		<code><a href="source-class-Zend.Validator.NotEmpty.html#123-131" title="Go to source code">getType</a>( )</code>
+		<code><a href="source-class-Zend.Validator.NotEmpty.html#122-130" title="Go to source code">getType</a>( )</code>
 
 		<div class="description short">
 			<p>Returns the set types</p>
@@ -2899,7 +2911,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getDefaultType">#</a>
-		<code><a href="source-class-Zend.Validator.NotEmpty.html#133-139" title="Go to source code">getDefaultType</a>( )</code>
+		<code><a href="source-class-Zend.Validator.NotEmpty.html#132-138" title="Go to source code">getDefaultType</a>( )</code>
 
 		<div class="description short">
 			
@@ -2933,7 +2945,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_calculateTypeValue">#</a>
-		<code><a href="source-class-Zend.Validator.NotEmpty.html#141-163" title="Go to source code">calculateTypeValue</a>( <span>array|integer|string <var>$type</var></span> )</code>
+		<code><a href="source-class-Zend.Validator.NotEmpty.html#140-162" title="Go to source code">calculateTypeValue</a>( <span>array|integer|string <var>$type</var></span> )</code>
 
 		<div class="description short">
 			
@@ -2972,7 +2984,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_setType">#</a>
-		<code><a href="source-class-Zend.Validator.NotEmpty.html#165-183" title="Go to source code">setType</a>( <span>integer|array <var>$type</var> = <span class="php-keyword1">null</span></span> )</code>
+		<code><a href="source-class-Zend.Validator.NotEmpty.html#164-182" title="Go to source code">setType</a>( <span>integer|array <var>$type</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="description short">
 			<p>Set the types</p>
@@ -3015,7 +3027,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_isValid">#</a>
-		<code><a href="source-class-Zend.Validator.NotEmpty.html#185-301" title="Go to source code">isValid</a>( <span>string <var>$value</var></span> )</code>
+		<code><a href="source-class-Zend.Validator.NotEmpty.html#184-300" title="Go to source code">isValid</a>( <span>string <var>$value</var></span> )</code>
 
 		<div class="description short">
 			<p>Returns true if and only if $value is not an empty value.</p>
@@ -3115,7 +3127,7 @@
 		<td class="value">
 			<div>
 				<a href="#BOOLEAN" class="anchor">#</a>
-				<code><span class="php-num">0x001</span></code>
+				<code><span class="php-num">0b000000000001</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3139,7 +3151,7 @@
 		<td class="value">
 			<div>
 				<a href="#INTEGER" class="anchor">#</a>
-				<code><span class="php-num">0x002</span></code>
+				<code><span class="php-num">0b000000000010</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3163,7 +3175,7 @@
 		<td class="value">
 			<div>
 				<a href="#FLOAT" class="anchor">#</a>
-				<code><span class="php-num">0x004</span></code>
+				<code><span class="php-num">0b000000000100</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3187,7 +3199,7 @@
 		<td class="value">
 			<div>
 				<a href="#STRING" class="anchor">#</a>
-				<code><span class="php-num">0x008</span></code>
+				<code><span class="php-num">0b000000001000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3211,7 +3223,7 @@
 		<td class="value">
 			<div>
 				<a href="#ZERO" class="anchor">#</a>
-				<code><span class="php-num">0x010</span></code>
+				<code><span class="php-num">0b000000010000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3235,7 +3247,7 @@
 		<td class="value">
 			<div>
 				<a href="#EMPTY_ARRAY" class="anchor">#</a>
-				<code><span class="php-num">0x020</span></code>
+				<code><span class="php-num">0b000000100000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3259,7 +3271,7 @@
 		<td class="value">
 			<div>
 				<a href="#NULL" class="anchor">#</a>
-				<code><span class="php-num">0x040</span></code>
+				<code><span class="php-num">0b000001000000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3283,7 +3295,7 @@
 		<td class="value">
 			<div>
 				<a href="#PHP" class="anchor">#</a>
-				<code><span class="php-num">0x07F</span></code>
+				<code><span class="php-num">0b000001111111</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3307,7 +3319,7 @@
 		<td class="value">
 			<div>
 				<a href="#SPACE" class="anchor">#</a>
-				<code><span class="php-num">0x080</span></code>
+				<code><span class="php-num">0b000010000000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3331,7 +3343,7 @@
 		<td class="value">
 			<div>
 				<a href="#OBJECT" class="anchor">#</a>
-				<code><span class="php-num">0x100</span></code>
+				<code><span class="php-num">0b000100000000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3355,7 +3367,7 @@
 		<td class="value">
 			<div>
 				<a href="#OBJECT_STRING" class="anchor">#</a>
-				<code><span class="php-num">0x200</span></code>
+				<code><span class="php-num">0b001000000000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3379,7 +3391,7 @@
 		<td class="value">
 			<div>
 				<a href="#OBJECT_COUNT" class="anchor">#</a>
-				<code><span class="php-num">0x400</span></code>
+				<code><span class="php-num">0b010000000000</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3403,7 +3415,7 @@
 		<td class="value">
 			<div>
 				<a href="#ALL" class="anchor">#</a>
-				<code><span class="php-num">0x7FF</span></code>
+				<code><span class="php-num">0b011111111111</span></code>
 			</div>
 		</td>
 	</tr>
@@ -3508,14 +3520,14 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Validator.NotEmpty.html#50-63" title="Go to source code"><var>$defaultType</var></a>
+				<a href="source-class-Zend.Validator.NotEmpty.html#50-62" title="Go to source code"><var>$defaultType</var></a>
 
 			<div class="description short">
-				<p>Default value for types; value = 493</p>
+				<p>Default value for types; value = 0b000111101001</p>
 			</div>
 
 			<div class="description detailed hidden">
-				<p>Default value for types; value = 493</p>
+				<p>Default value for types; value = 0b000111101001</p>
 
 			</div>
 		</td>
@@ -3528,7 +3540,6 @@
     self::<span class="php-keyword1">NULL</span>,
     self::EMPTY_ARRAY,
     self::STRING,
-    self::FLOAT,
     self::BOOLEAN
 ]</code>
 			</div>
@@ -3541,7 +3552,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Validator.NotEmpty.html#65-71" title="Go to source code"><var>$messageTemplates</var></a>
+				<a href="source-class-Zend.Validator.NotEmpty.html#64-70" title="Go to source code"><var>$messageTemplates</var></a>
 
 			<div class="description short">
 				
@@ -3569,7 +3580,7 @@
 		</code></td>
 
 		<td class="name">
-				<a href="source-class-Zend.Validator.NotEmpty.html#73-78" title="Go to source code"><var>$options</var></a>
+				<a href="source-class-Zend.Validator.NotEmpty.html#72-77" title="Go to source code"><var>$options</var></a>
 
 			<div class="description short">
 				<p>Options for this validator</p>
@@ -3613,7 +3624,7 @@
 	</div>
 </div>
 </div>
-<script src="resources/combined.js?0ac31a913655c97431a907cff0bf6b36eddbf59b"></script>
-<script src="elementlist.js?5414120ce966b2ac41e98d803a056fba2b945fa9"></script>
+<script src="resources/combined.js?60fbc4a0141620768e5ab954c557249d534cb57b"></script>
+<script src="elementlist.js?a4d398231987253ba837e05157fc0dba2071d834"></script>
 </body>
 </html>
